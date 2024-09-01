@@ -1,0 +1,746 @@
+
+
+================================================================
+== Vivado HLS Report for 'pooling2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_s'
+================================================================
+* Date:           Sun Apr 14 16:57:45 2024
+
+* Version:        2018.2 (Build 2258646 on Thu Jun 14 20:25:20 MDT 2018)
+* Project:        myproject_prj
+* Solution:       solution1
+* Product family: artix7
+* Target device:  xc7a200tfbg676-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |   5.00|     3.760|        0.62|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +--------+--------+--------+--------+---------+
+    |     Latency     |     Interval    | Pipeline|
+    |   min  |   max  |   min  |   max  |   Type  |
+    +--------+--------+--------+--------+---------+
+    |  242433|  715521|  242433|  715521|   none  |
+    +--------+--------+--------+--------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +---------------------+--------+--------+-------------+-----------+-----------+------+----------+
+        |                     |     Latency     |  Iteration  |  Initiation Interval  | Trip |          |
+        |      Loop Name      |   min  |   max  |   Latency   |  achieved |   target  | Count| Pipelined|
+        +---------------------+--------+--------+-------------+-----------+-----------+------+----------+
+        |- Loop 1             |  242432|  715520| 1894 ~ 5590 |          -|          -|   128|    no    |
+        | + Loop 1.1          |    1892|    5588|   43 ~ 127  |          -|          -|    44|    no    |
+        |  ++ Loop 1.1.1      |      12|      96|    6 ~ 48   |          -|          -|     2|    no    |
+        |   +++ Loop 1.1.1.1  |       4|      46|    2 ~ 23   |          -|          -|     2|    no    |
+        |  ++ Loop 1.1.2      |       9|       9|            3|          -|          -|     3|    no    |
+        +---------------------+--------+--------+-------------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 49
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / (!exitcond)
+3 --> 
+	4  / (tmp_s)
+	2  / (!tmp_s)
+4 --> 
+	28  / (tmp_13)
+	5  / (!tmp_13)
+5 --> 
+	6  / (!tmp_18 & !tmp_16)
+	27  / (!tmp_18 & tmp_16)
+	4  / (tmp_18)
+6 --> 
+	7  / true
+7 --> 
+	8  / true
+8 --> 
+	9  / true
+9 --> 
+	10  / true
+10 --> 
+	11  / true
+11 --> 
+	12  / true
+12 --> 
+	13  / true
+13 --> 
+	14  / true
+14 --> 
+	15  / true
+15 --> 
+	16  / true
+16 --> 
+	17  / true
+17 --> 
+	18  / true
+18 --> 
+	19  / true
+19 --> 
+	20  / true
+20 --> 
+	21  / true
+21 --> 
+	22  / true
+22 --> 
+	23  / true
+23 --> 
+	24  / true
+24 --> 
+	25  / true
+25 --> 
+	26  / true
+26 --> 
+	27  / true
+27 --> 
+	5  / true
+28 --> 
+	29  / true
+29 --> 
+	30  / (!exitcond_i_i)
+	32  / (exitcond_i_i)
+30 --> 
+	31  / true
+31 --> 
+	29  / true
+32 --> 
+	33  / true
+33 --> 
+	34  / true
+34 --> 
+	35  / true
+35 --> 
+	36  / true
+36 --> 
+	37  / true
+37 --> 
+	38  / true
+38 --> 
+	39  / true
+39 --> 
+	40  / true
+40 --> 
+	41  / true
+41 --> 
+	42  / true
+42 --> 
+	43  / true
+43 --> 
+	44  / true
+44 --> 
+	45  / true
+45 --> 
+	46  / true
+46 --> 
+	47  / true
+47 --> 
+	48  / true
+48 --> 
+	49  / true
+49 --> 
+	3  / true
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.35>
+ST_1 : Operation 50 [1/1] (0.00ns)   --->   "%pool_V = alloca [4 x i16], align 2" [firmware/nnet_utils/nnet_pooling.h:220]   --->   Operation 50 'alloca' 'pool_V' <Predicate = true> <Delay = 0.00> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 704> <RAM>
+ST_1 : Operation 51 [1/1] (0.00ns)   --->   "%pool_V_addr = getelementptr [4 x i16]* %pool_V, i64 0, i64 0"   --->   Operation 51 'getelementptr' 'pool_V_addr' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 52 [1/1] (1.35ns)   --->   "br label %.loopexit" [firmware/nnet_utils/nnet_pooling.h:215]   --->   Operation 52 'br' <Predicate = true> <Delay = 1.35>
+
+State 2 <SV = 1> <Delay = 1.71>
+ST_2 : Operation 53 [1/1] (0.00ns)   --->   "%ff = phi i8 [ 0, %0 ], [ %ff_1, %.loopexit.loopexit ]"   --->   Operation 53 'phi' 'ff' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 54 [1/1] (0.00ns)   --->   "%ff_cast1 = zext i8 %ff to i13" [firmware/nnet_utils/nnet_pooling.h:215]   --->   Operation 54 'zext' 'ff_cast1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 55 [1/1] (1.24ns)   --->   "%exitcond = icmp eq i8 %ff, -128" [firmware/nnet_utils/nnet_pooling.h:215]   --->   Operation 55 'icmp' 'exitcond' <Predicate = true> <Delay = 1.24> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.97> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 56 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 128, i64 128, i64 128)"   --->   Operation 56 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 57 [1/1] (1.71ns)   --->   "%ff_1 = add i8 %ff, 1" [firmware/nnet_utils/nnet_pooling.h:215]   --->   Operation 57 'add' 'ff_1' <Predicate = true> <Delay = 1.71> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.66> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 58 [1/1] (0.00ns)   --->   "br i1 %exitcond, label %5, label %.preheader12.preheader" [firmware/nnet_utils/nnet_pooling.h:215]   --->   Operation 58 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 59 [1/1] (1.35ns)   --->   "br label %.preheader12" [firmware/nnet_utils/nnet_pooling.h:217]   --->   Operation 59 'br' <Predicate = (!exitcond)> <Delay = 1.35>
+ST_2 : Operation 60 [1/1] (0.00ns)   --->   "ret void" [firmware/nnet_utils/nnet_pooling.h:258]   --->   Operation 60 'ret' <Predicate = (exitcond)> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 1.35>
+ST_3 : Operation 61 [1/1] (0.00ns)   --->   "%ii = phi i7 [ %ii_4, %.preheader11.134 ], [ 0, %.preheader12.preheader ]"   --->   Operation 61 'phi' 'ii' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 62 [1/1] (1.23ns)   --->   "%tmp_s = icmp ult i7 %ii, -40" [firmware/nnet_utils/nnet_pooling.h:217]   --->   Operation 62 'icmp' 'tmp_s' <Predicate = true> <Delay = 1.23> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.97> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 63 [1/1] (0.00ns)   --->   "%empty_44 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 44, i64 44, i64 44)"   --->   Operation 63 'speclooptripcount' 'empty_44' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 64 [1/1] (0.00ns)   --->   "br i1 %tmp_s, label %.preheader10.0.preheader, label %.loopexit.loopexit" [firmware/nnet_utils/nnet_pooling.h:217]   --->   Operation 64 'br' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 65 [1/1] (1.35ns)   --->   "br label %.preheader10.0" [firmware/nnet_utils/nnet_pooling.h:225]   --->   Operation 65 'br' <Predicate = (tmp_s)> <Delay = 1.35>
+ST_3 : Operation 66 [1/1] (0.00ns)   --->   "br label %.loopexit"   --->   Operation 66 'br' <Predicate = (!tmp_s)> <Delay = 0.00>
+
+State 4 <SV = 3> <Delay = 2.90>
+ST_4 : Operation 67 [1/1] (0.00ns)   --->   "%kk = phi i2 [ %kk_1, %.preheader10.0.loopexit ], [ 0, %.preheader10.0.preheader ]" [firmware/nnet_utils/nnet_pooling.h:225]   --->   Operation 67 'phi' 'kk' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 68 [1/1] (0.00ns)   --->   "%kk_cast = zext i2 %kk to i7" [firmware/nnet_utils/nnet_pooling.h:225]   --->   Operation 68 'zext' 'kk_cast' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 69 [1/1] (0.79ns)   --->   "%tmp_13 = icmp eq i2 %kk, -2" [firmware/nnet_utils/nnet_pooling.h:225]   --->   Operation 69 'icmp' 'tmp_13' <Predicate = true> <Delay = 0.79> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.97> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 70 [1/1] (0.00ns)   --->   "%empty_47 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 2, i64 2, i64 2)"   --->   Operation 70 'speclooptripcount' 'empty_47' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 71 [1/1] (1.20ns)   --->   "%kk_1 = add i2 %kk, 1" [firmware/nnet_utils/nnet_pooling.h:225]   --->   Operation 71 'add' 'kk_1' <Predicate = true> <Delay = 1.20> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.66> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 72 [1/1] (0.00ns)   --->   "br i1 %tmp_13, label %.preheader11.1, label %.preheader.preheader.0" [firmware/nnet_utils/nnet_pooling.h:225]   --->   Operation 72 'br' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 73 [1/1] (1.66ns)   --->   "%tmp_15 = add i7 %ii, %kk_cast" [firmware/nnet_utils/nnet_pooling.h:228]   --->   Operation 73 'add' 'tmp_15' <Predicate = (!tmp_13)> <Delay = 1.66> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.66> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 74 [1/1] (1.23ns)   --->   "%tmp_16 = icmp ugt i7 %tmp_15, -41" [firmware/nnet_utils/nnet_pooling.h:228]   --->   Operation 74 'icmp' 'tmp_16' <Predicate = (!tmp_13)> <Delay = 1.23> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.97> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 75 [1/1] (0.00ns)   --->   "%tmp_32 = shl i2 %kk, 1" [firmware/nnet_utils/nnet_pooling.h:231]   --->   Operation 75 'shl' 'tmp_32' <Predicate = (!tmp_13)> <Delay = 0.00>
+ST_4 : Operation 76 [1/1] (0.00ns)   --->   "%tmp_17 = call i15 @_ssdm_op_BitConcatenate.i15.i7.i8(i7 %tmp_15, i8 %ff)" [firmware/nnet_utils/nnet_pooling.h:235]   --->   Operation 76 'bitconcatenate' 'tmp_17' <Predicate = (!tmp_13)> <Delay = 0.00>
+ST_4 : Operation 77 [1/1] (1.35ns)   --->   "br label %.preheader.0" [firmware/nnet_utils/nnet_pooling.h:227]   --->   Operation 77 'br' <Predicate = (!tmp_13)> <Delay = 1.35>
+ST_4 : Operation 78 [2/2] (1.75ns)   --->   "%y_V = load i16* %pool_V_addr, align 2" [firmware/nnet_utils/nnet_pooling.h:11->firmware/nnet_utils/nnet_pooling.h:57->firmware/nnet_utils/nnet_pooling.h:247]   --->   Operation 78 'load' 'y_V' <Predicate = (tmp_13)> <Delay = 1.75> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 704> <RAM>
+
+State 5 <SV = 4> <Delay = 2.95>
+ST_5 : Operation 79 [1/1] (0.00ns)   --->   "%ll = phi i2 [ %ll_1, %2 ], [ 0, %.preheader.preheader.0 ]" [firmware/nnet_utils/nnet_pooling.h:227]   --->   Operation 79 'phi' 'll' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 80 [1/1] (0.79ns)   --->   "%tmp_18 = icmp eq i2 %ll, -2" [firmware/nnet_utils/nnet_pooling.h:227]   --->   Operation 80 'icmp' 'tmp_18' <Predicate = true> <Delay = 0.79> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.97> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 81 [1/1] (0.00ns)   --->   "%empty_48 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 2, i64 2, i64 2)"   --->   Operation 81 'speclooptripcount' 'empty_48' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 82 [1/1] (1.20ns)   --->   "%ll_1 = add i2 %ll, 1" [firmware/nnet_utils/nnet_pooling.h:227]   --->   Operation 82 'add' 'll_1' <Predicate = true> <Delay = 1.20> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.66> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 83 [1/1] (0.00ns)   --->   "br i1 %tmp_18, label %.preheader10.0.loopexit, label %3" [firmware/nnet_utils/nnet_pooling.h:227]   --->   Operation 83 'br' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 84 [1/1] (1.20ns)   --->   "%tmp_19 = add i2 %tmp_32, %ll" [firmware/nnet_utils/nnet_pooling.h:231]   --->   Operation 84 'add' 'tmp_19' <Predicate = (!tmp_18)> <Delay = 1.20> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.66> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 85 [1/1] (0.00ns)   --->   "%tmp_20 = zext i2 %tmp_19 to i64" [firmware/nnet_utils/nnet_pooling.h:231]   --->   Operation 85 'zext' 'tmp_20' <Predicate = (!tmp_18)> <Delay = 0.00>
+ST_5 : Operation 86 [1/1] (0.00ns)   --->   "br i1 %tmp_16, label %._crit_edge.0, label %4" [firmware/nnet_utils/nnet_pooling.h:228]   --->   Operation 86 'br' <Predicate = (!tmp_18)> <Delay = 0.00>
+ST_5 : Operation 87 [1/1] (0.00ns)   --->   "%tmp_34 = trunc i2 %ll to i1" [firmware/nnet_utils/nnet_pooling.h:227]   --->   Operation 87 'trunc' 'tmp_34' <Predicate = (!tmp_18 & !tmp_16)> <Delay = 0.00>
+ST_5 : Operation 88 [1/1] (0.00ns)   --->   "%tmp_21 = call i8 @_ssdm_op_BitConcatenate.i8.i1.i7(i1 %tmp_34, i7 0)" [firmware/nnet_utils/nnet_pooling.h:235]   --->   Operation 88 'bitconcatenate' 'tmp_21' <Predicate = (!tmp_18 & !tmp_16)> <Delay = 0.00>
+ST_5 : Operation 89 [1/1] (0.00ns)   --->   "%tmp_34_cast = zext i8 %tmp_21 to i15" [firmware/nnet_utils/nnet_pooling.h:235]   --->   Operation 89 'zext' 'tmp_34_cast' <Predicate = (!tmp_18 & !tmp_16)> <Delay = 0.00>
+ST_5 : Operation 90 [1/1] (1.82ns)   --->   "%tmp_22 = add i15 %tmp_34_cast, %tmp_17" [firmware/nnet_utils/nnet_pooling.h:235]   --->   Operation 90 'add' 'tmp_22' <Predicate = (!tmp_18 & !tmp_16)> <Delay = 1.82> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.66> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 91 [1/1] (0.00ns)   --->   "%pool_V_addr_2 = getelementptr [4 x i16]* %pool_V, i64 0, i64 %tmp_20" [firmware/nnet_utils/nnet_pooling.h:231]   --->   Operation 91 'getelementptr' 'pool_V_addr_2' <Predicate = (!tmp_18 & tmp_16)> <Delay = 0.00>
+ST_5 : Operation 92 [1/1] (1.75ns)   --->   "store i16 -32768, i16* %pool_V_addr_2, align 2" [firmware/nnet_utils/nnet_pooling.h:231]   --->   Operation 92 'store' <Predicate = (!tmp_18 & tmp_16)> <Delay = 1.75> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 704> <RAM>
+ST_5 : Operation 93 [1/1] (0.00ns)   --->   "br label %2" [firmware/nnet_utils/nnet_pooling.h:234]   --->   Operation 93 'br' <Predicate = (!tmp_18 & tmp_16)> <Delay = 0.00>
+ST_5 : Operation 94 [1/1] (0.00ns)   --->   "br label %.preheader10.0"   --->   Operation 94 'br' <Predicate = (tmp_18)> <Delay = 0.00>
+
+State 6 <SV = 5> <Delay = 3.76>
+ST_6 : Operation 95 [1/1] (0.00ns)   --->   "%zext1_cast = zext i15 %tmp_22 to i32" [firmware/nnet_utils/nnet_pooling.h:235]   --->   Operation 95 'zext' 'zext1_cast' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 96 [3/3] (3.76ns)   --->   "%mul2 = mul i32 47128, %zext1_cast" [firmware/nnet_utils/nnet_pooling.h:235]   --->   Operation 96 'mul' 'mul2' <Predicate = true> <Delay = 3.76> <Core = "DSP48">   --->   Core 61 'DSP48' <Latency = 2> <II = 1> <Delay = 3.76> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_6 : Operation 97 [19/19] (2.95ns)   --->   "%newIndex = urem i15 %tmp_22, 2848" [firmware/nnet_utils/nnet_pooling.h:235]   --->   Operation 97 'urem' 'newIndex' <Predicate = true> <Delay = 2.95> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 16> <II = 13> <Delay = 2.90> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 7 <SV = 6> <Delay = 3.76>
+ST_7 : Operation 98 [2/3] (3.76ns)   --->   "%mul2 = mul i32 47128, %zext1_cast" [firmware/nnet_utils/nnet_pooling.h:235]   --->   Operation 98 'mul' 'mul2' <Predicate = true> <Delay = 3.76> <Core = "DSP48">   --->   Core 61 'DSP48' <Latency = 2> <II = 1> <Delay = 3.76> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_7 : Operation 99 [18/19] (2.95ns)   --->   "%newIndex = urem i15 %tmp_22, 2848" [firmware/nnet_utils/nnet_pooling.h:235]   --->   Operation 99 'urem' 'newIndex' <Predicate = true> <Delay = 2.95> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 16> <II = 13> <Delay = 2.90> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 8 <SV = 7> <Delay = 2.95>
+ST_8 : Operation 100 [1/3] (0.00ns)   --->   "%mul2 = mul i32 47128, %zext1_cast" [firmware/nnet_utils/nnet_pooling.h:235]   --->   Operation 100 'mul' 'mul2' <Predicate = true> <Delay = 0.00> <Core = "DSP48">   --->   Core 61 'DSP48' <Latency = 2> <II = 1> <Delay = 3.76> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_8 : Operation 101 [17/19] (2.95ns)   --->   "%newIndex = urem i15 %tmp_22, 2848" [firmware/nnet_utils/nnet_pooling.h:235]   --->   Operation 101 'urem' 'newIndex' <Predicate = true> <Delay = 2.95> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 16> <II = 13> <Delay = 2.90> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 9 <SV = 8> <Delay = 2.95>
+ST_9 : Operation 102 [1/1] (0.00ns)   --->   "%tmp_35 = call i5 @_ssdm_op_PartSelect.i5.i32.i32.i32(i32 %mul2, i32 27, i32 31)" [firmware/nnet_utils/nnet_pooling.h:235]   --->   Operation 102 'partselect' 'tmp_35' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 103 [16/19] (2.95ns)   --->   "%newIndex = urem i15 %tmp_22, 2848" [firmware/nnet_utils/nnet_pooling.h:235]   --->   Operation 103 'urem' 'newIndex' <Predicate = true> <Delay = 2.95> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 16> <II = 13> <Delay = 2.90> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 10 <SV = 9> <Delay = 2.95>
+ST_10 : Operation 104 [15/19] (2.95ns)   --->   "%newIndex = urem i15 %tmp_22, 2848" [firmware/nnet_utils/nnet_pooling.h:235]   --->   Operation 104 'urem' 'newIndex' <Predicate = true> <Delay = 2.95> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 16> <II = 13> <Delay = 2.90> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 11 <SV = 10> <Delay = 2.95>
+ST_11 : Operation 105 [14/19] (2.95ns)   --->   "%newIndex = urem i15 %tmp_22, 2848" [firmware/nnet_utils/nnet_pooling.h:235]   --->   Operation 105 'urem' 'newIndex' <Predicate = true> <Delay = 2.95> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 16> <II = 13> <Delay = 2.90> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 12 <SV = 11> <Delay = 2.95>
+ST_12 : Operation 106 [13/19] (2.95ns)   --->   "%newIndex = urem i15 %tmp_22, 2848" [firmware/nnet_utils/nnet_pooling.h:235]   --->   Operation 106 'urem' 'newIndex' <Predicate = true> <Delay = 2.95> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 16> <II = 13> <Delay = 2.90> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 13 <SV = 12> <Delay = 2.95>
+ST_13 : Operation 107 [12/19] (2.95ns)   --->   "%newIndex = urem i15 %tmp_22, 2848" [firmware/nnet_utils/nnet_pooling.h:235]   --->   Operation 107 'urem' 'newIndex' <Predicate = true> <Delay = 2.95> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 16> <II = 13> <Delay = 2.90> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 14 <SV = 13> <Delay = 2.95>
+ST_14 : Operation 108 [11/19] (2.95ns)   --->   "%newIndex = urem i15 %tmp_22, 2848" [firmware/nnet_utils/nnet_pooling.h:235]   --->   Operation 108 'urem' 'newIndex' <Predicate = true> <Delay = 2.95> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 16> <II = 13> <Delay = 2.90> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 15 <SV = 14> <Delay = 2.95>
+ST_15 : Operation 109 [10/19] (2.95ns)   --->   "%newIndex = urem i15 %tmp_22, 2848" [firmware/nnet_utils/nnet_pooling.h:235]   --->   Operation 109 'urem' 'newIndex' <Predicate = true> <Delay = 2.95> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 16> <II = 13> <Delay = 2.90> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 16 <SV = 15> <Delay = 2.95>
+ST_16 : Operation 110 [9/19] (2.95ns)   --->   "%newIndex = urem i15 %tmp_22, 2848" [firmware/nnet_utils/nnet_pooling.h:235]   --->   Operation 110 'urem' 'newIndex' <Predicate = true> <Delay = 2.95> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 16> <II = 13> <Delay = 2.90> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 17 <SV = 16> <Delay = 2.95>
+ST_17 : Operation 111 [8/19] (2.95ns)   --->   "%newIndex = urem i15 %tmp_22, 2848" [firmware/nnet_utils/nnet_pooling.h:235]   --->   Operation 111 'urem' 'newIndex' <Predicate = true> <Delay = 2.95> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 16> <II = 13> <Delay = 2.90> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 18 <SV = 17> <Delay = 2.95>
+ST_18 : Operation 112 [7/19] (2.95ns)   --->   "%newIndex = urem i15 %tmp_22, 2848" [firmware/nnet_utils/nnet_pooling.h:235]   --->   Operation 112 'urem' 'newIndex' <Predicate = true> <Delay = 2.95> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 16> <II = 13> <Delay = 2.90> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 19 <SV = 18> <Delay = 2.95>
+ST_19 : Operation 113 [6/19] (2.95ns)   --->   "%newIndex = urem i15 %tmp_22, 2848" [firmware/nnet_utils/nnet_pooling.h:235]   --->   Operation 113 'urem' 'newIndex' <Predicate = true> <Delay = 2.95> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 16> <II = 13> <Delay = 2.90> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 20 <SV = 19> <Delay = 2.95>
+ST_20 : Operation 114 [5/19] (2.95ns)   --->   "%newIndex = urem i15 %tmp_22, 2848" [firmware/nnet_utils/nnet_pooling.h:235]   --->   Operation 114 'urem' 'newIndex' <Predicate = true> <Delay = 2.95> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 16> <II = 13> <Delay = 2.90> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 21 <SV = 20> <Delay = 2.95>
+ST_21 : Operation 115 [4/19] (2.95ns)   --->   "%newIndex = urem i15 %tmp_22, 2848" [firmware/nnet_utils/nnet_pooling.h:235]   --->   Operation 115 'urem' 'newIndex' <Predicate = true> <Delay = 2.95> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 16> <II = 13> <Delay = 2.90> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 22 <SV = 21> <Delay = 2.95>
+ST_22 : Operation 116 [3/19] (2.95ns)   --->   "%newIndex = urem i15 %tmp_22, 2848" [firmware/nnet_utils/nnet_pooling.h:235]   --->   Operation 116 'urem' 'newIndex' <Predicate = true> <Delay = 2.95> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 16> <II = 13> <Delay = 2.90> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 23 <SV = 22> <Delay = 2.95>
+ST_23 : Operation 117 [2/19] (2.95ns)   --->   "%newIndex = urem i15 %tmp_22, 2848" [firmware/nnet_utils/nnet_pooling.h:235]   --->   Operation 117 'urem' 'newIndex' <Predicate = true> <Delay = 2.95> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 16> <II = 13> <Delay = 2.90> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 24 <SV = 23> <Delay = 2.95>
+ST_24 : Operation 118 [1/19] (2.95ns)   --->   "%newIndex = urem i15 %tmp_22, 2848" [firmware/nnet_utils/nnet_pooling.h:235]   --->   Operation 118 'urem' 'newIndex' <Predicate = true> <Delay = 2.95> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 16> <II = 13> <Delay = 2.90> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 25 <SV = 24> <Delay = 2.77>
+ST_25 : Operation 119 [1/1] (0.00ns)   --->   "%newIndex5 = zext i15 %newIndex to i64" [firmware/nnet_utils/nnet_pooling.h:235]   --->   Operation 119 'zext' 'newIndex5' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 120 [1/1] (0.00ns)   --->   "%data_0_V_addr = getelementptr [2848 x i15]* %data_0_V, i64 0, i64 %newIndex5" [firmware/nnet_utils/nnet_pooling.h:235]   --->   Operation 120 'getelementptr' 'data_0_V_addr' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 121 [2/2] (2.77ns)   --->   "%data_0_V_load = load i15* %data_0_V_addr, align 2" [firmware/nnet_utils/nnet_pooling.h:235]   --->   Operation 121 'load' 'data_0_V_load' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 704> <RAM>
+ST_25 : Operation 122 [1/1] (0.00ns)   --->   "%data_1_V_addr = getelementptr [2848 x i15]* %data_1_V, i64 0, i64 %newIndex5" [firmware/nnet_utils/nnet_pooling.h:235]   --->   Operation 122 'getelementptr' 'data_1_V_addr' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 123 [2/2] (2.77ns)   --->   "%data_1_V_load = load i15* %data_1_V_addr, align 2" [firmware/nnet_utils/nnet_pooling.h:235]   --->   Operation 123 'load' 'data_1_V_load' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 704> <RAM>
+ST_25 : Operation 124 [1/1] (0.00ns)   --->   "%data_2_V_addr = getelementptr [2848 x i15]* %data_2_V, i64 0, i64 %newIndex5" [firmware/nnet_utils/nnet_pooling.h:235]   --->   Operation 124 'getelementptr' 'data_2_V_addr' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 125 [2/2] (2.77ns)   --->   "%data_2_V_load = load i15* %data_2_V_addr, align 2" [firmware/nnet_utils/nnet_pooling.h:235]   --->   Operation 125 'load' 'data_2_V_load' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 704> <RAM>
+ST_25 : Operation 126 [1/1] (0.00ns)   --->   "%data_3_V_addr = getelementptr [2848 x i15]* %data_3_V, i64 0, i64 %newIndex5" [firmware/nnet_utils/nnet_pooling.h:235]   --->   Operation 126 'getelementptr' 'data_3_V_addr' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 127 [2/2] (2.77ns)   --->   "%data_3_V_load = load i15* %data_3_V_addr, align 2" [firmware/nnet_utils/nnet_pooling.h:235]   --->   Operation 127 'load' 'data_3_V_load' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 704> <RAM>
+ST_25 : Operation 128 [1/1] (0.00ns)   --->   "%data_4_V_addr = getelementptr [2848 x i15]* %data_4_V, i64 0, i64 %newIndex5" [firmware/nnet_utils/nnet_pooling.h:235]   --->   Operation 128 'getelementptr' 'data_4_V_addr' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 129 [2/2] (2.77ns)   --->   "%data_4_V_load = load i15* %data_4_V_addr, align 2" [firmware/nnet_utils/nnet_pooling.h:235]   --->   Operation 129 'load' 'data_4_V_load' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 704> <RAM>
+ST_25 : Operation 130 [1/1] (0.00ns)   --->   "%data_5_V_addr = getelementptr [2848 x i15]* %data_5_V, i64 0, i64 %newIndex5" [firmware/nnet_utils/nnet_pooling.h:235]   --->   Operation 130 'getelementptr' 'data_5_V_addr' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 131 [2/2] (2.77ns)   --->   "%data_5_V_load = load i15* %data_5_V_addr, align 2" [firmware/nnet_utils/nnet_pooling.h:235]   --->   Operation 131 'load' 'data_5_V_load' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 704> <RAM>
+ST_25 : Operation 132 [1/1] (0.00ns)   --->   "%data_6_V_addr = getelementptr [2848 x i15]* %data_6_V, i64 0, i64 %newIndex5" [firmware/nnet_utils/nnet_pooling.h:235]   --->   Operation 132 'getelementptr' 'data_6_V_addr' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 133 [2/2] (2.77ns)   --->   "%data_6_V_load = load i15* %data_6_V_addr, align 2" [firmware/nnet_utils/nnet_pooling.h:235]   --->   Operation 133 'load' 'data_6_V_load' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 704> <RAM>
+ST_25 : Operation 134 [1/1] (0.00ns)   --->   "%data_7_V_addr = getelementptr [2848 x i15]* %data_7_V, i64 0, i64 %newIndex5" [firmware/nnet_utils/nnet_pooling.h:235]   --->   Operation 134 'getelementptr' 'data_7_V_addr' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 135 [2/2] (2.77ns)   --->   "%data_7_V_load = load i15* %data_7_V_addr, align 2" [firmware/nnet_utils/nnet_pooling.h:235]   --->   Operation 135 'load' 'data_7_V_load' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 704> <RAM>
+
+State 26 <SV = 25> <Delay = 2.77>
+ST_26 : Operation 136 [1/2] (2.77ns)   --->   "%data_0_V_load = load i15* %data_0_V_addr, align 2" [firmware/nnet_utils/nnet_pooling.h:235]   --->   Operation 136 'load' 'data_0_V_load' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 704> <RAM>
+ST_26 : Operation 137 [1/2] (2.77ns)   --->   "%data_1_V_load = load i15* %data_1_V_addr, align 2" [firmware/nnet_utils/nnet_pooling.h:235]   --->   Operation 137 'load' 'data_1_V_load' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 704> <RAM>
+ST_26 : Operation 138 [1/2] (2.77ns)   --->   "%data_2_V_load = load i15* %data_2_V_addr, align 2" [firmware/nnet_utils/nnet_pooling.h:235]   --->   Operation 138 'load' 'data_2_V_load' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 704> <RAM>
+ST_26 : Operation 139 [1/2] (2.77ns)   --->   "%data_3_V_load = load i15* %data_3_V_addr, align 2" [firmware/nnet_utils/nnet_pooling.h:235]   --->   Operation 139 'load' 'data_3_V_load' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 704> <RAM>
+ST_26 : Operation 140 [1/2] (2.77ns)   --->   "%data_4_V_load = load i15* %data_4_V_addr, align 2" [firmware/nnet_utils/nnet_pooling.h:235]   --->   Operation 140 'load' 'data_4_V_load' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 704> <RAM>
+ST_26 : Operation 141 [1/2] (2.77ns)   --->   "%data_5_V_load = load i15* %data_5_V_addr, align 2" [firmware/nnet_utils/nnet_pooling.h:235]   --->   Operation 141 'load' 'data_5_V_load' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 704> <RAM>
+ST_26 : Operation 142 [1/2] (2.77ns)   --->   "%data_6_V_load = load i15* %data_6_V_addr, align 2" [firmware/nnet_utils/nnet_pooling.h:235]   --->   Operation 142 'load' 'data_6_V_load' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 704> <RAM>
+ST_26 : Operation 143 [1/2] (2.77ns)   --->   "%data_7_V_load = load i15* %data_7_V_addr, align 2" [firmware/nnet_utils/nnet_pooling.h:235]   --->   Operation 143 'load' 'data_7_V_load' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 704> <RAM>
+
+State 27 <SV = 26> <Delay = 3.58>
+ST_27 : Operation 144 [1/1] (0.00ns)   --->   "%arrayNo = sext i5 %tmp_35 to i15" [firmware/nnet_utils/nnet_pooling.h:235]   --->   Operation 144 'sext' 'arrayNo' <Predicate = (!tmp_16)> <Delay = 0.00>
+ST_27 : Operation 145 [1/1] (0.00ns)   --->   "%arrayNo_cast = zext i15 %arrayNo to i32" [firmware/nnet_utils/nnet_pooling.h:235]   --->   Operation 145 'zext' 'arrayNo_cast' <Predicate = (!tmp_16)> <Delay = 0.00>
+ST_27 : Operation 146 [1/1] (0.00ns)   --->   "%extLd = zext i15 %data_0_V_load to i16" [firmware/nnet_utils/nnet_pooling.h:235]   --->   Operation 146 'zext' 'extLd' <Predicate = (!tmp_16)> <Delay = 0.00>
+ST_27 : Operation 147 [1/1] (0.00ns)   --->   "%extLd9 = zext i15 %data_1_V_load to i16" [firmware/nnet_utils/nnet_pooling.h:235]   --->   Operation 147 'zext' 'extLd9' <Predicate = (!tmp_16)> <Delay = 0.00>
+ST_27 : Operation 148 [1/1] (0.00ns)   --->   "%extLd1 = zext i15 %data_2_V_load to i16" [firmware/nnet_utils/nnet_pooling.h:235]   --->   Operation 148 'zext' 'extLd1' <Predicate = (!tmp_16)> <Delay = 0.00>
+ST_27 : Operation 149 [1/1] (0.00ns)   --->   "%extLd2 = zext i15 %data_3_V_load to i16" [firmware/nnet_utils/nnet_pooling.h:235]   --->   Operation 149 'zext' 'extLd2' <Predicate = (!tmp_16)> <Delay = 0.00>
+ST_27 : Operation 150 [1/1] (0.00ns)   --->   "%extLd3 = zext i15 %data_4_V_load to i16" [firmware/nnet_utils/nnet_pooling.h:235]   --->   Operation 150 'zext' 'extLd3' <Predicate = (!tmp_16)> <Delay = 0.00>
+ST_27 : Operation 151 [1/1] (0.00ns)   --->   "%extLd4 = zext i15 %data_5_V_load to i16" [firmware/nnet_utils/nnet_pooling.h:235]   --->   Operation 151 'zext' 'extLd4' <Predicate = (!tmp_16)> <Delay = 0.00>
+ST_27 : Operation 152 [1/1] (0.00ns)   --->   "%extLd5 = zext i15 %data_6_V_load to i16" [firmware/nnet_utils/nnet_pooling.h:235]   --->   Operation 152 'zext' 'extLd5' <Predicate = (!tmp_16)> <Delay = 0.00>
+ST_27 : Operation 153 [1/1] (0.00ns)   --->   "%extLd6 = zext i15 %data_7_V_load to i16" [firmware/nnet_utils/nnet_pooling.h:235]   --->   Operation 153 'zext' 'extLd6' <Predicate = (!tmp_16)> <Delay = 0.00>
+ST_27 : Operation 154 [1/1] (1.83ns)   --->   "%tmp = call i16 @_ssdm_op_Mux.ap_auto.8i16.i32(i16 %extLd, i16 %extLd9, i16 %extLd1, i16 %extLd2, i16 %extLd3, i16 %extLd4, i16 %extLd5, i16 %extLd6, i32 %arrayNo_cast)" [firmware/nnet_utils/nnet_pooling.h:235]   --->   Operation 154 'mux' 'tmp' <Predicate = (!tmp_16)> <Delay = 1.83> <Core = "MuxnS">   --->   Core 31 'MuxnS' <Latency = 0> <II = 1> <Delay = 1.83> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
+ST_27 : Operation 155 [1/1] (0.00ns)   --->   "%pool_V_addr_3 = getelementptr [4 x i16]* %pool_V, i64 0, i64 %tmp_20" [firmware/nnet_utils/nnet_pooling.h:235]   --->   Operation 155 'getelementptr' 'pool_V_addr_3' <Predicate = (!tmp_16)> <Delay = 0.00>
+ST_27 : Operation 156 [1/1] (1.75ns)   --->   "store i16 %tmp, i16* %pool_V_addr_3, align 2" [firmware/nnet_utils/nnet_pooling.h:235]   --->   Operation 156 'store' <Predicate = (!tmp_16)> <Delay = 1.75> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 704> <RAM>
+ST_27 : Operation 157 [1/1] (0.00ns)   --->   "br label %2"   --->   Operation 157 'br' <Predicate = (!tmp_16)> <Delay = 0.00>
+ST_27 : Operation 158 [1/1] (0.00ns)   --->   "br label %.preheader.0" [firmware/nnet_utils/nnet_pooling.h:227]   --->   Operation 158 'br' <Predicate = true> <Delay = 0.00>
+
+State 28 <SV = 4> <Delay = 1.79>
+ST_28 : Operation 159 [1/1] (0.00ns)   --->   "%tmp1 = call i13 @_ssdm_op_BitConcatenate.i13.i7.i6(i7 %ii, i6 0)" [firmware/nnet_utils/nnet_pooling.h:217]   --->   Operation 159 'bitconcatenate' 'tmp1' <Predicate = true> <Delay = 0.00>
+ST_28 : Operation 160 [1/1] (1.79ns)   --->   "%tmp_14 = add i13 %ff_cast1, %tmp1" [firmware/nnet_utils/nnet_pooling.h:245]   --->   Operation 160 'add' 'tmp_14' <Predicate = true> <Delay = 1.79> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.66> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_28 : Operation 161 [1/2] (1.75ns)   --->   "%y_V = load i16* %pool_V_addr, align 2" [firmware/nnet_utils/nnet_pooling.h:11->firmware/nnet_utils/nnet_pooling.h:57->firmware/nnet_utils/nnet_pooling.h:247]   --->   Operation 161 'load' 'y_V' <Predicate = true> <Delay = 1.75> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 704> <RAM>
+ST_28 : Operation 162 [1/1] (1.35ns)   --->   "br label %1" [firmware/nnet_utils/nnet_pooling.h:12->firmware/nnet_utils/nnet_pooling.h:57->firmware/nnet_utils/nnet_pooling.h:247]   --->   Operation 162 'br' <Predicate = true> <Delay = 1.35>
+
+State 29 <SV = 5> <Delay = 3.76>
+ST_29 : Operation 163 [1/1] (0.00ns)   --->   "%agg_result_V_i_i = phi i16 [ %y_V, %.preheader11.1 ], [ %y_V_2, %._crit_edge.i.i ]"   --->   Operation 163 'phi' 'agg_result_V_i_i' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 164 [1/1] (0.00ns)   --->   "%i_i_i = phi i3 [ 1, %.preheader11.1 ], [ %i, %._crit_edge.i.i ]"   --->   Operation 164 'phi' 'i_i_i' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 165 [1/1] (1.00ns)   --->   "%exitcond_i_i = icmp eq i3 %i_i_i, -4" [firmware/nnet_utils/nnet_pooling.h:12->firmware/nnet_utils/nnet_pooling.h:57->firmware/nnet_utils/nnet_pooling.h:247]   --->   Operation 165 'icmp' 'exitcond_i_i' <Predicate = true> <Delay = 1.00> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.97> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_29 : Operation 166 [1/1] (0.00ns)   --->   "%empty_45 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 3, i64 3, i64 3)"   --->   Operation 166 'speclooptripcount' 'empty_45' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 167 [1/1] (0.00ns)   --->   "br i1 %exitcond_i_i, label %"pool_op<ap_fixed<16, 6, 5, 3, 0>, 4, 0>.exit", label %._crit_edge.i.i" [firmware/nnet_utils/nnet_pooling.h:12->firmware/nnet_utils/nnet_pooling.h:57->firmware/nnet_utils/nnet_pooling.h:247]   --->   Operation 167 'br' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 168 [1/1] (0.00ns)   --->   "%tmp_i_i = zext i3 %i_i_i to i64" [firmware/nnet_utils/nnet_pooling.h:13->firmware/nnet_utils/nnet_pooling.h:57->firmware/nnet_utils/nnet_pooling.h:247]   --->   Operation 168 'zext' 'tmp_i_i' <Predicate = (!exitcond_i_i)> <Delay = 0.00>
+ST_29 : Operation 169 [1/1] (0.00ns)   --->   "%pool_V_addr_1 = getelementptr [4 x i16]* %pool_V, i64 0, i64 %tmp_i_i" [firmware/nnet_utils/nnet_pooling.h:13->firmware/nnet_utils/nnet_pooling.h:57->firmware/nnet_utils/nnet_pooling.h:247]   --->   Operation 169 'getelementptr' 'pool_V_addr_1' <Predicate = (!exitcond_i_i)> <Delay = 0.00>
+ST_29 : Operation 170 [2/2] (1.75ns)   --->   "%pool_V_load = load i16* %pool_V_addr_1, align 2" [firmware/nnet_utils/nnet_pooling.h:13->firmware/nnet_utils/nnet_pooling.h:57->firmware/nnet_utils/nnet_pooling.h:247]   --->   Operation 170 'load' 'pool_V_load' <Predicate = (!exitcond_i_i)> <Delay = 1.75> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 704> <RAM>
+ST_29 : Operation 171 [1/1] (1.34ns)   --->   "%i = add i3 %i_i_i, 1" [firmware/nnet_utils/nnet_pooling.h:12->firmware/nnet_utils/nnet_pooling.h:57->firmware/nnet_utils/nnet_pooling.h:247]   --->   Operation 171 'add' 'i' <Predicate = (!exitcond_i_i)> <Delay = 1.34> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.66> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_29 : Operation 172 [1/1] (0.00ns)   --->   "%zext_cast = zext i13 %tmp_14 to i28" [firmware/nnet_utils/nnet_pooling.h:245]   --->   Operation 172 'zext' 'zext_cast' <Predicate = (exitcond_i_i)> <Delay = 0.00>
+ST_29 : Operation 173 [3/3] (3.76ns)   --->   "%mul = mul i28 %zext_cast, 11916" [firmware/nnet_utils/nnet_pooling.h:245]   --->   Operation 173 'mul' 'mul' <Predicate = (exitcond_i_i)> <Delay = 3.76> <Core = "DSP48">   --->   Core 61 'DSP48' <Latency = 2> <II = 1> <Delay = 3.76> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_29 : Operation 174 [17/17] (2.90ns)   --->   "%newIndex3 = urem i13 %tmp_14, 704" [firmware/nnet_utils/nnet_pooling.h:245]   --->   Operation 174 'urem' 'newIndex3' <Predicate = (exitcond_i_i)> <Delay = 2.90> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 16> <II = 13> <Delay = 2.90> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 30 <SV = 6> <Delay = 1.75>
+ST_30 : Operation 175 [1/2] (1.75ns)   --->   "%pool_V_load = load i16* %pool_V_addr_1, align 2" [firmware/nnet_utils/nnet_pooling.h:13->firmware/nnet_utils/nnet_pooling.h:57->firmware/nnet_utils/nnet_pooling.h:247]   --->   Operation 175 'load' 'pool_V_load' <Predicate = true> <Delay = 1.75> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 704> <RAM>
+
+State 31 <SV = 7> <Delay = 3.04>
+ST_31 : Operation 176 [1/1] (1.97ns)   --->   "%tmp_i_i_46 = icmp sgt i16 %pool_V_load, %agg_result_V_i_i" [firmware/nnet_utils/nnet_pooling.h:13->firmware/nnet_utils/nnet_pooling.h:57->firmware/nnet_utils/nnet_pooling.h:247]   --->   Operation 176 'icmp' 'tmp_i_i_46' <Predicate = true> <Delay = 1.97> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.97> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_31 : Operation 177 [1/1] (1.06ns)   --->   "%y_V_2 = select i1 %tmp_i_i_46, i16 %pool_V_load, i16 %agg_result_V_i_i" [firmware/nnet_utils/nnet_pooling.h:13->firmware/nnet_utils/nnet_pooling.h:57->firmware/nnet_utils/nnet_pooling.h:247]   --->   Operation 177 'select' 'y_V_2' <Predicate = true> <Delay = 1.06> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 1.06> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_31 : Operation 178 [1/1] (0.00ns)   --->   "br label %1" [firmware/nnet_utils/nnet_pooling.h:12->firmware/nnet_utils/nnet_pooling.h:57->firmware/nnet_utils/nnet_pooling.h:247]   --->   Operation 178 'br' <Predicate = true> <Delay = 0.00>
+
+State 32 <SV = 6> <Delay = 3.76>
+ST_32 : Operation 179 [2/3] (3.76ns)   --->   "%mul = mul i28 %zext_cast, 11916" [firmware/nnet_utils/nnet_pooling.h:245]   --->   Operation 179 'mul' 'mul' <Predicate = true> <Delay = 3.76> <Core = "DSP48">   --->   Core 61 'DSP48' <Latency = 2> <II = 1> <Delay = 3.76> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_32 : Operation 180 [16/17] (2.90ns)   --->   "%newIndex3 = urem i13 %tmp_14, 704" [firmware/nnet_utils/nnet_pooling.h:245]   --->   Operation 180 'urem' 'newIndex3' <Predicate = true> <Delay = 2.90> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 16> <II = 13> <Delay = 2.90> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 33 <SV = 7> <Delay = 2.90>
+ST_33 : Operation 181 [1/3] (0.00ns)   --->   "%mul = mul i28 %zext_cast, 11916" [firmware/nnet_utils/nnet_pooling.h:245]   --->   Operation 181 'mul' 'mul' <Predicate = true> <Delay = 0.00> <Core = "DSP48">   --->   Core 61 'DSP48' <Latency = 2> <II = 1> <Delay = 3.76> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_33 : Operation 182 [15/17] (2.90ns)   --->   "%newIndex3 = urem i13 %tmp_14, 704" [firmware/nnet_utils/nnet_pooling.h:245]   --->   Operation 182 'urem' 'newIndex3' <Predicate = true> <Delay = 2.90> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 16> <II = 13> <Delay = 2.90> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 34 <SV = 8> <Delay = 2.90>
+ST_34 : Operation 183 [1/1] (0.00ns)   --->   "%tmp_33 = call i5 @_ssdm_op_PartSelect.i5.i28.i32.i32(i28 %mul, i32 23, i32 27)" [firmware/nnet_utils/nnet_pooling.h:245]   --->   Operation 183 'partselect' 'tmp_33' <Predicate = true> <Delay = 0.00>
+ST_34 : Operation 184 [14/17] (2.90ns)   --->   "%newIndex3 = urem i13 %tmp_14, 704" [firmware/nnet_utils/nnet_pooling.h:245]   --->   Operation 184 'urem' 'newIndex3' <Predicate = true> <Delay = 2.90> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 16> <II = 13> <Delay = 2.90> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 35 <SV = 9> <Delay = 2.90>
+ST_35 : Operation 185 [13/17] (2.90ns)   --->   "%newIndex3 = urem i13 %tmp_14, 704" [firmware/nnet_utils/nnet_pooling.h:245]   --->   Operation 185 'urem' 'newIndex3' <Predicate = true> <Delay = 2.90> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 16> <II = 13> <Delay = 2.90> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 36 <SV = 10> <Delay = 2.90>
+ST_36 : Operation 186 [12/17] (2.90ns)   --->   "%newIndex3 = urem i13 %tmp_14, 704" [firmware/nnet_utils/nnet_pooling.h:245]   --->   Operation 186 'urem' 'newIndex3' <Predicate = true> <Delay = 2.90> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 16> <II = 13> <Delay = 2.90> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 37 <SV = 11> <Delay = 2.90>
+ST_37 : Operation 187 [11/17] (2.90ns)   --->   "%newIndex3 = urem i13 %tmp_14, 704" [firmware/nnet_utils/nnet_pooling.h:245]   --->   Operation 187 'urem' 'newIndex3' <Predicate = true> <Delay = 2.90> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 16> <II = 13> <Delay = 2.90> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 38 <SV = 12> <Delay = 2.90>
+ST_38 : Operation 188 [10/17] (2.90ns)   --->   "%newIndex3 = urem i13 %tmp_14, 704" [firmware/nnet_utils/nnet_pooling.h:245]   --->   Operation 188 'urem' 'newIndex3' <Predicate = true> <Delay = 2.90> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 16> <II = 13> <Delay = 2.90> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 39 <SV = 13> <Delay = 2.90>
+ST_39 : Operation 189 [9/17] (2.90ns)   --->   "%newIndex3 = urem i13 %tmp_14, 704" [firmware/nnet_utils/nnet_pooling.h:245]   --->   Operation 189 'urem' 'newIndex3' <Predicate = true> <Delay = 2.90> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 16> <II = 13> <Delay = 2.90> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 40 <SV = 14> <Delay = 2.90>
+ST_40 : Operation 190 [8/17] (2.90ns)   --->   "%newIndex3 = urem i13 %tmp_14, 704" [firmware/nnet_utils/nnet_pooling.h:245]   --->   Operation 190 'urem' 'newIndex3' <Predicate = true> <Delay = 2.90> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 16> <II = 13> <Delay = 2.90> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 41 <SV = 15> <Delay = 2.90>
+ST_41 : Operation 191 [7/17] (2.90ns)   --->   "%newIndex3 = urem i13 %tmp_14, 704" [firmware/nnet_utils/nnet_pooling.h:245]   --->   Operation 191 'urem' 'newIndex3' <Predicate = true> <Delay = 2.90> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 16> <II = 13> <Delay = 2.90> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 42 <SV = 16> <Delay = 2.90>
+ST_42 : Operation 192 [6/17] (2.90ns)   --->   "%newIndex3 = urem i13 %tmp_14, 704" [firmware/nnet_utils/nnet_pooling.h:245]   --->   Operation 192 'urem' 'newIndex3' <Predicate = true> <Delay = 2.90> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 16> <II = 13> <Delay = 2.90> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 43 <SV = 17> <Delay = 2.90>
+ST_43 : Operation 193 [5/17] (2.90ns)   --->   "%newIndex3 = urem i13 %tmp_14, 704" [firmware/nnet_utils/nnet_pooling.h:245]   --->   Operation 193 'urem' 'newIndex3' <Predicate = true> <Delay = 2.90> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 16> <II = 13> <Delay = 2.90> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 44 <SV = 18> <Delay = 2.90>
+ST_44 : Operation 194 [4/17] (2.90ns)   --->   "%newIndex3 = urem i13 %tmp_14, 704" [firmware/nnet_utils/nnet_pooling.h:245]   --->   Operation 194 'urem' 'newIndex3' <Predicate = true> <Delay = 2.90> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 16> <II = 13> <Delay = 2.90> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 45 <SV = 19> <Delay = 2.90>
+ST_45 : Operation 195 [3/17] (2.90ns)   --->   "%newIndex3 = urem i13 %tmp_14, 704" [firmware/nnet_utils/nnet_pooling.h:245]   --->   Operation 195 'urem' 'newIndex3' <Predicate = true> <Delay = 2.90> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 16> <II = 13> <Delay = 2.90> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 46 <SV = 20> <Delay = 2.90>
+ST_46 : Operation 196 [2/17] (2.90ns)   --->   "%newIndex3 = urem i13 %tmp_14, 704" [firmware/nnet_utils/nnet_pooling.h:245]   --->   Operation 196 'urem' 'newIndex3' <Predicate = true> <Delay = 2.90> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 16> <II = 13> <Delay = 2.90> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 47 <SV = 21> <Delay = 2.90>
+ST_47 : Operation 197 [1/1] (0.00ns)   --->   "%arrayNo2 = sext i5 %tmp_33 to i13" [firmware/nnet_utils/nnet_pooling.h:245]   --->   Operation 197 'sext' 'arrayNo2' <Predicate = true> <Delay = 0.00>
+ST_47 : Operation 198 [1/17] (2.90ns)   --->   "%newIndex3 = urem i13 %tmp_14, 704" [firmware/nnet_utils/nnet_pooling.h:245]   --->   Operation 198 'urem' 'newIndex3' <Predicate = true> <Delay = 2.90> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 16> <II = 13> <Delay = 2.90> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_47 : Operation 199 [1/1] (0.00ns)   --->   "%newIndex4 = zext i13 %newIndex3 to i64" [firmware/nnet_utils/nnet_pooling.h:245]   --->   Operation 199 'zext' 'newIndex4' <Predicate = true> <Delay = 0.00>
+ST_47 : Operation 200 [1/1] (0.00ns)   --->   "%res_0_V_addr = getelementptr [704 x i16]* %res_0_V, i64 0, i64 %newIndex4" [firmware/nnet_utils/nnet_pooling.h:247]   --->   Operation 200 'getelementptr' 'res_0_V_addr' <Predicate = true> <Delay = 0.00>
+ST_47 : Operation 201 [1/1] (0.00ns)   --->   "%res_1_V_addr = getelementptr [704 x i16]* %res_1_V, i64 0, i64 %newIndex4" [firmware/nnet_utils/nnet_pooling.h:247]   --->   Operation 201 'getelementptr' 'res_1_V_addr' <Predicate = true> <Delay = 0.00>
+ST_47 : Operation 202 [1/1] (0.00ns)   --->   "%res_2_V_addr = getelementptr [704 x i16]* %res_2_V, i64 0, i64 %newIndex4" [firmware/nnet_utils/nnet_pooling.h:247]   --->   Operation 202 'getelementptr' 'res_2_V_addr' <Predicate = true> <Delay = 0.00>
+ST_47 : Operation 203 [1/1] (0.00ns)   --->   "%res_3_V_addr = getelementptr [704 x i16]* %res_3_V, i64 0, i64 %newIndex4" [firmware/nnet_utils/nnet_pooling.h:247]   --->   Operation 203 'getelementptr' 'res_3_V_addr' <Predicate = true> <Delay = 0.00>
+ST_47 : Operation 204 [1/1] (0.00ns)   --->   "%res_4_V_addr = getelementptr [704 x i16]* %res_4_V, i64 0, i64 %newIndex4" [firmware/nnet_utils/nnet_pooling.h:247]   --->   Operation 204 'getelementptr' 'res_4_V_addr' <Predicate = true> <Delay = 0.00>
+ST_47 : Operation 205 [1/1] (0.00ns)   --->   "%res_5_V_addr = getelementptr [704 x i16]* %res_5_V, i64 0, i64 %newIndex4" [firmware/nnet_utils/nnet_pooling.h:247]   --->   Operation 205 'getelementptr' 'res_5_V_addr' <Predicate = true> <Delay = 0.00>
+ST_47 : Operation 206 [1/1] (0.00ns)   --->   "%res_6_V_addr = getelementptr [704 x i16]* %res_6_V, i64 0, i64 %newIndex4" [firmware/nnet_utils/nnet_pooling.h:247]   --->   Operation 206 'getelementptr' 'res_6_V_addr' <Predicate = true> <Delay = 0.00>
+ST_47 : Operation 207 [1/1] (0.00ns)   --->   "%res_7_V_addr = getelementptr [704 x i16]* %res_7_V, i64 0, i64 %newIndex4" [firmware/nnet_utils/nnet_pooling.h:247]   --->   Operation 207 'getelementptr' 'res_7_V_addr' <Predicate = true> <Delay = 0.00>
+ST_47 : Operation 208 [1/1] (1.21ns)   --->   "switch i13 %arrayNo2, label %branch7 [
+    i13 0, label %branch0
+    i13 1, label %branch1
+    i13 2, label %branch2
+    i13 3, label %branch3
+    i13 4, label %branch4
+    i13 5, label %branch5
+    i13 6, label %branch6
+  ]" [firmware/nnet_utils/nnet_pooling.h:247]   --->   Operation 208 'switch' <Predicate = true> <Delay = 1.21>
+
+State 48 <SV = 22> <Delay = 2.77>
+ST_48 : Operation 209 [1/1] (2.77ns)   --->   "store i16 %agg_result_V_i_i, i16* %res_6_V_addr, align 2" [firmware/nnet_utils/nnet_pooling.h:247]   --->   Operation 209 'store' <Predicate = (arrayNo2 == 6)> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 704> <RAM>
+ST_48 : Operation 210 [1/1] (0.00ns)   --->   "br label %.preheader11.134" [firmware/nnet_utils/nnet_pooling.h:247]   --->   Operation 210 'br' <Predicate = (arrayNo2 == 6)> <Delay = 0.00>
+ST_48 : Operation 211 [1/1] (2.77ns)   --->   "store i16 %agg_result_V_i_i, i16* %res_5_V_addr, align 2" [firmware/nnet_utils/nnet_pooling.h:247]   --->   Operation 211 'store' <Predicate = (arrayNo2 == 5)> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 704> <RAM>
+ST_48 : Operation 212 [1/1] (0.00ns)   --->   "br label %.preheader11.134" [firmware/nnet_utils/nnet_pooling.h:247]   --->   Operation 212 'br' <Predicate = (arrayNo2 == 5)> <Delay = 0.00>
+ST_48 : Operation 213 [1/1] (2.77ns)   --->   "store i16 %agg_result_V_i_i, i16* %res_4_V_addr, align 2" [firmware/nnet_utils/nnet_pooling.h:247]   --->   Operation 213 'store' <Predicate = (arrayNo2 == 4)> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 704> <RAM>
+ST_48 : Operation 214 [1/1] (0.00ns)   --->   "br label %.preheader11.134" [firmware/nnet_utils/nnet_pooling.h:247]   --->   Operation 214 'br' <Predicate = (arrayNo2 == 4)> <Delay = 0.00>
+ST_48 : Operation 215 [1/1] (2.77ns)   --->   "store i16 %agg_result_V_i_i, i16* %res_3_V_addr, align 2" [firmware/nnet_utils/nnet_pooling.h:247]   --->   Operation 215 'store' <Predicate = (arrayNo2 == 3)> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 704> <RAM>
+ST_48 : Operation 216 [1/1] (0.00ns)   --->   "br label %.preheader11.134" [firmware/nnet_utils/nnet_pooling.h:247]   --->   Operation 216 'br' <Predicate = (arrayNo2 == 3)> <Delay = 0.00>
+ST_48 : Operation 217 [1/1] (2.77ns)   --->   "store i16 %agg_result_V_i_i, i16* %res_2_V_addr, align 2" [firmware/nnet_utils/nnet_pooling.h:247]   --->   Operation 217 'store' <Predicate = (arrayNo2 == 2)> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 704> <RAM>
+ST_48 : Operation 218 [1/1] (0.00ns)   --->   "br label %.preheader11.134" [firmware/nnet_utils/nnet_pooling.h:247]   --->   Operation 218 'br' <Predicate = (arrayNo2 == 2)> <Delay = 0.00>
+ST_48 : Operation 219 [1/1] (2.77ns)   --->   "store i16 %agg_result_V_i_i, i16* %res_1_V_addr, align 2" [firmware/nnet_utils/nnet_pooling.h:247]   --->   Operation 219 'store' <Predicate = (arrayNo2 == 1)> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 704> <RAM>
+ST_48 : Operation 220 [1/1] (0.00ns)   --->   "br label %.preheader11.134" [firmware/nnet_utils/nnet_pooling.h:247]   --->   Operation 220 'br' <Predicate = (arrayNo2 == 1)> <Delay = 0.00>
+ST_48 : Operation 221 [1/1] (2.77ns)   --->   "store i16 %agg_result_V_i_i, i16* %res_0_V_addr, align 2" [firmware/nnet_utils/nnet_pooling.h:247]   --->   Operation 221 'store' <Predicate = (arrayNo2 == 0)> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 704> <RAM>
+ST_48 : Operation 222 [1/1] (0.00ns)   --->   "br label %.preheader11.134" [firmware/nnet_utils/nnet_pooling.h:247]   --->   Operation 222 'br' <Predicate = (arrayNo2 == 0)> <Delay = 0.00>
+ST_48 : Operation 223 [1/1] (2.77ns)   --->   "store i16 %agg_result_V_i_i, i16* %res_7_V_addr, align 2" [firmware/nnet_utils/nnet_pooling.h:247]   --->   Operation 223 'store' <Predicate = (arrayNo2 != 0 & arrayNo2 != 1 & arrayNo2 != 2 & arrayNo2 != 3 & arrayNo2 != 4 & arrayNo2 != 5 & arrayNo2 != 6)> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 704> <RAM>
+ST_48 : Operation 224 [1/1] (0.00ns)   --->   "br label %.preheader11.134" [firmware/nnet_utils/nnet_pooling.h:247]   --->   Operation 224 'br' <Predicate = (arrayNo2 != 0 & arrayNo2 != 1 & arrayNo2 != 2 & arrayNo2 != 3 & arrayNo2 != 4 & arrayNo2 != 5 & arrayNo2 != 6)> <Delay = 0.00>
+
+State 49 <SV = 23> <Delay = 1.66>
+ST_49 : Operation 225 [1/1] (1.66ns)   --->   "%ii_4 = add i7 %ii, 2" [firmware/nnet_utils/nnet_pooling.h:217]   --->   Operation 225 'add' 'ii_4' <Predicate = true> <Delay = 1.66> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.66> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_49 : Operation 226 [1/1] (0.00ns)   --->   "br label %.preheader12" [firmware/nnet_utils/nnet_pooling.h:217]   --->   Operation 226 'br' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 5ns, clock uncertainty: 0.625ns.
+
+ <State 1>: 1.35ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('ff') with incoming values : ('ff', firmware/nnet_utils/nnet_pooling.h:215) [21]  (1.35 ns)
+
+ <State 2>: 1.72ns
+The critical path consists of the following:
+	'phi' operation ('ff') with incoming values : ('ff', firmware/nnet_utils/nnet_pooling.h:215) [21]  (0 ns)
+	'add' operation ('ff', firmware/nnet_utils/nnet_pooling.h:215) [25]  (1.72 ns)
+
+ <State 3>: 1.35ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('kk', firmware/nnet_utils/nnet_pooling.h:225) with incoming values : ('kk_1', firmware/nnet_utils/nnet_pooling.h:225) [37]  (1.35 ns)
+
+ <State 4>: 2.9ns
+The critical path consists of the following:
+	'phi' operation ('kk', firmware/nnet_utils/nnet_pooling.h:225) with incoming values : ('kk_1', firmware/nnet_utils/nnet_pooling.h:225) [37]  (0 ns)
+	'add' operation ('tmp_15', firmware/nnet_utils/nnet_pooling.h:228) [44]  (1.66 ns)
+	'icmp' operation ('tmp_16', firmware/nnet_utils/nnet_pooling.h:228) [45]  (1.24 ns)
+
+ <State 5>: 2.96ns
+The critical path consists of the following:
+	'phi' operation ('ll', firmware/nnet_utils/nnet_pooling.h:227) with incoming values : ('ll_1', firmware/nnet_utils/nnet_pooling.h:227) [50]  (0 ns)
+	'add' operation ('tmp_19', firmware/nnet_utils/nnet_pooling.h:231) [56]  (1.2 ns)
+	'getelementptr' operation ('pool_V_addr_2', firmware/nnet_utils/nnet_pooling.h:231) [100]  (0 ns)
+	'store' operation (firmware/nnet_utils/nnet_pooling.h:231) of constant 32768 on array 'pool.V', firmware/nnet_utils/nnet_pooling.h:220 [101]  (1.75 ns)
+
+ <State 6>: 3.76ns
+The critical path consists of the following:
+	'mul' operation ('mul2', firmware/nnet_utils/nnet_pooling.h:235) [65]  (3.76 ns)
+
+ <State 7>: 3.76ns
+The critical path consists of the following:
+	'mul' operation ('mul2', firmware/nnet_utils/nnet_pooling.h:235) [65]  (3.76 ns)
+
+ <State 8>: 2.96ns
+The critical path consists of the following:
+	'urem' operation ('newIndex', firmware/nnet_utils/nnet_pooling.h:235) [69]  (2.96 ns)
+
+ <State 9>: 2.96ns
+The critical path consists of the following:
+	'urem' operation ('newIndex', firmware/nnet_utils/nnet_pooling.h:235) [69]  (2.96 ns)
+
+ <State 10>: 2.96ns
+The critical path consists of the following:
+	'urem' operation ('newIndex', firmware/nnet_utils/nnet_pooling.h:235) [69]  (2.96 ns)
+
+ <State 11>: 2.96ns
+The critical path consists of the following:
+	'urem' operation ('newIndex', firmware/nnet_utils/nnet_pooling.h:235) [69]  (2.96 ns)
+
+ <State 12>: 2.96ns
+The critical path consists of the following:
+	'urem' operation ('newIndex', firmware/nnet_utils/nnet_pooling.h:235) [69]  (2.96 ns)
+
+ <State 13>: 2.96ns
+The critical path consists of the following:
+	'urem' operation ('newIndex', firmware/nnet_utils/nnet_pooling.h:235) [69]  (2.96 ns)
+
+ <State 14>: 2.96ns
+The critical path consists of the following:
+	'urem' operation ('newIndex', firmware/nnet_utils/nnet_pooling.h:235) [69]  (2.96 ns)
+
+ <State 15>: 2.96ns
+The critical path consists of the following:
+	'urem' operation ('newIndex', firmware/nnet_utils/nnet_pooling.h:235) [69]  (2.96 ns)
+
+ <State 16>: 2.96ns
+The critical path consists of the following:
+	'urem' operation ('newIndex', firmware/nnet_utils/nnet_pooling.h:235) [69]  (2.96 ns)
+
+ <State 17>: 2.96ns
+The critical path consists of the following:
+	'urem' operation ('newIndex', firmware/nnet_utils/nnet_pooling.h:235) [69]  (2.96 ns)
+
+ <State 18>: 2.96ns
+The critical path consists of the following:
+	'urem' operation ('newIndex', firmware/nnet_utils/nnet_pooling.h:235) [69]  (2.96 ns)
+
+ <State 19>: 2.96ns
+The critical path consists of the following:
+	'urem' operation ('newIndex', firmware/nnet_utils/nnet_pooling.h:235) [69]  (2.96 ns)
+
+ <State 20>: 2.96ns
+The critical path consists of the following:
+	'urem' operation ('newIndex', firmware/nnet_utils/nnet_pooling.h:235) [69]  (2.96 ns)
+
+ <State 21>: 2.96ns
+The critical path consists of the following:
+	'urem' operation ('newIndex', firmware/nnet_utils/nnet_pooling.h:235) [69]  (2.96 ns)
+
+ <State 22>: 2.96ns
+The critical path consists of the following:
+	'urem' operation ('newIndex', firmware/nnet_utils/nnet_pooling.h:235) [69]  (2.96 ns)
+
+ <State 23>: 2.96ns
+The critical path consists of the following:
+	'urem' operation ('newIndex', firmware/nnet_utils/nnet_pooling.h:235) [69]  (2.96 ns)
+
+ <State 24>: 2.96ns
+The critical path consists of the following:
+	'urem' operation ('newIndex', firmware/nnet_utils/nnet_pooling.h:235) [69]  (2.96 ns)
+
+ <State 25>: 2.77ns
+The critical path consists of the following:
+	'getelementptr' operation ('data_2_V_addr', firmware/nnet_utils/nnet_pooling.h:235) [77]  (0 ns)
+	'load' operation ('data_2_V_load', firmware/nnet_utils/nnet_pooling.h:235) on array 'data_2_V' [78]  (2.77 ns)
+
+ <State 26>: 2.77ns
+The critical path consists of the following:
+	'load' operation ('data_0_V_load', firmware/nnet_utils/nnet_pooling.h:235) on array 'data_0_V' [72]  (2.77 ns)
+
+ <State 27>: 3.59ns
+The critical path consists of the following:
+	'mux' operation ('tmp', firmware/nnet_utils/nnet_pooling.h:235) [95]  (1.83 ns)
+	'store' operation (firmware/nnet_utils/nnet_pooling.h:235) of variable 'tmp', firmware/nnet_utils/nnet_pooling.h:235 on array 'pool.V', firmware/nnet_utils/nnet_pooling.h:220 [97]  (1.75 ns)
+
+ <State 28>: 1.79ns
+The critical path consists of the following:
+	'add' operation ('tmp_14', firmware/nnet_utils/nnet_pooling.h:245) [109]  (1.79 ns)
+
+ <State 29>: 3.76ns
+The critical path consists of the following:
+	'mul' operation ('mul', firmware/nnet_utils/nnet_pooling.h:245) [128]  (3.76 ns)
+
+ <State 30>: 1.75ns
+The critical path consists of the following:
+	'load' operation ('pool_V_load', firmware/nnet_utils/nnet_pooling.h:13->firmware/nnet_utils/nnet_pooling.h:57->firmware/nnet_utils/nnet_pooling.h:247) on array 'pool.V', firmware/nnet_utils/nnet_pooling.h:220 [121]  (1.75 ns)
+
+ <State 31>: 3.04ns
+The critical path consists of the following:
+	'icmp' operation ('tmp_i_i_46', firmware/nnet_utils/nnet_pooling.h:13->firmware/nnet_utils/nnet_pooling.h:57->firmware/nnet_utils/nnet_pooling.h:247) [122]  (1.98 ns)
+	'select' operation ('y.V', firmware/nnet_utils/nnet_pooling.h:13->firmware/nnet_utils/nnet_pooling.h:57->firmware/nnet_utils/nnet_pooling.h:247) [123]  (1.06 ns)
+
+ <State 32>: 3.76ns
+The critical path consists of the following:
+	'mul' operation ('mul', firmware/nnet_utils/nnet_pooling.h:245) [128]  (3.76 ns)
+
+ <State 33>: 2.9ns
+The critical path consists of the following:
+	'urem' operation ('newIndex3', firmware/nnet_utils/nnet_pooling.h:245) [131]  (2.9 ns)
+
+ <State 34>: 2.9ns
+The critical path consists of the following:
+	'urem' operation ('newIndex3', firmware/nnet_utils/nnet_pooling.h:245) [131]  (2.9 ns)
+
+ <State 35>: 2.9ns
+The critical path consists of the following:
+	'urem' operation ('newIndex3', firmware/nnet_utils/nnet_pooling.h:245) [131]  (2.9 ns)
+
+ <State 36>: 2.9ns
+The critical path consists of the following:
+	'urem' operation ('newIndex3', firmware/nnet_utils/nnet_pooling.h:245) [131]  (2.9 ns)
+
+ <State 37>: 2.9ns
+The critical path consists of the following:
+	'urem' operation ('newIndex3', firmware/nnet_utils/nnet_pooling.h:245) [131]  (2.9 ns)
+
+ <State 38>: 2.9ns
+The critical path consists of the following:
+	'urem' operation ('newIndex3', firmware/nnet_utils/nnet_pooling.h:245) [131]  (2.9 ns)
+
+ <State 39>: 2.9ns
+The critical path consists of the following:
+	'urem' operation ('newIndex3', firmware/nnet_utils/nnet_pooling.h:245) [131]  (2.9 ns)
+
+ <State 40>: 2.9ns
+The critical path consists of the following:
+	'urem' operation ('newIndex3', firmware/nnet_utils/nnet_pooling.h:245) [131]  (2.9 ns)
+
+ <State 41>: 2.9ns
+The critical path consists of the following:
+	'urem' operation ('newIndex3', firmware/nnet_utils/nnet_pooling.h:245) [131]  (2.9 ns)
+
+ <State 42>: 2.9ns
+The critical path consists of the following:
+	'urem' operation ('newIndex3', firmware/nnet_utils/nnet_pooling.h:245) [131]  (2.9 ns)
+
+ <State 43>: 2.9ns
+The critical path consists of the following:
+	'urem' operation ('newIndex3', firmware/nnet_utils/nnet_pooling.h:245) [131]  (2.9 ns)
+
+ <State 44>: 2.9ns
+The critical path consists of the following:
+	'urem' operation ('newIndex3', firmware/nnet_utils/nnet_pooling.h:245) [131]  (2.9 ns)
+
+ <State 45>: 2.9ns
+The critical path consists of the following:
+	'urem' operation ('newIndex3', firmware/nnet_utils/nnet_pooling.h:245) [131]  (2.9 ns)
+
+ <State 46>: 2.9ns
+The critical path consists of the following:
+	'urem' operation ('newIndex3', firmware/nnet_utils/nnet_pooling.h:245) [131]  (2.9 ns)
+
+ <State 47>: 2.9ns
+The critical path consists of the following:
+	'urem' operation ('newIndex3', firmware/nnet_utils/nnet_pooling.h:245) [131]  (2.9 ns)
+	'getelementptr' operation ('res_6_V_addr', firmware/nnet_utils/nnet_pooling.h:247) [139]  (0 ns)
+
+ <State 48>: 2.77ns
+The critical path consists of the following:
+	'store' operation (firmware/nnet_utils/nnet_pooling.h:247) of variable 'y.V' on array 'res_6_V' [143]  (2.77 ns)
+
+ <State 49>: 1.66ns
+The critical path consists of the following:
+	'add' operation ('ii', firmware/nnet_utils/nnet_pooling.h:217) [167]  (1.66 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+	State 20
+	State 21
+	State 22
+	State 23
+	State 24
+	State 25
+	State 26
+	State 27
+	State 28
+	State 29
+	State 30
+	State 31
+	State 32
+	State 33
+	State 34
+	State 35
+	State 36
+	State 37
+	State 38
+	State 39
+	State 40
+	State 41
+	State 42
+	State 43
+	State 44
+	State 45
+	State 46
+	State 47
+	State 48
+	State 49
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

@@ -1,0 +1,238 @@
+
+
+================================================================
+== Vivado HLS Report for 'relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_s'
+================================================================
+* Date:           Sun Apr 14 16:57:42 2024
+
+* Version:        2018.2 (Build 2258646 on Thu Jun 14 20:25:20 MDT 2018)
+* Project:        myproject_prj
+* Solution:       solution1
+* Product family: artix7
+* Target device:  xc7a200tfbg676-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |   5.00|     3.811|        0.62|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +--------+--------+--------+--------+---------+
+    |     Latency     |     Interval    | Pipeline|
+    |   min  |   max  |   min  |   max  |   Type  |
+    +--------+--------+--------+--------+---------+
+    |  113921|  113921|  113921|  113921|   none  |
+    +--------+--------+--------+--------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+--------+--------+----------+-----------+-----------+-------+----------+
+        |          |     Latency     | Iteration|  Initiation Interval  |  Trip |          |
+        | Loop Name|   min  |   max  |  Latency |  achieved |   target  | Count | Pipelined|
+        +----------+--------+--------+----------+-----------+-----------+-------+----------+
+        |- Loop 1  |  113920|  113920|         5|          -|          -|  22784|    no    |
+        +----------+--------+--------+----------+-----------+-----------+-------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 6
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / (!tmp)
+3 --> 
+	4  / true
+4 --> 
+	5  / true
+5 --> 
+	6  / true
+6 --> 
+	2  / true
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.35>
+ST_1 : Operation 7 [1/1] (1.35ns)   --->   "br label %1" [firmware/nnet_utils/nnet_activation.h:43]   --->   Operation 7 'br' <Predicate = true> <Delay = 1.35>
+
+State 2 <SV = 1> <Delay = 2.77>
+ST_2 : Operation 8 [1/1] (0.00ns)   --->   "%ii = phi i15 [ 0, %0 ], [ %ii_3, %3 ]"   --->   Operation 8 'phi' 'ii' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 9 [1/1] (0.00ns)   --->   "%phi_mul = phi i31 [ 0, %0 ], [ %next_mul, %3 ]"   --->   Operation 9 'phi' 'phi_mul' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 10 [1/1] (0.00ns)   --->   "%phi_urem = phi i15 [ 0, %0 ], [ %idx_urem, %3 ]"   --->   Operation 10 'phi' 'phi_urem' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 11 [1/1] (1.88ns)   --->   "%tmp = icmp eq i15 %ii, -9984" [firmware/nnet_utils/nnet_activation.h:43]   --->   Operation 11 'icmp' 'tmp' <Predicate = true> <Delay = 1.88> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.88> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 12 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 22784, i64 22784, i64 22784)"   --->   Operation 12 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 13 [1/1] (1.82ns)   --->   "%ii_3 = add i15 %ii, 1" [firmware/nnet_utils/nnet_activation.h:43]   --->   Operation 13 'add' 'ii_3' <Predicate = true> <Delay = 1.82> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 14 [1/1] (0.00ns)   --->   "br i1 %tmp, label %4, label %2" [firmware/nnet_utils/nnet_activation.h:43]   --->   Operation 14 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 15 [1/1] (2.15ns)   --->   "%next_mul = add i31 47128, %phi_mul"   --->   Operation 15 'add' 'next_mul' <Predicate = (!tmp)> <Delay = 2.15> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 16 [1/1] (0.00ns)   --->   "%tmp_29 = call i4 @_ssdm_op_PartSelect.i4.i31.i32.i32(i31 %phi_mul, i32 27, i32 30)"   --->   Operation 16 'partselect' 'tmp_29' <Predicate = (!tmp)> <Delay = 0.00>
+ST_2 : Operation 17 [1/1] (0.00ns)   --->   "%newIndex1 = zext i15 %phi_urem to i64"   --->   Operation 17 'zext' 'newIndex1' <Predicate = (!tmp)> <Delay = 0.00>
+ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%data_0_V_addr = getelementptr [2848 x i16]* %data_0_V, i64 0, i64 %newIndex1"   --->   Operation 18 'getelementptr' 'data_0_V_addr' <Predicate = (!tmp)> <Delay = 0.00>
+ST_2 : Operation 19 [2/2] (2.77ns)   --->   "%data_0_V_load = load i16* %data_0_V_addr, align 2"   --->   Operation 19 'load' 'data_0_V_load' <Predicate = (!tmp)> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 15> <Depth = 2848> <RAM>
+ST_2 : Operation 20 [1/1] (0.00ns)   --->   "%data_1_V_addr = getelementptr [2848 x i16]* %data_1_V, i64 0, i64 %newIndex1"   --->   Operation 20 'getelementptr' 'data_1_V_addr' <Predicate = (!tmp)> <Delay = 0.00>
+ST_2 : Operation 21 [2/2] (2.77ns)   --->   "%data_1_V_load = load i16* %data_1_V_addr, align 2"   --->   Operation 21 'load' 'data_1_V_load' <Predicate = (!tmp)> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 15> <Depth = 2848> <RAM>
+ST_2 : Operation 22 [1/1] (0.00ns)   --->   "%data_2_V_addr = getelementptr [2848 x i16]* %data_2_V, i64 0, i64 %newIndex1"   --->   Operation 22 'getelementptr' 'data_2_V_addr' <Predicate = (!tmp)> <Delay = 0.00>
+ST_2 : Operation 23 [2/2] (2.77ns)   --->   "%data_2_V_load = load i16* %data_2_V_addr, align 2"   --->   Operation 23 'load' 'data_2_V_load' <Predicate = (!tmp)> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 15> <Depth = 2848> <RAM>
+ST_2 : Operation 24 [1/1] (0.00ns)   --->   "%data_3_V_addr = getelementptr [2848 x i16]* %data_3_V, i64 0, i64 %newIndex1"   --->   Operation 24 'getelementptr' 'data_3_V_addr' <Predicate = (!tmp)> <Delay = 0.00>
+ST_2 : Operation 25 [2/2] (2.77ns)   --->   "%data_3_V_load = load i16* %data_3_V_addr, align 2"   --->   Operation 25 'load' 'data_3_V_load' <Predicate = (!tmp)> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 15> <Depth = 2848> <RAM>
+ST_2 : Operation 26 [1/1] (0.00ns)   --->   "%data_4_V_addr = getelementptr [2848 x i16]* %data_4_V, i64 0, i64 %newIndex1"   --->   Operation 26 'getelementptr' 'data_4_V_addr' <Predicate = (!tmp)> <Delay = 0.00>
+ST_2 : Operation 27 [2/2] (2.77ns)   --->   "%data_4_V_load = load i16* %data_4_V_addr, align 2"   --->   Operation 27 'load' 'data_4_V_load' <Predicate = (!tmp)> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 15> <Depth = 2848> <RAM>
+ST_2 : Operation 28 [1/1] (0.00ns)   --->   "%data_5_V_addr = getelementptr [2848 x i16]* %data_5_V, i64 0, i64 %newIndex1"   --->   Operation 28 'getelementptr' 'data_5_V_addr' <Predicate = (!tmp)> <Delay = 0.00>
+ST_2 : Operation 29 [2/2] (2.77ns)   --->   "%data_5_V_load = load i16* %data_5_V_addr, align 2"   --->   Operation 29 'load' 'data_5_V_load' <Predicate = (!tmp)> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 15> <Depth = 2848> <RAM>
+ST_2 : Operation 30 [1/1] (0.00ns)   --->   "%data_6_V_addr = getelementptr [2848 x i16]* %data_6_V, i64 0, i64 %newIndex1"   --->   Operation 30 'getelementptr' 'data_6_V_addr' <Predicate = (!tmp)> <Delay = 0.00>
+ST_2 : Operation 31 [2/2] (2.77ns)   --->   "%data_6_V_load = load i16* %data_6_V_addr, align 2"   --->   Operation 31 'load' 'data_6_V_load' <Predicate = (!tmp)> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 15> <Depth = 2848> <RAM>
+ST_2 : Operation 32 [1/1] (0.00ns)   --->   "%data_7_V_addr = getelementptr [2848 x i16]* %data_7_V, i64 0, i64 %newIndex1"   --->   Operation 32 'getelementptr' 'data_7_V_addr' <Predicate = (!tmp)> <Delay = 0.00>
+ST_2 : Operation 33 [2/2] (2.77ns)   --->   "%data_7_V_load = load i16* %data_7_V_addr, align 2"   --->   Operation 33 'load' 'data_7_V_load' <Predicate = (!tmp)> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 15> <Depth = 2848> <RAM>
+ST_2 : Operation 34 [1/1] (0.00ns)   --->   "ret void" [firmware/nnet_utils/nnet_activation.h:50]   --->   Operation 34 'ret' <Predicate = (tmp)> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 2.77>
+ST_3 : Operation 35 [1/2] (2.77ns)   --->   "%data_0_V_load = load i16* %data_0_V_addr, align 2"   --->   Operation 35 'load' 'data_0_V_load' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 15> <Depth = 2848> <RAM>
+ST_3 : Operation 36 [1/2] (2.77ns)   --->   "%data_1_V_load = load i16* %data_1_V_addr, align 2"   --->   Operation 36 'load' 'data_1_V_load' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 15> <Depth = 2848> <RAM>
+ST_3 : Operation 37 [1/2] (2.77ns)   --->   "%data_2_V_load = load i16* %data_2_V_addr, align 2"   --->   Operation 37 'load' 'data_2_V_load' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 15> <Depth = 2848> <RAM>
+ST_3 : Operation 38 [1/2] (2.77ns)   --->   "%data_3_V_load = load i16* %data_3_V_addr, align 2"   --->   Operation 38 'load' 'data_3_V_load' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 15> <Depth = 2848> <RAM>
+ST_3 : Operation 39 [1/2] (2.77ns)   --->   "%data_4_V_load = load i16* %data_4_V_addr, align 2"   --->   Operation 39 'load' 'data_4_V_load' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 15> <Depth = 2848> <RAM>
+ST_3 : Operation 40 [1/2] (2.77ns)   --->   "%data_5_V_load = load i16* %data_5_V_addr, align 2"   --->   Operation 40 'load' 'data_5_V_load' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 15> <Depth = 2848> <RAM>
+ST_3 : Operation 41 [1/2] (2.77ns)   --->   "%data_6_V_load = load i16* %data_6_V_addr, align 2"   --->   Operation 41 'load' 'data_6_V_load' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 15> <Depth = 2848> <RAM>
+ST_3 : Operation 42 [1/2] (2.77ns)   --->   "%data_7_V_load = load i16* %data_7_V_addr, align 2"   --->   Operation 42 'load' 'data_7_V_load' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 15> <Depth = 2848> <RAM>
+
+State 4 <SV = 3> <Delay = 3.81>
+ST_4 : Operation 43 [1/1] (0.00ns)   --->   "%arrayNo_cast = zext i4 %tmp_29 to i32"   --->   Operation 43 'zext' 'arrayNo_cast' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 44 [1/1] (1.83ns)   --->   "%datareg_V = call i16 @_ssdm_op_Mux.ap_auto.8i16.i32(i16 %data_0_V_load, i16 %data_1_V_load, i16 %data_2_V_load, i16 %data_3_V_load, i16 %data_4_V_load, i16 %data_5_V_load, i16 %data_6_V_load, i16 %data_7_V_load, i32 %arrayNo_cast)"   --->   Operation 44 'mux' 'datareg_V' <Predicate = true> <Delay = 1.83> <Core = "MuxnS">   --->   Core 31 'MuxnS' <Latency = 0> <II = 1> <Delay = 1.83> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 45 [1/1] (0.00ns)   --->   "%tmp_30 = trunc i16 %datareg_V to i15" [firmware/nnet_utils/nnet_activation.h:44]   --->   Operation 45 'trunc' 'tmp_30' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 46 [1/1] (1.97ns)   --->   "%tmp_s = icmp sgt i16 %datareg_V, 0" [firmware/nnet_utils/nnet_activation.h:45]   --->   Operation 46 'icmp' 'tmp_s' <Predicate = true> <Delay = 1.97> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.88> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+
+State 5 <SV = 4> <Delay = 3.61>
+ST_5 : Operation 47 [1/1] (0.00ns)   --->   "%res_0_V_addr = getelementptr [2848 x i15]* %res_0_V, i64 0, i64 %newIndex1" [firmware/nnet_utils/nnet_activation.h:46]   --->   Operation 47 'getelementptr' 'res_0_V_addr' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 48 [1/1] (0.00ns)   --->   "%res_1_V_addr = getelementptr [2848 x i15]* %res_1_V, i64 0, i64 %newIndex1" [firmware/nnet_utils/nnet_activation.h:46]   --->   Operation 48 'getelementptr' 'res_1_V_addr' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 49 [1/1] (0.00ns)   --->   "%res_2_V_addr = getelementptr [2848 x i15]* %res_2_V, i64 0, i64 %newIndex1" [firmware/nnet_utils/nnet_activation.h:46]   --->   Operation 49 'getelementptr' 'res_2_V_addr' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 50 [1/1] (0.00ns)   --->   "%res_3_V_addr = getelementptr [2848 x i15]* %res_3_V, i64 0, i64 %newIndex1" [firmware/nnet_utils/nnet_activation.h:46]   --->   Operation 50 'getelementptr' 'res_3_V_addr' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 51 [1/1] (0.00ns)   --->   "%res_4_V_addr = getelementptr [2848 x i15]* %res_4_V, i64 0, i64 %newIndex1" [firmware/nnet_utils/nnet_activation.h:46]   --->   Operation 51 'getelementptr' 'res_4_V_addr' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 52 [1/1] (0.00ns)   --->   "%res_5_V_addr = getelementptr [2848 x i15]* %res_5_V, i64 0, i64 %newIndex1" [firmware/nnet_utils/nnet_activation.h:46]   --->   Operation 52 'getelementptr' 'res_5_V_addr' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 53 [1/1] (0.00ns)   --->   "%res_6_V_addr = getelementptr [2848 x i15]* %res_6_V, i64 0, i64 %newIndex1" [firmware/nnet_utils/nnet_activation.h:46]   --->   Operation 53 'getelementptr' 'res_6_V_addr' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 54 [1/1] (0.00ns)   --->   "%res_7_V_addr = getelementptr [2848 x i15]* %res_7_V, i64 0, i64 %newIndex1" [firmware/nnet_utils/nnet_activation.h:46]   --->   Operation 54 'getelementptr' 'res_7_V_addr' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 55 [1/1] (0.84ns)   --->   "%datareg_V_3 = select i1 %tmp_s, i15 %tmp_30, i15 0" [firmware/nnet_utils/nnet_activation.h:45]   --->   Operation 55 'select' 'datareg_V_3' <Predicate = true> <Delay = 0.84> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.84> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_5 : Operation 56 [1/1] (1.21ns)   --->   "switch i4 %tmp_29, label %branch7 [
+    i4 0, label %branch0
+    i4 1, label %branch1
+    i4 2, label %branch2
+    i4 3, label %branch3
+    i4 4, label %branch4
+    i4 5, label %branch5
+    i4 6, label %branch6
+  ]" [firmware/nnet_utils/nnet_activation.h:46]   --->   Operation 56 'switch' <Predicate = true> <Delay = 1.21>
+ST_5 : Operation 57 [1/1] (2.77ns)   --->   "store i15 %datareg_V_3, i15* %res_6_V_addr, align 2" [firmware/nnet_utils/nnet_activation.h:46]   --->   Operation 57 'store' <Predicate = (tmp_29 == 6)> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 15> <Depth = 2848> <RAM>
+ST_5 : Operation 58 [1/1] (0.00ns)   --->   "br label %3" [firmware/nnet_utils/nnet_activation.h:46]   --->   Operation 58 'br' <Predicate = (tmp_29 == 6)> <Delay = 0.00>
+ST_5 : Operation 59 [1/1] (2.77ns)   --->   "store i15 %datareg_V_3, i15* %res_5_V_addr, align 2" [firmware/nnet_utils/nnet_activation.h:46]   --->   Operation 59 'store' <Predicate = (tmp_29 == 5)> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 15> <Depth = 2848> <RAM>
+ST_5 : Operation 60 [1/1] (0.00ns)   --->   "br label %3" [firmware/nnet_utils/nnet_activation.h:46]   --->   Operation 60 'br' <Predicate = (tmp_29 == 5)> <Delay = 0.00>
+ST_5 : Operation 61 [1/1] (2.77ns)   --->   "store i15 %datareg_V_3, i15* %res_4_V_addr, align 2" [firmware/nnet_utils/nnet_activation.h:46]   --->   Operation 61 'store' <Predicate = (tmp_29 == 4)> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 15> <Depth = 2848> <RAM>
+ST_5 : Operation 62 [1/1] (0.00ns)   --->   "br label %3" [firmware/nnet_utils/nnet_activation.h:46]   --->   Operation 62 'br' <Predicate = (tmp_29 == 4)> <Delay = 0.00>
+ST_5 : Operation 63 [1/1] (2.77ns)   --->   "store i15 %datareg_V_3, i15* %res_3_V_addr, align 2" [firmware/nnet_utils/nnet_activation.h:46]   --->   Operation 63 'store' <Predicate = (tmp_29 == 3)> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 15> <Depth = 2848> <RAM>
+ST_5 : Operation 64 [1/1] (0.00ns)   --->   "br label %3" [firmware/nnet_utils/nnet_activation.h:46]   --->   Operation 64 'br' <Predicate = (tmp_29 == 3)> <Delay = 0.00>
+ST_5 : Operation 65 [1/1] (2.77ns)   --->   "store i15 %datareg_V_3, i15* %res_2_V_addr, align 2" [firmware/nnet_utils/nnet_activation.h:46]   --->   Operation 65 'store' <Predicate = (tmp_29 == 2)> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 15> <Depth = 2848> <RAM>
+ST_5 : Operation 66 [1/1] (0.00ns)   --->   "br label %3" [firmware/nnet_utils/nnet_activation.h:46]   --->   Operation 66 'br' <Predicate = (tmp_29 == 2)> <Delay = 0.00>
+ST_5 : Operation 67 [1/1] (2.77ns)   --->   "store i15 %datareg_V_3, i15* %res_1_V_addr, align 2" [firmware/nnet_utils/nnet_activation.h:46]   --->   Operation 67 'store' <Predicate = (tmp_29 == 1)> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 15> <Depth = 2848> <RAM>
+ST_5 : Operation 68 [1/1] (0.00ns)   --->   "br label %3" [firmware/nnet_utils/nnet_activation.h:46]   --->   Operation 68 'br' <Predicate = (tmp_29 == 1)> <Delay = 0.00>
+ST_5 : Operation 69 [1/1] (2.77ns)   --->   "store i15 %datareg_V_3, i15* %res_0_V_addr, align 2" [firmware/nnet_utils/nnet_activation.h:46]   --->   Operation 69 'store' <Predicate = (tmp_29 == 0)> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 15> <Depth = 2848> <RAM>
+ST_5 : Operation 70 [1/1] (0.00ns)   --->   "br label %3" [firmware/nnet_utils/nnet_activation.h:46]   --->   Operation 70 'br' <Predicate = (tmp_29 == 0)> <Delay = 0.00>
+ST_5 : Operation 71 [1/1] (2.77ns)   --->   "store i15 %datareg_V_3, i15* %res_7_V_addr, align 2" [firmware/nnet_utils/nnet_activation.h:46]   --->   Operation 71 'store' <Predicate = (tmp_29 != 0 & tmp_29 != 1 & tmp_29 != 2 & tmp_29 != 3 & tmp_29 != 4 & tmp_29 != 5 & tmp_29 != 6)> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 15> <Depth = 2848> <RAM>
+ST_5 : Operation 72 [1/1] (0.00ns)   --->   "br label %3" [firmware/nnet_utils/nnet_activation.h:46]   --->   Operation 72 'br' <Predicate = (tmp_29 != 0 & tmp_29 != 1 & tmp_29 != 2 & tmp_29 != 3 & tmp_29 != 4 & tmp_29 != 5 & tmp_29 != 6)> <Delay = 0.00>
+ST_5 : Operation 73 [1/1] (1.82ns)   --->   "%next_urem = add i15 %phi_urem, 1"   --->   Operation 73 'add' 'next_urem' <Predicate = true> <Delay = 1.82> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+
+State 6 <SV = 5> <Delay = 2.72>
+ST_6 : Operation 74 [1/1] (1.88ns)   --->   "%tmp_31 = icmp ult i15 %next_urem, 2848"   --->   Operation 74 'icmp' 'tmp_31' <Predicate = true> <Delay = 1.88> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.88> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 75 [1/1] (0.84ns)   --->   "%idx_urem = select i1 %tmp_31, i15 %next_urem, i15 0"   --->   Operation 75 'select' 'idx_urem' <Predicate = true> <Delay = 0.84> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.84> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_6 : Operation 76 [1/1] (0.00ns)   --->   "br label %1" [firmware/nnet_utils/nnet_activation.h:43]   --->   Operation 76 'br' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 5ns, clock uncertainty: 0.625ns.
+
+ <State 1>: 1.35ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('ii') with incoming values : ('ii', firmware/nnet_utils/nnet_activation.h:43) [19]  (1.35 ns)
+
+ <State 2>: 2.77ns
+The critical path consists of the following:
+	'phi' operation ('phi_urem') with incoming values : ('idx_urem') [21]  (0 ns)
+	'getelementptr' operation ('data_3_V_addr') [37]  (0 ns)
+	'load' operation ('data_3_V_load') on array 'data_3_V' [38]  (2.77 ns)
+
+ <State 3>: 2.77ns
+The critical path consists of the following:
+	'load' operation ('data_0_V_load') on array 'data_0_V' [32]  (2.77 ns)
+
+ <State 4>: 3.81ns
+The critical path consists of the following:
+	'mux' operation ('datareg.V') [47]  (1.83 ns)
+	'icmp' operation ('tmp_s', firmware/nnet_utils/nnet_activation.h:45) [49]  (1.98 ns)
+
+ <State 5>: 3.61ns
+The critical path consists of the following:
+	'select' operation ('datareg.V', firmware/nnet_utils/nnet_activation.h:45) [58]  (0.84 ns)
+	'store' operation (firmware/nnet_utils/nnet_activation.h:46) of variable 'datareg.V', firmware/nnet_utils/nnet_activation.h:45 on array 'res_7_V' [82]  (2.77 ns)
+
+ <State 6>: 2.73ns
+The critical path consists of the following:
+	'icmp' operation ('tmp_31') [86]  (1.89 ns)
+	'select' operation ('idx_urem') [87]  (0.84 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

@@ -1,0 +1,477 @@
+
+
+================================================================
+== Vivado HLS Report for 'myproject'
+================================================================
+* Date:           Sun Apr 14 17:00:41 2024
+
+* Version:        2018.2 (Build 2258646 on Thu Jun 14 20:25:20 MDT 2018)
+* Project:        myproject_prj
+* Solution:       solution1
+* Product family: artix7
+* Target device:  xc7a200tfbg676-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |   5.00|     4.356|        0.62|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +---------+---------+---------+---------+----------+
+    |      Latency      |      Interval     | Pipeline |
+    |   min   |   max   |   min   |   max   |   Type   |
+    +---------+---------+---------+---------+----------+
+    |  9273017|  9746106|  8685445|  8685445| dataflow |
+    +---------+---------+---------+---------+----------+
+
+    + Detail: 
+        * Instance: 
+        +---------------------------------------------------------------------+--------------------------------------------------------------------+---------+---------+---------+---------+---------------------------------------------+
+        |                                                                     |                                                                    |      Latency      |      Interval     |                   Pipeline                  |
+        |                               Instance                              |                               Module                               |   min   |   max   |   min   |   max   |                     Type                    |
+        +---------------------------------------------------------------------+--------------------------------------------------------------------+---------+---------+---------+---------+---------------------------------------------+
+        |conv_2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_U0        |conv_2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s        |    22811|    22812|    22784|    22784| loop rewind(delay=0 initiation interval(s)) |
+        |pooling2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_U0      |pooling2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_s      |   242433|   715521|   242433|   715521|                     none                    |
+        |softmax_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_softmax_config11_U0  |softmax_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_softmax_config11_s  |      104|      104|      104|      104|                     none                    |
+        |dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_U0     |dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_s     |  8685444|  8685444|  8685444|  8685444|                     none                    |
+        |dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_U0     |dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_s     |   198148|   198148|   198148|   198148|                     none                    |
+        |dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config10_U0    |dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config10_s    |     9122|     9122|     9122|     9122|                     none                    |
+        |relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_U0         |relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_s         |   113921|   113921|   113921|   113921|                     none                    |
+        |relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_U0         |relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_s         |      513|      513|      513|      513|                     none                    |
+        |relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config9_U0         |relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config9_s         |      513|      513|      513|      513|                     none                    |
+        +---------------------------------------------------------------------+--------------------------------------------------------------------+---------+---------+---------+---------+---------------------------------------------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+--------+
+|       Name      | BRAM_18K| DSP48E|   FF   |   LUT  |
++-----------------+---------+-------+--------+--------+
+|DSP              |        -|      -|       -|       -|
+|Expression       |        -|      -|       0|     270|
+|FIFO             |        -|      -|       -|       -|
+|Instance         |     1883|    400|  150477|  107674|
+|Memory           |       72|      -|    1088|     131|
+|Multiplexer      |        -|      -|       -|     531|
+|Register         |        -|      -|      59|       -|
++-----------------+---------+-------+--------+--------+
+|Total            |     1955|    400|  151624|  108606|
++-----------------+---------+-------+--------+--------+
+|Available        |      730|    740|  269200|  129000|
++-----------------+---------+-------+--------+--------+
+|Utilization (%)  |      267|     54|      56|      84|
++-----------------+---------+-------+--------+--------+
+
++ Detail: 
+    * Instance: 
+    +---------------------------------------------------------------------+--------------------------------------------------------------------+---------+-------+--------+--------+
+    |                               Instance                              |                               Module                               | BRAM_18K| DSP48E|   FF   |   LUT  |
+    +---------------------------------------------------------------------+--------------------------------------------------------------------+---------+-------+--------+--------+
+    |conv_2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_U0        |conv_2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s        |      120|    394|  147429|  103706|
+    |dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config10_U0    |dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config10_s    |        2|      1|     307|     503|
+    |dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_U0     |dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_s     |     1730|      1|     598|     627|
+    |dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_U0     |dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_s     |       29|      1|     349|     503|
+    |pooling2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_U0      |pooling2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_s      |        0|      2|     860|     796|
+    |relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_U0         |relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_s         |        0|      0|     292|     268|
+    |relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_U0         |relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_s         |        0|      0|     104|     150|
+    |relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config9_U0         |relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config9_s         |        0|      0|     104|     150|
+    |softmax_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_softmax_config11_U0  |softmax_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_softmax_config11_s  |        2|      1|     434|     971|
+    +---------------------------------------------------------------------+--------------------------------------------------------------------+---------+-------+--------+--------+
+    |Total                                                                |                                                                    |     1883|    400|  150477|  107674|
+    +---------------------------------------------------------------------+--------------------------------------------------------------------+---------+-------+--------+--------+
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    +-------------------+---------------------------+---------+----+----+------+-----+------+-------------+
+    |       Memory      |           Module          | BRAM_18K| FF | LUT| Words| Bits| Banks| W*Bits*Banks|
+    +-------------------+---------------------------+---------+----+----+------+-----+------+-------------+
+    |layer10_out_0_V_U  |myproject_layer10_out_0_V  |        0|  32|   1|     2|   16|     2|           64|
+    |layer10_out_1_V_U  |myproject_layer10_out_0_V  |        0|  32|   1|     2|   16|     2|           64|
+    |layer10_out_2_V_U  |myproject_layer10_out_0_V  |        0|  32|   1|     2|   16|     2|           64|
+    |layer2_out_0_V_U   |myproject_layer2_out_0_V   |        4|   0|   0|  2848|   16|     2|        91136|
+    |layer2_out_1_V_U   |myproject_layer2_out_0_V   |        4|   0|   0|  2848|   16|     2|        91136|
+    |layer2_out_2_V_U   |myproject_layer2_out_0_V   |        4|   0|   0|  2848|   16|     2|        91136|
+    |layer2_out_3_V_U   |myproject_layer2_out_0_V   |        4|   0|   0|  2848|   16|     2|        91136|
+    |layer2_out_4_V_U   |myproject_layer2_out_0_V   |        4|   0|   0|  2848|   16|     2|        91136|
+    |layer2_out_5_V_U   |myproject_layer2_out_0_V   |        4|   0|   0|  2848|   16|     2|        91136|
+    |layer2_out_6_V_U   |myproject_layer2_out_0_V   |        4|   0|   0|  2848|   16|     2|        91136|
+    |layer2_out_7_V_U   |myproject_layer2_out_0_V   |        4|   0|   0|  2848|   16|     2|        91136|
+    |layer3_out_0_V_U   |myproject_layer3_out_0_V   |        4|   0|   0|  2848|   15|     2|        85440|
+    |layer3_out_1_V_U   |myproject_layer3_out_0_V   |        4|   0|   0|  2848|   15|     2|        85440|
+    |layer3_out_2_V_U   |myproject_layer3_out_0_V   |        4|   0|   0|  2848|   15|     2|        85440|
+    |layer3_out_3_V_U   |myproject_layer3_out_0_V   |        4|   0|   0|  2848|   15|     2|        85440|
+    |layer3_out_4_V_U   |myproject_layer3_out_0_V   |        4|   0|   0|  2848|   15|     2|        85440|
+    |layer3_out_5_V_U   |myproject_layer3_out_0_V   |        4|   0|   0|  2848|   15|     2|        85440|
+    |layer3_out_6_V_U   |myproject_layer3_out_0_V   |        4|   0|   0|  2848|   15|     2|        85440|
+    |layer3_out_7_V_U   |myproject_layer3_out_0_V   |        4|   0|   0|  2848|   15|     2|        85440|
+    |layer4_out_0_V_U   |myproject_layer4_out_0_V   |        1|   0|   0|   704|   16|     2|        22528|
+    |layer4_out_1_V_U   |myproject_layer4_out_0_V   |        1|   0|   0|   704|   16|     2|        22528|
+    |layer4_out_2_V_U   |myproject_layer4_out_0_V   |        1|   0|   0|   704|   16|     2|        22528|
+    |layer4_out_3_V_U   |myproject_layer4_out_0_V   |        1|   0|   0|   704|   16|     2|        22528|
+    |layer4_out_4_V_U   |myproject_layer4_out_0_V   |        1|   0|   0|   704|   16|     2|        22528|
+    |layer4_out_5_V_U   |myproject_layer4_out_0_V   |        1|   0|   0|   704|   16|     2|        22528|
+    |layer4_out_6_V_U   |myproject_layer4_out_0_V   |        1|   0|   0|   704|   16|     2|        22528|
+    |layer4_out_7_V_U   |myproject_layer4_out_0_V   |        1|   0|   0|   704|   16|     2|        22528|
+    |layer6_out_0_V_U   |myproject_layer6_out_0_V   |        0|  32|   4|    16|   16|     2|          512|
+    |layer6_out_1_V_U   |myproject_layer6_out_0_V   |        0|  32|   4|    16|   16|     2|          512|
+    |layer6_out_2_V_U   |myproject_layer6_out_0_V   |        0|  32|   4|    16|   16|     2|          512|
+    |layer6_out_3_V_U   |myproject_layer6_out_0_V   |        0|  32|   4|    16|   16|     2|          512|
+    |layer6_out_4_V_U   |myproject_layer6_out_0_V   |        0|  32|   4|    16|   16|     2|          512|
+    |layer6_out_5_V_U   |myproject_layer6_out_0_V   |        0|  32|   4|    16|   16|     2|          512|
+    |layer6_out_6_V_U   |myproject_layer6_out_0_V   |        0|  32|   4|    16|   16|     2|          512|
+    |layer6_out_7_V_U   |myproject_layer6_out_0_V   |        0|  32|   4|    16|   16|     2|          512|
+    |layer8_out_0_V_U   |myproject_layer6_out_0_V   |        0|  32|   4|    16|   16|     2|          512|
+    |layer8_out_1_V_U   |myproject_layer6_out_0_V   |        0|  32|   4|    16|   16|     2|          512|
+    |layer8_out_2_V_U   |myproject_layer6_out_0_V   |        0|  32|   4|    16|   16|     2|          512|
+    |layer8_out_3_V_U   |myproject_layer6_out_0_V   |        0|  32|   4|    16|   16|     2|          512|
+    |layer8_out_4_V_U   |myproject_layer6_out_0_V   |        0|  32|   4|    16|   16|     2|          512|
+    |layer8_out_5_V_U   |myproject_layer6_out_0_V   |        0|  32|   4|    16|   16|     2|          512|
+    |layer8_out_6_V_U   |myproject_layer6_out_0_V   |        0|  32|   4|    16|   16|     2|          512|
+    |layer8_out_7_V_U   |myproject_layer6_out_0_V   |        0|  32|   4|    16|   16|     2|          512|
+    |layer7_out_0_V_U   |myproject_layer7_out_0_V   |        0|  30|   4|    16|   15|     2|          480|
+    |layer7_out_1_V_U   |myproject_layer7_out_0_V   |        0|  30|   4|    16|   15|     2|          480|
+    |layer7_out_2_V_U   |myproject_layer7_out_0_V   |        0|  30|   4|    16|   15|     2|          480|
+    |layer7_out_3_V_U   |myproject_layer7_out_0_V   |        0|  30|   4|    16|   15|     2|          480|
+    |layer7_out_4_V_U   |myproject_layer7_out_0_V   |        0|  30|   4|    16|   15|     2|          480|
+    |layer7_out_5_V_U   |myproject_layer7_out_0_V   |        0|  30|   4|    16|   15|     2|          480|
+    |layer7_out_6_V_U   |myproject_layer7_out_0_V   |        0|  30|   4|    16|   15|     2|          480|
+    |layer7_out_7_V_U   |myproject_layer7_out_0_V   |        0|  30|   4|    16|   15|     2|          480|
+    |layer9_out_0_V_U   |myproject_layer7_out_0_V   |        0|  30|   4|    16|   15|     2|          480|
+    |layer9_out_1_V_U   |myproject_layer7_out_0_V   |        0|  30|   4|    16|   15|     2|          480|
+    |layer9_out_2_V_U   |myproject_layer7_out_0_V   |        0|  30|   4|    16|   15|     2|          480|
+    |layer9_out_3_V_U   |myproject_layer7_out_0_V   |        0|  30|   4|    16|   15|     2|          480|
+    |layer9_out_4_V_U   |myproject_layer7_out_0_V   |        0|  30|   4|    16|   15|     2|          480|
+    |layer9_out_5_V_U   |myproject_layer7_out_0_V   |        0|  30|   4|    16|   15|     2|          480|
+    |layer9_out_6_V_U   |myproject_layer7_out_0_V   |        0|  30|   4|    16|   15|     2|          480|
+    |layer9_out_7_V_U   |myproject_layer7_out_0_V   |        0|  30|   4|    16|   15|     2|          480|
+    +-------------------+---------------------------+---------+----+----+------+-----+------+-------------+
+    |Total              |                           |       72|1088| 131| 51718|  920|   118|      1608896|
+    +-------------------+---------------------------+---------+----+----+------+-----+------+-------------+
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-------------------------------------------------------------------------------+----------+-------+---+----+------------+------------+
+    |                                 Variable Name                                 | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-------------------------------------------------------------------------------+----------+-------+---+----+------------+------------+
+    |ap_channel_done_layer10_out_0_V                                                |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_layer10_out_1_V                                                |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_layer10_out_2_V                                                |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_layer2_out_0_V                                                 |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_layer2_out_1_V                                                 |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_layer2_out_2_V                                                 |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_layer2_out_3_V                                                 |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_layer2_out_4_V                                                 |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_layer2_out_5_V                                                 |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_layer2_out_6_V                                                 |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_layer2_out_7_V                                                 |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_layer3_out_0_V                                                 |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_layer3_out_1_V                                                 |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_layer3_out_2_V                                                 |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_layer3_out_3_V                                                 |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_layer3_out_4_V                                                 |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_layer3_out_5_V                                                 |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_layer3_out_6_V                                                 |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_layer3_out_7_V                                                 |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_layer4_out_0_V                                                 |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_layer4_out_1_V                                                 |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_layer4_out_2_V                                                 |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_layer4_out_3_V                                                 |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_layer4_out_4_V                                                 |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_layer4_out_5_V                                                 |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_layer4_out_6_V                                                 |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_layer4_out_7_V                                                 |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_layer6_out_0_V                                                 |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_layer6_out_1_V                                                 |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_layer6_out_2_V                                                 |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_layer6_out_3_V                                                 |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_layer6_out_4_V                                                 |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_layer6_out_5_V                                                 |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_layer6_out_6_V                                                 |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_layer6_out_7_V                                                 |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_layer7_out_0_V                                                 |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_layer7_out_1_V                                                 |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_layer7_out_2_V                                                 |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_layer7_out_3_V                                                 |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_layer7_out_4_V                                                 |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_layer7_out_5_V                                                 |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_layer7_out_6_V                                                 |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_layer7_out_7_V                                                 |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_layer8_out_0_V                                                 |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_layer8_out_1_V                                                 |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_layer8_out_2_V                                                 |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_layer8_out_3_V                                                 |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_layer8_out_4_V                                                 |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_layer8_out_5_V                                                 |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_layer8_out_6_V                                                 |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_layer8_out_7_V                                                 |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_layer9_out_0_V                                                 |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_layer9_out_1_V                                                 |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_layer9_out_2_V                                                 |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_layer9_out_3_V                                                 |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_layer9_out_4_V                                                 |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_layer9_out_5_V                                                 |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_layer9_out_6_V                                                 |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_layer9_out_7_V                                                 |    and   |      0|  0|   2|           1|           1|
+    |ap_idle                                                                        |    and   |      0|  0|   2|           1|           1|
+    |conv_2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_U0_ap_continue      |    and   |      0|  0|   2|           1|           1|
+    |dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config10_U0_ap_continue  |    and   |      0|  0|   2|           1|           1|
+    |dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config10_U0_ap_start     |    and   |      0|  0|   2|           1|           1|
+    |dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_U0_ap_continue   |    and   |      0|  0|   2|           1|           1|
+    |dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_U0_ap_start      |    and   |      0|  0|   2|           1|           1|
+    |dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_U0_ap_continue   |    and   |      0|  0|   2|           1|           1|
+    |dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_U0_ap_start      |    and   |      0|  0|   2|           1|           1|
+    |pooling2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_U0_ap_continue    |    and   |      0|  0|   2|           1|           1|
+    |pooling2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_U0_ap_start       |    and   |      0|  0|   2|           1|           1|
+    |relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_U0_ap_continue       |    and   |      0|  0|   2|           1|           1|
+    |relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_U0_ap_start          |    and   |      0|  0|   2|           1|           1|
+    |relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_U0_ap_continue       |    and   |      0|  0|   2|           1|           1|
+    |relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_U0_ap_start          |    and   |      0|  0|   2|           1|           1|
+    |relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config9_U0_ap_continue       |    and   |      0|  0|   2|           1|           1|
+    |relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config9_U0_ap_start          |    and   |      0|  0|   2|           1|           1|
+    |softmax_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_softmax_config11_U0_ap_start   |    and   |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_layer10_out_0_V                                          |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_layer10_out_1_V                                          |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_layer10_out_2_V                                          |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_layer2_out_0_V                                           |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_layer2_out_1_V                                           |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_layer2_out_2_V                                           |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_layer2_out_3_V                                           |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_layer2_out_4_V                                           |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_layer2_out_5_V                                           |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_layer2_out_6_V                                           |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_layer2_out_7_V                                           |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_layer3_out_0_V                                           |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_layer3_out_1_V                                           |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_layer3_out_2_V                                           |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_layer3_out_3_V                                           |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_layer3_out_4_V                                           |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_layer3_out_5_V                                           |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_layer3_out_6_V                                           |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_layer3_out_7_V                                           |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_layer4_out_0_V                                           |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_layer4_out_1_V                                           |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_layer4_out_2_V                                           |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_layer4_out_3_V                                           |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_layer4_out_4_V                                           |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_layer4_out_5_V                                           |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_layer4_out_6_V                                           |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_layer4_out_7_V                                           |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_layer6_out_0_V                                           |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_layer6_out_1_V                                           |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_layer6_out_2_V                                           |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_layer6_out_3_V                                           |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_layer6_out_4_V                                           |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_layer6_out_5_V                                           |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_layer6_out_6_V                                           |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_layer6_out_7_V                                           |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_layer7_out_0_V                                           |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_layer7_out_1_V                                           |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_layer7_out_2_V                                           |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_layer7_out_3_V                                           |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_layer7_out_4_V                                           |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_layer7_out_5_V                                           |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_layer7_out_6_V                                           |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_layer7_out_7_V                                           |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_layer8_out_0_V                                           |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_layer8_out_1_V                                           |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_layer8_out_2_V                                           |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_layer8_out_3_V                                           |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_layer8_out_4_V                                           |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_layer8_out_5_V                                           |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_layer8_out_6_V                                           |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_layer8_out_7_V                                           |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_layer9_out_0_V                                           |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_layer9_out_1_V                                           |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_layer9_out_2_V                                           |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_layer9_out_3_V                                           |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_layer9_out_4_V                                           |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_layer9_out_5_V                                           |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_layer9_out_6_V                                           |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_layer9_out_7_V                                           |    or    |      0|  0|   2|           1|           1|
+    +-------------------------------------------------------------------------------+----------+-------+---+----+------------+------------+
+    |Total                                                                          |          |      0|  0| 270|         135|         135|
+    +-------------------------------------------------------------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------------------------+----+-----------+-----+-----------+
+    |                    Name                   | LUT| Input Size| Bits| Total Bits|
+    +-------------------------------------------+----+-----------+-----+-----------+
+    |ap_sync_reg_channel_write_layer10_out_0_V  |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_layer10_out_1_V  |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_layer10_out_2_V  |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_layer2_out_0_V   |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_layer2_out_1_V   |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_layer2_out_2_V   |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_layer2_out_3_V   |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_layer2_out_4_V   |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_layer2_out_5_V   |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_layer2_out_6_V   |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_layer2_out_7_V   |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_layer3_out_0_V   |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_layer3_out_1_V   |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_layer3_out_2_V   |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_layer3_out_3_V   |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_layer3_out_4_V   |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_layer3_out_5_V   |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_layer3_out_6_V   |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_layer3_out_7_V   |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_layer4_out_0_V   |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_layer4_out_1_V   |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_layer4_out_2_V   |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_layer4_out_3_V   |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_layer4_out_4_V   |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_layer4_out_5_V   |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_layer4_out_6_V   |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_layer4_out_7_V   |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_layer6_out_0_V   |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_layer6_out_1_V   |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_layer6_out_2_V   |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_layer6_out_3_V   |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_layer6_out_4_V   |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_layer6_out_5_V   |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_layer6_out_6_V   |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_layer6_out_7_V   |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_layer7_out_0_V   |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_layer7_out_1_V   |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_layer7_out_2_V   |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_layer7_out_3_V   |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_layer7_out_4_V   |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_layer7_out_5_V   |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_layer7_out_6_V   |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_layer7_out_7_V   |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_layer8_out_0_V   |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_layer8_out_1_V   |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_layer8_out_2_V   |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_layer8_out_3_V   |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_layer8_out_4_V   |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_layer8_out_5_V   |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_layer8_out_6_V   |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_layer8_out_7_V   |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_layer9_out_0_V   |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_layer9_out_1_V   |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_layer9_out_2_V   |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_layer9_out_3_V   |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_layer9_out_4_V   |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_layer9_out_5_V   |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_layer9_out_6_V   |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_layer9_out_7_V   |   9|          2|    1|          2|
+    +-------------------------------------------+----+-----------+-----+-----------+
+    |Total                                      | 531|        118|   59|        118|
+    +-------------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------------------------+---+----+-----+-----------+
+    |                    Name                   | FF| LUT| Bits| Const Bits|
+    +-------------------------------------------+---+----+-----+-----------+
+    |ap_sync_reg_channel_write_layer10_out_0_V  |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_layer10_out_1_V  |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_layer10_out_2_V  |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_layer2_out_0_V   |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_layer2_out_1_V   |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_layer2_out_2_V   |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_layer2_out_3_V   |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_layer2_out_4_V   |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_layer2_out_5_V   |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_layer2_out_6_V   |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_layer2_out_7_V   |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_layer3_out_0_V   |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_layer3_out_1_V   |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_layer3_out_2_V   |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_layer3_out_3_V   |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_layer3_out_4_V   |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_layer3_out_5_V   |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_layer3_out_6_V   |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_layer3_out_7_V   |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_layer4_out_0_V   |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_layer4_out_1_V   |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_layer4_out_2_V   |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_layer4_out_3_V   |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_layer4_out_4_V   |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_layer4_out_5_V   |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_layer4_out_6_V   |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_layer4_out_7_V   |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_layer6_out_0_V   |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_layer6_out_1_V   |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_layer6_out_2_V   |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_layer6_out_3_V   |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_layer6_out_4_V   |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_layer6_out_5_V   |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_layer6_out_6_V   |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_layer6_out_7_V   |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_layer7_out_0_V   |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_layer7_out_1_V   |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_layer7_out_2_V   |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_layer7_out_3_V   |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_layer7_out_4_V   |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_layer7_out_5_V   |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_layer7_out_6_V   |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_layer7_out_7_V   |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_layer8_out_0_V   |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_layer8_out_1_V   |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_layer8_out_2_V   |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_layer8_out_3_V   |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_layer8_out_4_V   |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_layer8_out_5_V   |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_layer8_out_6_V   |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_layer8_out_7_V   |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_layer9_out_0_V   |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_layer9_out_1_V   |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_layer9_out_2_V   |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_layer9_out_3_V   |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_layer9_out_4_V   |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_layer9_out_5_V   |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_layer9_out_6_V   |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_layer9_out_7_V   |  1|   0|    1|          0|
+    +-------------------------------------------+---+----+-----+-----------+
+    |Total                                      | 59|   0|   59|          0|
+    +-------------------------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------------------+-----+------+------------+------------------+--------------+
+|        RTL Ports        | Dir | Bits |  Protocol  |   Source Object  |    C Type    |
++-------------------------+-----+------+------------+------------------+--------------+
+|ap_clk                   |  in |     1| ap_ctrl_hs |     myproject    | return value |
+|ap_rst                   |  in |     1| ap_ctrl_hs |     myproject    | return value |
+|ap_done                  | out |     1| ap_ctrl_hs |     myproject    | return value |
+|ap_start                 |  in |     1| ap_ctrl_hs |     myproject    | return value |
+|ap_ready                 | out |     1| ap_ctrl_hs |     myproject    | return value |
+|ap_idle                  | out |     1| ap_ctrl_hs |     myproject    | return value |
+|conv2d_1_input_V         |  in |  4320|   ap_vld   | conv2d_1_input_V |    pointer   |
+|conv2d_1_input_V_ap_vld  |  in |     1|   ap_vld   | conv2d_1_input_V |    pointer   |
+|layer11_out_0_V          | out |    16|   ap_vld   |  layer11_out_0_V |    pointer   |
+|layer11_out_0_V_ap_vld   | out |     1|   ap_vld   |  layer11_out_0_V |    pointer   |
+|layer11_out_1_V          | out |    16|   ap_vld   |  layer11_out_1_V |    pointer   |
+|layer11_out_1_V_ap_vld   | out |     1|   ap_vld   |  layer11_out_1_V |    pointer   |
+|layer11_out_2_V          | out |    16|   ap_vld   |  layer11_out_2_V |    pointer   |
+|layer11_out_2_V_ap_vld   | out |     1|   ap_vld   |  layer11_out_2_V |    pointer   |
+|layer11_out_3_V          | out |    16|   ap_vld   |  layer11_out_3_V |    pointer   |
+|layer11_out_3_V_ap_vld   | out |     1|   ap_vld   |  layer11_out_3_V |    pointer   |
+|layer11_out_4_V          | out |    16|   ap_vld   |  layer11_out_4_V |    pointer   |
+|layer11_out_4_V_ap_vld   | out |     1|   ap_vld   |  layer11_out_4_V |    pointer   |
+|layer11_out_5_V          | out |    16|   ap_vld   |  layer11_out_5_V |    pointer   |
+|layer11_out_5_V_ap_vld   | out |     1|   ap_vld   |  layer11_out_5_V |    pointer   |
++-------------------------+-----+------+------------+------------------+--------------+
+

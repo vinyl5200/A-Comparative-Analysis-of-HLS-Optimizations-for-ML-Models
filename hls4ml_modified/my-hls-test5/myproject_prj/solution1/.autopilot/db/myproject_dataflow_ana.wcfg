@@ -1,0 +1,2098 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="myproject.wdb" id="1">
+         <top_modules>
+            <top_module name="apa_myproject_top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0ns"></ZoomStartTime>
+      <ZoomEndTime time="2000ns"></ZoomEndTime>
+      <Cursor1Time time="0ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="257"></NameColumnWidth>
+      <ValueColumnWidth column_width="84"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="2" />
+   <wvobject type="group" fp_name="AESL_inst_myproject_group">
+      <obj_property name="label">AESL_inst_myproject</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="protoinst" fp_name="/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_U0/conv_2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_U0_activity">
+         <obj_property name="ElementShortName">conv_2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">conv_2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_U0/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_U0_activity">
+         <obj_property name="ElementShortName">relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_myproject_top/AESL_inst_myproject/pooling2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_U0/pooling2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_U0_activity">
+         <obj_property name="ElementShortName">pooling2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">pooling2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_U0/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_U0_activity">
+         <obj_property name="ElementShortName">dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_U0/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_U0_activity">
+         <obj_property name="ElementShortName">relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_U0/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_U0_activity">
+         <obj_property name="ElementShortName">dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config9_U0/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config9_U0_activity">
+         <obj_property name="ElementShortName">relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config9_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config9_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config10_U0/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config10_U0_activity">
+         <obj_property name="ElementShortName">dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config10_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config10_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_myproject_top/AESL_inst_myproject/softmax_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_softmax_config11_U0/softmax_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_softmax_config11_U0_activity">
+         <obj_property name="ElementShortName">softmax_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_softmax_config11_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">softmax_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_softmax_config11_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="group" fp_name="conv_2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_U0_group">
+         <obj_property name="label">conv_2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="conv_2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="conv_2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="conv_2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="res_0_V_group">
+               <obj_property name="label">res_0_V(layer2_out_0_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_U0/res_0_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_U0/res_0_V_d0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_U0/res_0_V_ce0">
+                  <obj_property name="ElementShortName">res_0_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">res_0_V_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_U0/res_0_V_we0">
+                  <obj_property name="ElementShortName">res_0_V_we0</obj_property>
+                  <obj_property name="ObjectShortName">res_0_V_we0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="res_1_V_group">
+               <obj_property name="label">res_1_V(layer2_out_1_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_U0/res_1_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_U0/res_1_V_d0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_U0/res_1_V_ce0">
+                  <obj_property name="ElementShortName">res_1_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">res_1_V_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_U0/res_1_V_we0">
+                  <obj_property name="ElementShortName">res_1_V_we0</obj_property>
+                  <obj_property name="ObjectShortName">res_1_V_we0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="res_2_V_group">
+               <obj_property name="label">res_2_V(layer2_out_2_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_U0/res_2_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_U0/res_2_V_d0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_U0/res_2_V_ce0">
+                  <obj_property name="ElementShortName">res_2_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">res_2_V_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_U0/res_2_V_we0">
+                  <obj_property name="ElementShortName">res_2_V_we0</obj_property>
+                  <obj_property name="ObjectShortName">res_2_V_we0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="res_3_V_group">
+               <obj_property name="label">res_3_V(layer2_out_3_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_U0/res_3_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_U0/res_3_V_d0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_U0/res_3_V_ce0">
+                  <obj_property name="ElementShortName">res_3_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">res_3_V_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_U0/res_3_V_we0">
+                  <obj_property name="ElementShortName">res_3_V_we0</obj_property>
+                  <obj_property name="ObjectShortName">res_3_V_we0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="res_4_V_group">
+               <obj_property name="label">res_4_V(layer2_out_4_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_U0/res_4_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_U0/res_4_V_d0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_U0/res_4_V_ce0">
+                  <obj_property name="ElementShortName">res_4_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">res_4_V_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_U0/res_4_V_we0">
+                  <obj_property name="ElementShortName">res_4_V_we0</obj_property>
+                  <obj_property name="ObjectShortName">res_4_V_we0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="res_5_V_group">
+               <obj_property name="label">res_5_V(layer2_out_5_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_U0/res_5_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_U0/res_5_V_d0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_U0/res_5_V_ce0">
+                  <obj_property name="ElementShortName">res_5_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">res_5_V_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_U0/res_5_V_we0">
+                  <obj_property name="ElementShortName">res_5_V_we0</obj_property>
+                  <obj_property name="ObjectShortName">res_5_V_we0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="res_6_V_group">
+               <obj_property name="label">res_6_V(layer2_out_6_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_U0/res_6_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_U0/res_6_V_d0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_U0/res_6_V_ce0">
+                  <obj_property name="ElementShortName">res_6_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">res_6_V_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_U0/res_6_V_we0">
+                  <obj_property name="ElementShortName">res_6_V_we0</obj_property>
+                  <obj_property name="ObjectShortName">res_6_V_we0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="res_7_V_group">
+               <obj_property name="label">res_7_V(layer2_out_7_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_U0/res_7_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_U0/res_7_V_d0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_U0/res_7_V_ce0">
+                  <obj_property name="ElementShortName">res_7_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">res_7_V_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_U0/res_7_V_we0">
+                  <obj_property name="ElementShortName">res_7_V_we0</obj_property>
+                  <obj_property name="ObjectShortName">res_7_V_we0</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_U0_group">
+         <obj_property name="label">relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="data_0_V_group">
+               <obj_property name="label">data_0_V(layer2_out_0_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_U0/data_0_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_U0/data_0_V_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_U0/data_0_V_ce0">
+                  <obj_property name="ElementShortName">data_0_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">data_0_V_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="data_1_V_group">
+               <obj_property name="label">data_1_V(layer2_out_1_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_U0/data_1_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_U0/data_1_V_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_U0/data_1_V_ce0">
+                  <obj_property name="ElementShortName">data_1_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">data_1_V_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="data_2_V_group">
+               <obj_property name="label">data_2_V(layer2_out_2_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_U0/data_2_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_U0/data_2_V_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_U0/data_2_V_ce0">
+                  <obj_property name="ElementShortName">data_2_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">data_2_V_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="data_3_V_group">
+               <obj_property name="label">data_3_V(layer2_out_3_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_U0/data_3_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_U0/data_3_V_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_U0/data_3_V_ce0">
+                  <obj_property name="ElementShortName">data_3_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">data_3_V_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="data_4_V_group">
+               <obj_property name="label">data_4_V(layer2_out_4_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_U0/data_4_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_U0/data_4_V_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_U0/data_4_V_ce0">
+                  <obj_property name="ElementShortName">data_4_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">data_4_V_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="data_5_V_group">
+               <obj_property name="label">data_5_V(layer2_out_5_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_U0/data_5_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_U0/data_5_V_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_U0/data_5_V_ce0">
+                  <obj_property name="ElementShortName">data_5_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">data_5_V_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="data_6_V_group">
+               <obj_property name="label">data_6_V(layer2_out_6_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_U0/data_6_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_U0/data_6_V_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_U0/data_6_V_ce0">
+                  <obj_property name="ElementShortName">data_6_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">data_6_V_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="data_7_V_group">
+               <obj_property name="label">data_7_V(layer2_out_7_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_U0/data_7_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_U0/data_7_V_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_U0/data_7_V_ce0">
+                  <obj_property name="ElementShortName">data_7_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">data_7_V_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="res_0_V_group">
+               <obj_property name="label">res_0_V(layer3_out_0_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_U0/res_0_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_U0/res_0_V_d0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_U0/res_0_V_ce0">
+                  <obj_property name="ElementShortName">res_0_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">res_0_V_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_U0/res_0_V_we0">
+                  <obj_property name="ElementShortName">res_0_V_we0</obj_property>
+                  <obj_property name="ObjectShortName">res_0_V_we0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="res_1_V_group">
+               <obj_property name="label">res_1_V(layer3_out_1_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_U0/res_1_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_U0/res_1_V_d0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_U0/res_1_V_ce0">
+                  <obj_property name="ElementShortName">res_1_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">res_1_V_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_U0/res_1_V_we0">
+                  <obj_property name="ElementShortName">res_1_V_we0</obj_property>
+                  <obj_property name="ObjectShortName">res_1_V_we0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="res_2_V_group">
+               <obj_property name="label">res_2_V(layer3_out_2_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_U0/res_2_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_U0/res_2_V_d0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_U0/res_2_V_ce0">
+                  <obj_property name="ElementShortName">res_2_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">res_2_V_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_U0/res_2_V_we0">
+                  <obj_property name="ElementShortName">res_2_V_we0</obj_property>
+                  <obj_property name="ObjectShortName">res_2_V_we0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="res_3_V_group">
+               <obj_property name="label">res_3_V(layer3_out_3_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_U0/res_3_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_U0/res_3_V_d0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_U0/res_3_V_ce0">
+                  <obj_property name="ElementShortName">res_3_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">res_3_V_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_U0/res_3_V_we0">
+                  <obj_property name="ElementShortName">res_3_V_we0</obj_property>
+                  <obj_property name="ObjectShortName">res_3_V_we0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="res_4_V_group">
+               <obj_property name="label">res_4_V(layer3_out_4_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_U0/res_4_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_U0/res_4_V_d0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_U0/res_4_V_ce0">
+                  <obj_property name="ElementShortName">res_4_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">res_4_V_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_U0/res_4_V_we0">
+                  <obj_property name="ElementShortName">res_4_V_we0</obj_property>
+                  <obj_property name="ObjectShortName">res_4_V_we0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="res_5_V_group">
+               <obj_property name="label">res_5_V(layer3_out_5_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_U0/res_5_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_U0/res_5_V_d0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_U0/res_5_V_ce0">
+                  <obj_property name="ElementShortName">res_5_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">res_5_V_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_U0/res_5_V_we0">
+                  <obj_property name="ElementShortName">res_5_V_we0</obj_property>
+                  <obj_property name="ObjectShortName">res_5_V_we0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="res_6_V_group">
+               <obj_property name="label">res_6_V(layer3_out_6_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_U0/res_6_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_U0/res_6_V_d0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_U0/res_6_V_ce0">
+                  <obj_property name="ElementShortName">res_6_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">res_6_V_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_U0/res_6_V_we0">
+                  <obj_property name="ElementShortName">res_6_V_we0</obj_property>
+                  <obj_property name="ObjectShortName">res_6_V_we0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="res_7_V_group">
+               <obj_property name="label">res_7_V(layer3_out_7_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_U0/res_7_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_U0/res_7_V_d0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_U0/res_7_V_ce0">
+                  <obj_property name="ElementShortName">res_7_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">res_7_V_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_U0/res_7_V_we0">
+                  <obj_property name="ElementShortName">res_7_V_we0</obj_property>
+                  <obj_property name="ObjectShortName">res_7_V_we0</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="pooling2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_U0_group">
+         <obj_property name="label">pooling2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="pooling2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="data_0_V_group">
+               <obj_property name="label">data_0_V(layer3_out_0_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/pooling2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_U0/data_0_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/pooling2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_U0/data_0_V_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/pooling2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_U0/data_0_V_ce0">
+                  <obj_property name="ElementShortName">data_0_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">data_0_V_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="data_1_V_group">
+               <obj_property name="label">data_1_V(layer3_out_1_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/pooling2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_U0/data_1_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/pooling2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_U0/data_1_V_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/pooling2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_U0/data_1_V_ce0">
+                  <obj_property name="ElementShortName">data_1_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">data_1_V_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="data_2_V_group">
+               <obj_property name="label">data_2_V(layer3_out_2_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/pooling2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_U0/data_2_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/pooling2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_U0/data_2_V_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/pooling2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_U0/data_2_V_ce0">
+                  <obj_property name="ElementShortName">data_2_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">data_2_V_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="data_3_V_group">
+               <obj_property name="label">data_3_V(layer3_out_3_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/pooling2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_U0/data_3_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/pooling2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_U0/data_3_V_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/pooling2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_U0/data_3_V_ce0">
+                  <obj_property name="ElementShortName">data_3_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">data_3_V_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="data_4_V_group">
+               <obj_property name="label">data_4_V(layer3_out_4_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/pooling2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_U0/data_4_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/pooling2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_U0/data_4_V_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/pooling2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_U0/data_4_V_ce0">
+                  <obj_property name="ElementShortName">data_4_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">data_4_V_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="data_5_V_group">
+               <obj_property name="label">data_5_V(layer3_out_5_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/pooling2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_U0/data_5_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/pooling2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_U0/data_5_V_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/pooling2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_U0/data_5_V_ce0">
+                  <obj_property name="ElementShortName">data_5_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">data_5_V_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="data_6_V_group">
+               <obj_property name="label">data_6_V(layer3_out_6_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/pooling2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_U0/data_6_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/pooling2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_U0/data_6_V_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/pooling2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_U0/data_6_V_ce0">
+                  <obj_property name="ElementShortName">data_6_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">data_6_V_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="data_7_V_group">
+               <obj_property name="label">data_7_V(layer3_out_7_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/pooling2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_U0/data_7_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/pooling2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_U0/data_7_V_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/pooling2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_U0/data_7_V_ce0">
+                  <obj_property name="ElementShortName">data_7_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">data_7_V_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="pooling2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/pooling2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/pooling2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/pooling2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/pooling2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="pooling2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="res_0_V_group">
+               <obj_property name="label">res_0_V(layer4_out_0_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/pooling2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_U0/res_0_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/pooling2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_U0/res_0_V_d0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/pooling2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_U0/res_0_V_ce0">
+                  <obj_property name="ElementShortName">res_0_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">res_0_V_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/pooling2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_U0/res_0_V_we0">
+                  <obj_property name="ElementShortName">res_0_V_we0</obj_property>
+                  <obj_property name="ObjectShortName">res_0_V_we0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="res_1_V_group">
+               <obj_property name="label">res_1_V(layer4_out_1_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/pooling2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_U0/res_1_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/pooling2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_U0/res_1_V_d0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/pooling2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_U0/res_1_V_ce0">
+                  <obj_property name="ElementShortName">res_1_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">res_1_V_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/pooling2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_U0/res_1_V_we0">
+                  <obj_property name="ElementShortName">res_1_V_we0</obj_property>
+                  <obj_property name="ObjectShortName">res_1_V_we0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="res_2_V_group">
+               <obj_property name="label">res_2_V(layer4_out_2_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/pooling2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_U0/res_2_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/pooling2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_U0/res_2_V_d0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/pooling2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_U0/res_2_V_ce0">
+                  <obj_property name="ElementShortName">res_2_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">res_2_V_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/pooling2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_U0/res_2_V_we0">
+                  <obj_property name="ElementShortName">res_2_V_we0</obj_property>
+                  <obj_property name="ObjectShortName">res_2_V_we0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="res_3_V_group">
+               <obj_property name="label">res_3_V(layer4_out_3_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/pooling2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_U0/res_3_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/pooling2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_U0/res_3_V_d0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/pooling2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_U0/res_3_V_ce0">
+                  <obj_property name="ElementShortName">res_3_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">res_3_V_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/pooling2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_U0/res_3_V_we0">
+                  <obj_property name="ElementShortName">res_3_V_we0</obj_property>
+                  <obj_property name="ObjectShortName">res_3_V_we0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="res_4_V_group">
+               <obj_property name="label">res_4_V(layer4_out_4_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/pooling2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_U0/res_4_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/pooling2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_U0/res_4_V_d0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/pooling2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_U0/res_4_V_ce0">
+                  <obj_property name="ElementShortName">res_4_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">res_4_V_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/pooling2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_U0/res_4_V_we0">
+                  <obj_property name="ElementShortName">res_4_V_we0</obj_property>
+                  <obj_property name="ObjectShortName">res_4_V_we0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="res_5_V_group">
+               <obj_property name="label">res_5_V(layer4_out_5_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/pooling2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_U0/res_5_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/pooling2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_U0/res_5_V_d0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/pooling2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_U0/res_5_V_ce0">
+                  <obj_property name="ElementShortName">res_5_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">res_5_V_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/pooling2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_U0/res_5_V_we0">
+                  <obj_property name="ElementShortName">res_5_V_we0</obj_property>
+                  <obj_property name="ObjectShortName">res_5_V_we0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="res_6_V_group">
+               <obj_property name="label">res_6_V(layer4_out_6_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/pooling2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_U0/res_6_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/pooling2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_U0/res_6_V_d0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/pooling2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_U0/res_6_V_ce0">
+                  <obj_property name="ElementShortName">res_6_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">res_6_V_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/pooling2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_U0/res_6_V_we0">
+                  <obj_property name="ElementShortName">res_6_V_we0</obj_property>
+                  <obj_property name="ObjectShortName">res_6_V_we0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="res_7_V_group">
+               <obj_property name="label">res_7_V(layer4_out_7_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/pooling2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_U0/res_7_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/pooling2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_U0/res_7_V_d0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/pooling2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_U0/res_7_V_ce0">
+                  <obj_property name="ElementShortName">res_7_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">res_7_V_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/pooling2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_U0/res_7_V_we0">
+                  <obj_property name="ElementShortName">res_7_V_we0</obj_property>
+                  <obj_property name="ObjectShortName">res_7_V_we0</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_U0_group">
+         <obj_property name="label">dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="data_0_V_group">
+               <obj_property name="label">data_0_V(layer4_out_0_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_U0/data_0_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_U0/data_0_V_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_U0/data_0_V_ce0">
+                  <obj_property name="ElementShortName">data_0_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">data_0_V_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="data_1_V_group">
+               <obj_property name="label">data_1_V(layer4_out_1_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_U0/data_1_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_U0/data_1_V_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_U0/data_1_V_ce0">
+                  <obj_property name="ElementShortName">data_1_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">data_1_V_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="data_2_V_group">
+               <obj_property name="label">data_2_V(layer4_out_2_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_U0/data_2_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_U0/data_2_V_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_U0/data_2_V_ce0">
+                  <obj_property name="ElementShortName">data_2_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">data_2_V_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="data_3_V_group">
+               <obj_property name="label">data_3_V(layer4_out_3_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_U0/data_3_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_U0/data_3_V_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_U0/data_3_V_ce0">
+                  <obj_property name="ElementShortName">data_3_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">data_3_V_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="data_4_V_group">
+               <obj_property name="label">data_4_V(layer4_out_4_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_U0/data_4_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_U0/data_4_V_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_U0/data_4_V_ce0">
+                  <obj_property name="ElementShortName">data_4_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">data_4_V_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="data_5_V_group">
+               <obj_property name="label">data_5_V(layer4_out_5_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_U0/data_5_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_U0/data_5_V_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_U0/data_5_V_ce0">
+                  <obj_property name="ElementShortName">data_5_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">data_5_V_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="data_6_V_group">
+               <obj_property name="label">data_6_V(layer4_out_6_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_U0/data_6_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_U0/data_6_V_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_U0/data_6_V_ce0">
+                  <obj_property name="ElementShortName">data_6_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">data_6_V_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="data_7_V_group">
+               <obj_property name="label">data_7_V(layer4_out_7_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_U0/data_7_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_U0/data_7_V_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_U0/data_7_V_ce0">
+                  <obj_property name="ElementShortName">data_7_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">data_7_V_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="w6_V_group">
+               <obj_property name="label">w6_V(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_U0/w6_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_U0/w6_V_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_U0/w6_V_ce0">
+                  <obj_property name="ElementShortName">w6_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">w6_V_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="b6_V_group">
+               <obj_property name="label">b6_V(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_U0/b6_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_U0/b6_V_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_U0/b6_V_ce0">
+                  <obj_property name="ElementShortName">b6_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">b6_V_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="res_0_V_group">
+               <obj_property name="label">res_0_V(layer6_out_0_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_U0/res_0_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_U0/res_0_V_d0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_U0/res_0_V_ce0">
+                  <obj_property name="ElementShortName">res_0_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">res_0_V_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_U0/res_0_V_we0">
+                  <obj_property name="ElementShortName">res_0_V_we0</obj_property>
+                  <obj_property name="ObjectShortName">res_0_V_we0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="res_1_V_group">
+               <obj_property name="label">res_1_V(layer6_out_1_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_U0/res_1_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_U0/res_1_V_d0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_U0/res_1_V_ce0">
+                  <obj_property name="ElementShortName">res_1_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">res_1_V_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_U0/res_1_V_we0">
+                  <obj_property name="ElementShortName">res_1_V_we0</obj_property>
+                  <obj_property name="ObjectShortName">res_1_V_we0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="res_2_V_group">
+               <obj_property name="label">res_2_V(layer6_out_2_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_U0/res_2_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_U0/res_2_V_d0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_U0/res_2_V_ce0">
+                  <obj_property name="ElementShortName">res_2_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">res_2_V_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_U0/res_2_V_we0">
+                  <obj_property name="ElementShortName">res_2_V_we0</obj_property>
+                  <obj_property name="ObjectShortName">res_2_V_we0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="res_3_V_group">
+               <obj_property name="label">res_3_V(layer6_out_3_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_U0/res_3_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_U0/res_3_V_d0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_U0/res_3_V_ce0">
+                  <obj_property name="ElementShortName">res_3_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">res_3_V_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_U0/res_3_V_we0">
+                  <obj_property name="ElementShortName">res_3_V_we0</obj_property>
+                  <obj_property name="ObjectShortName">res_3_V_we0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="res_4_V_group">
+               <obj_property name="label">res_4_V(layer6_out_4_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_U0/res_4_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_U0/res_4_V_d0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_U0/res_4_V_ce0">
+                  <obj_property name="ElementShortName">res_4_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">res_4_V_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_U0/res_4_V_we0">
+                  <obj_property name="ElementShortName">res_4_V_we0</obj_property>
+                  <obj_property name="ObjectShortName">res_4_V_we0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="res_5_V_group">
+               <obj_property name="label">res_5_V(layer6_out_5_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_U0/res_5_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_U0/res_5_V_d0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_U0/res_5_V_ce0">
+                  <obj_property name="ElementShortName">res_5_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">res_5_V_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_U0/res_5_V_we0">
+                  <obj_property name="ElementShortName">res_5_V_we0</obj_property>
+                  <obj_property name="ObjectShortName">res_5_V_we0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="res_6_V_group">
+               <obj_property name="label">res_6_V(layer6_out_6_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_U0/res_6_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_U0/res_6_V_d0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_U0/res_6_V_ce0">
+                  <obj_property name="ElementShortName">res_6_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">res_6_V_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_U0/res_6_V_we0">
+                  <obj_property name="ElementShortName">res_6_V_we0</obj_property>
+                  <obj_property name="ObjectShortName">res_6_V_we0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="res_7_V_group">
+               <obj_property name="label">res_7_V(layer6_out_7_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_U0/res_7_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_U0/res_7_V_d0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_U0/res_7_V_ce0">
+                  <obj_property name="ElementShortName">res_7_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">res_7_V_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_U0/res_7_V_we0">
+                  <obj_property name="ElementShortName">res_7_V_we0</obj_property>
+                  <obj_property name="ObjectShortName">res_7_V_we0</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_U0_group">
+         <obj_property name="label">relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="data_0_V_group">
+               <obj_property name="label">data_0_V(layer6_out_0_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_U0/data_0_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_U0/data_0_V_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_U0/data_0_V_ce0">
+                  <obj_property name="ElementShortName">data_0_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">data_0_V_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="data_1_V_group">
+               <obj_property name="label">data_1_V(layer6_out_1_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_U0/data_1_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_U0/data_1_V_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_U0/data_1_V_ce0">
+                  <obj_property name="ElementShortName">data_1_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">data_1_V_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="data_2_V_group">
+               <obj_property name="label">data_2_V(layer6_out_2_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_U0/data_2_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_U0/data_2_V_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_U0/data_2_V_ce0">
+                  <obj_property name="ElementShortName">data_2_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">data_2_V_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="data_3_V_group">
+               <obj_property name="label">data_3_V(layer6_out_3_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_U0/data_3_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_U0/data_3_V_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_U0/data_3_V_ce0">
+                  <obj_property name="ElementShortName">data_3_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">data_3_V_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="data_4_V_group">
+               <obj_property name="label">data_4_V(layer6_out_4_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_U0/data_4_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_U0/data_4_V_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_U0/data_4_V_ce0">
+                  <obj_property name="ElementShortName">data_4_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">data_4_V_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="data_5_V_group">
+               <obj_property name="label">data_5_V(layer6_out_5_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_U0/data_5_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_U0/data_5_V_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_U0/data_5_V_ce0">
+                  <obj_property name="ElementShortName">data_5_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">data_5_V_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="data_6_V_group">
+               <obj_property name="label">data_6_V(layer6_out_6_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_U0/data_6_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_U0/data_6_V_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_U0/data_6_V_ce0">
+                  <obj_property name="ElementShortName">data_6_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">data_6_V_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="data_7_V_group">
+               <obj_property name="label">data_7_V(layer6_out_7_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_U0/data_7_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_U0/data_7_V_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_U0/data_7_V_ce0">
+                  <obj_property name="ElementShortName">data_7_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">data_7_V_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="res_0_V_group">
+               <obj_property name="label">res_0_V(layer7_out_0_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_U0/res_0_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_U0/res_0_V_d0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_U0/res_0_V_ce0">
+                  <obj_property name="ElementShortName">res_0_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">res_0_V_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_U0/res_0_V_we0">
+                  <obj_property name="ElementShortName">res_0_V_we0</obj_property>
+                  <obj_property name="ObjectShortName">res_0_V_we0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="res_1_V_group">
+               <obj_property name="label">res_1_V(layer7_out_1_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_U0/res_1_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_U0/res_1_V_d0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_U0/res_1_V_ce0">
+                  <obj_property name="ElementShortName">res_1_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">res_1_V_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_U0/res_1_V_we0">
+                  <obj_property name="ElementShortName">res_1_V_we0</obj_property>
+                  <obj_property name="ObjectShortName">res_1_V_we0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="res_2_V_group">
+               <obj_property name="label">res_2_V(layer7_out_2_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_U0/res_2_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_U0/res_2_V_d0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_U0/res_2_V_ce0">
+                  <obj_property name="ElementShortName">res_2_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">res_2_V_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_U0/res_2_V_we0">
+                  <obj_property name="ElementShortName">res_2_V_we0</obj_property>
+                  <obj_property name="ObjectShortName">res_2_V_we0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="res_3_V_group">
+               <obj_property name="label">res_3_V(layer7_out_3_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_U0/res_3_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_U0/res_3_V_d0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_U0/res_3_V_ce0">
+                  <obj_property name="ElementShortName">res_3_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">res_3_V_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_U0/res_3_V_we0">
+                  <obj_property name="ElementShortName">res_3_V_we0</obj_property>
+                  <obj_property name="ObjectShortName">res_3_V_we0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="res_4_V_group">
+               <obj_property name="label">res_4_V(layer7_out_4_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_U0/res_4_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_U0/res_4_V_d0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_U0/res_4_V_ce0">
+                  <obj_property name="ElementShortName">res_4_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">res_4_V_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_U0/res_4_V_we0">
+                  <obj_property name="ElementShortName">res_4_V_we0</obj_property>
+                  <obj_property name="ObjectShortName">res_4_V_we0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="res_5_V_group">
+               <obj_property name="label">res_5_V(layer7_out_5_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_U0/res_5_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_U0/res_5_V_d0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_U0/res_5_V_ce0">
+                  <obj_property name="ElementShortName">res_5_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">res_5_V_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_U0/res_5_V_we0">
+                  <obj_property name="ElementShortName">res_5_V_we0</obj_property>
+                  <obj_property name="ObjectShortName">res_5_V_we0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="res_6_V_group">
+               <obj_property name="label">res_6_V(layer7_out_6_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_U0/res_6_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_U0/res_6_V_d0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_U0/res_6_V_ce0">
+                  <obj_property name="ElementShortName">res_6_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">res_6_V_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_U0/res_6_V_we0">
+                  <obj_property name="ElementShortName">res_6_V_we0</obj_property>
+                  <obj_property name="ObjectShortName">res_6_V_we0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="res_7_V_group">
+               <obj_property name="label">res_7_V(layer7_out_7_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_U0/res_7_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_U0/res_7_V_d0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_U0/res_7_V_ce0">
+                  <obj_property name="ElementShortName">res_7_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">res_7_V_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_U0/res_7_V_we0">
+                  <obj_property name="ElementShortName">res_7_V_we0</obj_property>
+                  <obj_property name="ObjectShortName">res_7_V_we0</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_U0_group">
+         <obj_property name="label">dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="data_0_V_group">
+               <obj_property name="label">data_0_V(layer7_out_0_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_U0/data_0_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_U0/data_0_V_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_U0/data_0_V_ce0">
+                  <obj_property name="ElementShortName">data_0_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">data_0_V_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="data_1_V_group">
+               <obj_property name="label">data_1_V(layer7_out_1_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_U0/data_1_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_U0/data_1_V_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_U0/data_1_V_ce0">
+                  <obj_property name="ElementShortName">data_1_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">data_1_V_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="data_2_V_group">
+               <obj_property name="label">data_2_V(layer7_out_2_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_U0/data_2_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_U0/data_2_V_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_U0/data_2_V_ce0">
+                  <obj_property name="ElementShortName">data_2_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">data_2_V_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="data_3_V_group">
+               <obj_property name="label">data_3_V(layer7_out_3_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_U0/data_3_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_U0/data_3_V_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_U0/data_3_V_ce0">
+                  <obj_property name="ElementShortName">data_3_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">data_3_V_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="data_4_V_group">
+               <obj_property name="label">data_4_V(layer7_out_4_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_U0/data_4_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_U0/data_4_V_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_U0/data_4_V_ce0">
+                  <obj_property name="ElementShortName">data_4_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">data_4_V_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="data_5_V_group">
+               <obj_property name="label">data_5_V(layer7_out_5_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_U0/data_5_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_U0/data_5_V_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_U0/data_5_V_ce0">
+                  <obj_property name="ElementShortName">data_5_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">data_5_V_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="data_6_V_group">
+               <obj_property name="label">data_6_V(layer7_out_6_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_U0/data_6_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_U0/data_6_V_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_U0/data_6_V_ce0">
+                  <obj_property name="ElementShortName">data_6_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">data_6_V_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="data_7_V_group">
+               <obj_property name="label">data_7_V(layer7_out_7_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_U0/data_7_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_U0/data_7_V_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_U0/data_7_V_ce0">
+                  <obj_property name="ElementShortName">data_7_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">data_7_V_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="w8_V_group">
+               <obj_property name="label">w8_V(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_U0/w8_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_U0/w8_V_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_U0/w8_V_ce0">
+                  <obj_property name="ElementShortName">w8_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">w8_V_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="b8_V_group">
+               <obj_property name="label">b8_V(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_U0/b8_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_U0/b8_V_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_U0/b8_V_ce0">
+                  <obj_property name="ElementShortName">b8_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">b8_V_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="res_0_V_group">
+               <obj_property name="label">res_0_V(layer8_out_0_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_U0/res_0_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_U0/res_0_V_d0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_U0/res_0_V_ce0">
+                  <obj_property name="ElementShortName">res_0_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">res_0_V_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_U0/res_0_V_we0">
+                  <obj_property name="ElementShortName">res_0_V_we0</obj_property>
+                  <obj_property name="ObjectShortName">res_0_V_we0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="res_1_V_group">
+               <obj_property name="label">res_1_V(layer8_out_1_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_U0/res_1_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_U0/res_1_V_d0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_U0/res_1_V_ce0">
+                  <obj_property name="ElementShortName">res_1_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">res_1_V_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_U0/res_1_V_we0">
+                  <obj_property name="ElementShortName">res_1_V_we0</obj_property>
+                  <obj_property name="ObjectShortName">res_1_V_we0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="res_2_V_group">
+               <obj_property name="label">res_2_V(layer8_out_2_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_U0/res_2_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_U0/res_2_V_d0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_U0/res_2_V_ce0">
+                  <obj_property name="ElementShortName">res_2_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">res_2_V_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_U0/res_2_V_we0">
+                  <obj_property name="ElementShortName">res_2_V_we0</obj_property>
+                  <obj_property name="ObjectShortName">res_2_V_we0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="res_3_V_group">
+               <obj_property name="label">res_3_V(layer8_out_3_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_U0/res_3_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_U0/res_3_V_d0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_U0/res_3_V_ce0">
+                  <obj_property name="ElementShortName">res_3_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">res_3_V_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_U0/res_3_V_we0">
+                  <obj_property name="ElementShortName">res_3_V_we0</obj_property>
+                  <obj_property name="ObjectShortName">res_3_V_we0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="res_4_V_group">
+               <obj_property name="label">res_4_V(layer8_out_4_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_U0/res_4_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_U0/res_4_V_d0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_U0/res_4_V_ce0">
+                  <obj_property name="ElementShortName">res_4_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">res_4_V_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_U0/res_4_V_we0">
+                  <obj_property name="ElementShortName">res_4_V_we0</obj_property>
+                  <obj_property name="ObjectShortName">res_4_V_we0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="res_5_V_group">
+               <obj_property name="label">res_5_V(layer8_out_5_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_U0/res_5_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_U0/res_5_V_d0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_U0/res_5_V_ce0">
+                  <obj_property name="ElementShortName">res_5_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">res_5_V_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_U0/res_5_V_we0">
+                  <obj_property name="ElementShortName">res_5_V_we0</obj_property>
+                  <obj_property name="ObjectShortName">res_5_V_we0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="res_6_V_group">
+               <obj_property name="label">res_6_V(layer8_out_6_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_U0/res_6_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_U0/res_6_V_d0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_U0/res_6_V_ce0">
+                  <obj_property name="ElementShortName">res_6_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">res_6_V_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_U0/res_6_V_we0">
+                  <obj_property name="ElementShortName">res_6_V_we0</obj_property>
+                  <obj_property name="ObjectShortName">res_6_V_we0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="res_7_V_group">
+               <obj_property name="label">res_7_V(layer8_out_7_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_U0/res_7_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_U0/res_7_V_d0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_U0/res_7_V_ce0">
+                  <obj_property name="ElementShortName">res_7_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">res_7_V_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_U0/res_7_V_we0">
+                  <obj_property name="ElementShortName">res_7_V_we0</obj_property>
+                  <obj_property name="ObjectShortName">res_7_V_we0</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config9_U0_group">
+         <obj_property name="label">relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config9_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config9_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="data_0_V_group">
+               <obj_property name="label">data_0_V(layer8_out_0_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config9_U0/data_0_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config9_U0/data_0_V_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config9_U0/data_0_V_ce0">
+                  <obj_property name="ElementShortName">data_0_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">data_0_V_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="data_1_V_group">
+               <obj_property name="label">data_1_V(layer8_out_1_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config9_U0/data_1_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config9_U0/data_1_V_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config9_U0/data_1_V_ce0">
+                  <obj_property name="ElementShortName">data_1_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">data_1_V_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="data_2_V_group">
+               <obj_property name="label">data_2_V(layer8_out_2_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config9_U0/data_2_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config9_U0/data_2_V_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config9_U0/data_2_V_ce0">
+                  <obj_property name="ElementShortName">data_2_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">data_2_V_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="data_3_V_group">
+               <obj_property name="label">data_3_V(layer8_out_3_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config9_U0/data_3_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config9_U0/data_3_V_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config9_U0/data_3_V_ce0">
+                  <obj_property name="ElementShortName">data_3_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">data_3_V_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="data_4_V_group">
+               <obj_property name="label">data_4_V(layer8_out_4_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config9_U0/data_4_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config9_U0/data_4_V_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config9_U0/data_4_V_ce0">
+                  <obj_property name="ElementShortName">data_4_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">data_4_V_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="data_5_V_group">
+               <obj_property name="label">data_5_V(layer8_out_5_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config9_U0/data_5_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config9_U0/data_5_V_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config9_U0/data_5_V_ce0">
+                  <obj_property name="ElementShortName">data_5_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">data_5_V_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="data_6_V_group">
+               <obj_property name="label">data_6_V(layer8_out_6_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config9_U0/data_6_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config9_U0/data_6_V_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config9_U0/data_6_V_ce0">
+                  <obj_property name="ElementShortName">data_6_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">data_6_V_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="data_7_V_group">
+               <obj_property name="label">data_7_V(layer8_out_7_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config9_U0/data_7_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config9_U0/data_7_V_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config9_U0/data_7_V_ce0">
+                  <obj_property name="ElementShortName">data_7_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">data_7_V_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config9_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config9_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config9_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config9_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config9_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config9_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="res_0_V_group">
+               <obj_property name="label">res_0_V(layer9_out_0_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config9_U0/res_0_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config9_U0/res_0_V_d0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config9_U0/res_0_V_ce0">
+                  <obj_property name="ElementShortName">res_0_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">res_0_V_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config9_U0/res_0_V_we0">
+                  <obj_property name="ElementShortName">res_0_V_we0</obj_property>
+                  <obj_property name="ObjectShortName">res_0_V_we0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="res_1_V_group">
+               <obj_property name="label">res_1_V(layer9_out_1_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config9_U0/res_1_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config9_U0/res_1_V_d0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config9_U0/res_1_V_ce0">
+                  <obj_property name="ElementShortName">res_1_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">res_1_V_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config9_U0/res_1_V_we0">
+                  <obj_property name="ElementShortName">res_1_V_we0</obj_property>
+                  <obj_property name="ObjectShortName">res_1_V_we0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="res_2_V_group">
+               <obj_property name="label">res_2_V(layer9_out_2_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config9_U0/res_2_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config9_U0/res_2_V_d0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config9_U0/res_2_V_ce0">
+                  <obj_property name="ElementShortName">res_2_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">res_2_V_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config9_U0/res_2_V_we0">
+                  <obj_property name="ElementShortName">res_2_V_we0</obj_property>
+                  <obj_property name="ObjectShortName">res_2_V_we0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="res_3_V_group">
+               <obj_property name="label">res_3_V(layer9_out_3_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config9_U0/res_3_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config9_U0/res_3_V_d0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config9_U0/res_3_V_ce0">
+                  <obj_property name="ElementShortName">res_3_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">res_3_V_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config9_U0/res_3_V_we0">
+                  <obj_property name="ElementShortName">res_3_V_we0</obj_property>
+                  <obj_property name="ObjectShortName">res_3_V_we0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="res_4_V_group">
+               <obj_property name="label">res_4_V(layer9_out_4_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config9_U0/res_4_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config9_U0/res_4_V_d0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config9_U0/res_4_V_ce0">
+                  <obj_property name="ElementShortName">res_4_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">res_4_V_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config9_U0/res_4_V_we0">
+                  <obj_property name="ElementShortName">res_4_V_we0</obj_property>
+                  <obj_property name="ObjectShortName">res_4_V_we0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="res_5_V_group">
+               <obj_property name="label">res_5_V(layer9_out_5_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config9_U0/res_5_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config9_U0/res_5_V_d0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config9_U0/res_5_V_ce0">
+                  <obj_property name="ElementShortName">res_5_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">res_5_V_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config9_U0/res_5_V_we0">
+                  <obj_property name="ElementShortName">res_5_V_we0</obj_property>
+                  <obj_property name="ObjectShortName">res_5_V_we0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="res_6_V_group">
+               <obj_property name="label">res_6_V(layer9_out_6_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config9_U0/res_6_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config9_U0/res_6_V_d0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config9_U0/res_6_V_ce0">
+                  <obj_property name="ElementShortName">res_6_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">res_6_V_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config9_U0/res_6_V_we0">
+                  <obj_property name="ElementShortName">res_6_V_we0</obj_property>
+                  <obj_property name="ObjectShortName">res_6_V_we0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="res_7_V_group">
+               <obj_property name="label">res_7_V(layer9_out_7_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config9_U0/res_7_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config9_U0/res_7_V_d0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config9_U0/res_7_V_ce0">
+                  <obj_property name="ElementShortName">res_7_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">res_7_V_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config9_U0/res_7_V_we0">
+                  <obj_property name="ElementShortName">res_7_V_we0</obj_property>
+                  <obj_property name="ObjectShortName">res_7_V_we0</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config10_U0_group">
+         <obj_property name="label">dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config10_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config10_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="data_0_V_group">
+               <obj_property name="label">data_0_V(layer9_out_0_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config10_U0/data_0_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config10_U0/data_0_V_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config10_U0/data_0_V_ce0">
+                  <obj_property name="ElementShortName">data_0_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">data_0_V_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="data_1_V_group">
+               <obj_property name="label">data_1_V(layer9_out_1_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config10_U0/data_1_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config10_U0/data_1_V_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config10_U0/data_1_V_ce0">
+                  <obj_property name="ElementShortName">data_1_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">data_1_V_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="data_2_V_group">
+               <obj_property name="label">data_2_V(layer9_out_2_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config10_U0/data_2_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config10_U0/data_2_V_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config10_U0/data_2_V_ce0">
+                  <obj_property name="ElementShortName">data_2_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">data_2_V_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="data_3_V_group">
+               <obj_property name="label">data_3_V(layer9_out_3_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config10_U0/data_3_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config10_U0/data_3_V_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config10_U0/data_3_V_ce0">
+                  <obj_property name="ElementShortName">data_3_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">data_3_V_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="data_4_V_group">
+               <obj_property name="label">data_4_V(layer9_out_4_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config10_U0/data_4_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config10_U0/data_4_V_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config10_U0/data_4_V_ce0">
+                  <obj_property name="ElementShortName">data_4_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">data_4_V_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="data_5_V_group">
+               <obj_property name="label">data_5_V(layer9_out_5_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config10_U0/data_5_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config10_U0/data_5_V_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config10_U0/data_5_V_ce0">
+                  <obj_property name="ElementShortName">data_5_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">data_5_V_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="data_6_V_group">
+               <obj_property name="label">data_6_V(layer9_out_6_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config10_U0/data_6_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config10_U0/data_6_V_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config10_U0/data_6_V_ce0">
+                  <obj_property name="ElementShortName">data_6_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">data_6_V_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="data_7_V_group">
+               <obj_property name="label">data_7_V(layer9_out_7_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config10_U0/data_7_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config10_U0/data_7_V_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config10_U0/data_7_V_ce0">
+                  <obj_property name="ElementShortName">data_7_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">data_7_V_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="w10_V_group">
+               <obj_property name="label">w10_V(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config10_U0/w10_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config10_U0/w10_V_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config10_U0/w10_V_ce0">
+                  <obj_property name="ElementShortName">w10_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">w10_V_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="b10_V_group">
+               <obj_property name="label">b10_V(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config10_U0/b10_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config10_U0/b10_V_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config10_U0/b10_V_ce0">
+                  <obj_property name="ElementShortName">b10_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">b10_V_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config10_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config10_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config10_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config10_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config10_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config10_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="res_0_V_group">
+               <obj_property name="label">res_0_V(layer10_out_0_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config10_U0/res_0_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config10_U0/res_0_V_d0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config10_U0/res_0_V_ce0">
+                  <obj_property name="ElementShortName">res_0_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">res_0_V_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config10_U0/res_0_V_we0">
+                  <obj_property name="ElementShortName">res_0_V_we0</obj_property>
+                  <obj_property name="ObjectShortName">res_0_V_we0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="res_1_V_group">
+               <obj_property name="label">res_1_V(layer10_out_1_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config10_U0/res_1_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config10_U0/res_1_V_d0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config10_U0/res_1_V_ce0">
+                  <obj_property name="ElementShortName">res_1_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">res_1_V_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config10_U0/res_1_V_we0">
+                  <obj_property name="ElementShortName">res_1_V_we0</obj_property>
+                  <obj_property name="ObjectShortName">res_1_V_we0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="res_2_V_group">
+               <obj_property name="label">res_2_V(layer10_out_2_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config10_U0/res_2_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config10_U0/res_2_V_d0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config10_U0/res_2_V_ce0">
+                  <obj_property name="ElementShortName">res_2_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">res_2_V_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config10_U0/res_2_V_we0">
+                  <obj_property name="ElementShortName">res_2_V_we0</obj_property>
+                  <obj_property name="ObjectShortName">res_2_V_we0</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="softmax_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_softmax_config11_U0_group">
+         <obj_property name="label">softmax_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_softmax_config11_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="softmax_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_softmax_config11_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="data_0_V_group">
+               <obj_property name="label">data_0_V(layer10_out_0_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/softmax_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_softmax_config11_U0/data_0_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/softmax_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_softmax_config11_U0/data_0_V_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/softmax_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_softmax_config11_U0/data_0_V_ce0">
+                  <obj_property name="ElementShortName">data_0_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">data_0_V_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="data_1_V_group">
+               <obj_property name="label">data_1_V(layer10_out_1_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/softmax_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_softmax_config11_U0/data_1_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/softmax_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_softmax_config11_U0/data_1_V_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/softmax_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_softmax_config11_U0/data_1_V_ce0">
+                  <obj_property name="ElementShortName">data_1_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">data_1_V_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="data_2_V_group">
+               <obj_property name="label">data_2_V(layer10_out_2_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/softmax_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_softmax_config11_U0/data_2_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/softmax_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_softmax_config11_U0/data_2_V_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/softmax_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_softmax_config11_U0/data_2_V_ce0">
+                  <obj_property name="ElementShortName">data_2_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">data_2_V_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="exp_table1_group">
+               <obj_property name="label">exp_table1(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/softmax_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_softmax_config11_U0/exp_table1_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/softmax_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_softmax_config11_U0/exp_table1_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/softmax_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_softmax_config11_U0/exp_table1_ce0">
+                  <obj_property name="ElementShortName">exp_table1_ce0</obj_property>
+                  <obj_property name="ObjectShortName">exp_table1_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="invert_table2_group">
+               <obj_property name="label">invert_table2(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/softmax_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_softmax_config11_U0/invert_table2_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/softmax_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_softmax_config11_U0/invert_table2_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/softmax_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_softmax_config11_U0/invert_table2_ce0">
+                  <obj_property name="ElementShortName">invert_table2_ce0</obj_property>
+                  <obj_property name="ObjectShortName">invert_table2_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="softmax_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_softmax_config11_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/softmax_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_softmax_config11_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/softmax_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_softmax_config11_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/softmax_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_softmax_config11_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/softmax_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_softmax_config11_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="softmax_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_softmax_config11_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+</wave_config>

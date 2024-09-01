@@ -1,0 +1,89 @@
+INFO-FLOW: Workspace /home/abhinit_singh/hls4ml_original/my-hls-test5/myproject_prj/solution1 opened at Wed Apr 24 11:24:00 IST 2024
+Execute     config_array_partition -maximum_size 4096 
+INFO: [XFORM 203-101] Allowed max sub elements number after partition is 4096.
+Execute     config_compile -name_max_length 80 
+INFO: [XFORM 203-1161] The maximum of name length is set into 80.
+Execute     set_part xc7a200tfbg676-2 
+Execute       add_library xilinx/artix7/artix7:xc7a200t:fbg676:-2 
+Execute         get_default_platform 
+Execute         license_isbetapart xc7a200t 
+Command         license_isbetapart done; error code: 1; 
+Execute         open_platform DefaultPlatform 
+Execute         import_lib /home/abhinit_singh/Vivado/2018.2/common/technology/xilinx/artix7/artix7 
+Execute           source /home/abhinit_singh/Vivado/2018.2/common/technology/xilinx/common/xilinx.lib 
+Execute             source /home/abhinit_singh/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute               source /home/abhinit_singh/Vivado/2018.2/common/technology/xilinx/interface/plb46.lib 
+Execute               source /home/abhinit_singh/Vivado/2018.2/common/technology/xilinx/interface/fsl.lib 
+Execute               source /home/abhinit_singh/Vivado/2018.2/common/technology/xilinx/interface/axi4.lib 
+Execute               source /home/abhinit_singh/Vivado/2018.2/common/technology/xilinx/interface/maxi.lib 
+Execute               source /home/abhinit_singh/Vivado/2018.2/common/technology/xilinx/interface/saxilite.lib 
+Execute             source /home/abhinit_singh/Vivado/2018.2/common/technology/xilinx/common/dsp48.lib 
+Execute             source /home/abhinit_singh/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.lib 
+Execute             source /home/abhinit_singh/Vivado/2018.2/common/technology/xilinx/ip/xfft.lib 
+Execute             source /home/abhinit_singh/Vivado/2018.2/common/technology/xilinx/ip/xfir.lib 
+Execute           source /home/abhinit_singh/Vivado/2018.2/common/technology/xilinx/common/xilinx_old.lib 
+Execute           source /home/abhinit_singh/Vivado/2018.2/common/technology/xilinx/common/xilinx_vivado.lib 
+Execute           source /home/abhinit_singh/Vivado/2018.2/common/technology/xilinx/common/xilinx.hlp 
+Execute             source /home/abhinit_singh/Vivado/2018.2/common/technology/xilinx/common/target_info.tcl 
+Execute             source /home/abhinit_singh/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute               source /home/abhinit_singh/Vivado/2018.2/common/technology/xilinx/interface/maxi.hlp 
+Execute               source /home/abhinit_singh/Vivado/2018.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute             source /home/abhinit_singh/Vivado/2018.2/common/technology/xilinx/common/dsp48.hlp 
+Execute           source /home/abhinit_singh/Vivado/2018.2/common/technology/xilinx/artix7/dsp48e1.hlp 
+Execute           get_default_platform 
+Execute           config_chip_info -quiet -resource  {SLICE 15850} {LUT 63400}     {FF 126800} {DSP48E 240}    {BRAM 270}  
+Execute           config_chip_info -quiet -speed medium 
+Execute           source /home/abhinit_singh/Vivado/2018.2/common/technology/xilinx/common/xilinx.hlp 
+Execute             source /home/abhinit_singh/Vivado/2018.2/common/technology/xilinx/common/target_info.tcl 
+Execute             source /home/abhinit_singh/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute               source /home/abhinit_singh/Vivado/2018.2/common/technology/xilinx/interface/maxi.hlp 
+Execute               source /home/abhinit_singh/Vivado/2018.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute             source /home/abhinit_singh/Vivado/2018.2/common/technology/xilinx/common/dsp48.hlp 
+Command         import_lib done; 0.18 sec.
+Execute         source /home/abhinit_singh/Vivado/2018.2/common/technology/xilinx/artix7/artix7.gen 
+Execute           source /home/abhinit_singh/Vivado/2018.2/common/technology/xilinx/common/virtex.gen 
+Execute             source /home/abhinit_singh/Vivado/2018.2/common/technology/xilinx/common/xilinx.gen 
+Execute               source /home/abhinit_singh/Vivado/2018.2/common/technology/xilinx/interface/plb46.gen 
+Execute               source /home/abhinit_singh/Vivado/2018.2/common/technology/xilinx/interface/fsl.gen 
+Execute               source /home/abhinit_singh/Vivado/2018.2/common/technology/xilinx/interface/axi4.gen 
+Execute               source /home/abhinit_singh/Vivado/2018.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute                 source /home/abhinit_singh/Vivado/2018.2/common/technology/xilinx/interface/saxilite.gen 
+Execute                 source /home/abhinit_singh/Vivado/2018.2/common/technology/xilinx/interface/maxi.gen 
+Execute               source /home/abhinit_singh/Vivado/2018.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute               source /home/abhinit_singh/Vivado/2018.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute               source /home/abhinit_singh/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute               source /home/abhinit_singh/Vivado/2018.2/common/technology/xilinx/ip/util.gen 
+Execute               source /home/abhinit_singh/Vivado/2018.2/common/technology/xilinx/ip/xfft.gen 
+Execute               source /home/abhinit_singh/Vivado/2018.2/common/technology/xilinx/ip/xfir.gen 
+Command             ap_source done; 0.24 sec.
+Execute             source /home/abhinit_singh/Vivado/2018.2/common/technology/xilinx/common/dsp48.gen 
+Command           ap_source done; 0.26 sec.
+Command         ap_source done; 0.28 sec.
+Execute         get_default_platform 
+Execute         config_chip_info -quiet -resource  {SLICE 33650} {LUT 129000}    {FF 269200} {DSP48E 740}    {BRAM 730}  
+Execute         config_chip_info -quiet -speed medium 
+Command       add_library done; 0.59 sec.
+Execute       add_library xilinx/artix7/artix7_fpv6 
+Execute         get_default_platform 
+Execute         open_platform DefaultPlatform 
+Execute         import_lib /home/abhinit_singh/Vivado/2018.2/common/technology/xilinx/artix7/artix7_fpv6 
+Execute           source /home/abhinit_singh/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv7.lib 
+Execute             source /home/abhinit_singh/Vivado/2018.2/common/technology/xilinx/common/xilinx_hp.lib 
+Execute           source /home/abhinit_singh/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv.hlp 
+Execute             source /home/abhinit_singh/Vivado/2018.2/common/technology/xilinx/common/xilinx.hlp 
+Execute               source /home/abhinit_singh/Vivado/2018.2/common/technology/xilinx/common/target_info.tcl 
+Execute               source /home/abhinit_singh/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute                 source /home/abhinit_singh/Vivado/2018.2/common/technology/xilinx/interface/maxi.hlp 
+Execute                 source /home/abhinit_singh/Vivado/2018.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute               source /home/abhinit_singh/Vivado/2018.2/common/technology/xilinx/common/dsp48.hlp 
+Execute           source /home/abhinit_singh/Vivado/2018.2/common/technology/xilinx/artix7/artix7_hp.hlp 
+Execute         source /home/abhinit_singh/Vivado/2018.2/common/technology/xilinx/artix7/artix7_fpv6.gen 
+Execute           source /home/abhinit_singh/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv6.gen 
+INFO: [HLS 200-10] Setting target device to 'xc7a200tfbg676-2'
+Execute       get_default_platform 
+Command     set_part done; 0.73 sec.
+Execute     config_schedule -enable_dsp_full_reg=false 
+ERROR: [HLS 200-101] 'config_schedule': Unknown option '-enable_dsp_full_reg=false'.
+Command     config_schedule done; error code: 1; 
+Command   ap_source done; error code: 1; 0.77 sec.
+Execute   cleanup_all 

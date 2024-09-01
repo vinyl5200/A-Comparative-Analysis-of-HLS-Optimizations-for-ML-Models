@@ -1,0 +1,1911 @@
+
+
+================================================================
+== Vivado HLS Report for 'myproject'
+================================================================
+* Date:           Sun Apr 14 16:58:18 2024
+
+* Version:        2018.2 (Build 2258646 on Thu Jun 14 20:25:20 MDT 2018)
+* Project:        myproject_prj
+* Solution:       solution1
+* Product family: artix7
+* Target device:  xc7a200tfbg676-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |   5.00|     4.356|        0.62|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +---------+---------+---------+---------+----------+
+    |      Latency      |      Interval     | Pipeline |
+    |   min   |   max   |   min   |   max   |   Type   |
+    +---------+---------+---------+---------+----------+
+    |  9273017|  9746106|  8685445|  8685445| dataflow |
+    +---------+---------+---------+---------+----------+
+
+    + Detail: 
+        * Instance: 
+        +-------------------------------------------------------------------------------+--------------------------------------------------------------------+---------+---------+---------+---------+---------------------------------------------+
+        |                                                                               |                                                                    |      Latency      |      Interval     |                   Pipeline                  |
+        |                                    Instance                                   |                               Module                               |   min   |   max   |   min   |   max   |                     Type                    |
+        +-------------------------------------------------------------------------------+--------------------------------------------------------------------+---------+---------+---------+---------+---------------------------------------------+
+        |grp_conv_2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_304        |conv_2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s        |    22811|    22812|    22784|    22784| loop rewind(delay=0 initiation interval(s)) |
+        |grp_pooling2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_s_fu_326      |pooling2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_s      |   242433|   715521|   242433|   715521|                     none                    |
+        |grp_softmax_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_softmax_config11_s_fu_346  |softmax_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_softmax_config11_s  |      104|      104|      104|      104|                     none                    |
+        |grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_s_fu_369     |dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_s     |  8685444|  8685444|  8685444|  8685444|                     none                    |
+        |grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_s_fu_393     |dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_s     |   198148|   198148|   198148|   198148|                     none                    |
+        |grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config10_s_fu_417    |dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config10_s    |     9122|     9122|     9122|     9122|                     none                    |
+        |grp_relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_s_fu_436         |relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_s         |   113921|   113921|   113921|   113921|                     none                    |
+        |grp_relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_s_fu_456         |relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_s         |      513|      513|      513|      513|                     none                    |
+        |grp_relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config9_s_fu_476         |relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config9_s         |      513|      513|      513|      513|                     none                    |
+        +-------------------------------------------------------------------------------+--------------------------------------------------------------------+---------+---------+---------+---------+---------------------------------------------+
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 18
+* Pipeline : 0
+* Dataflow Pipeline: 1
+  DF-Pipeline-0: Size = 18, States = { 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 }
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / true
+3 --> 
+	4  / true
+4 --> 
+	5  / true
+5 --> 
+	6  / true
+6 --> 
+	7  / true
+7 --> 
+	8  / true
+8 --> 
+	9  / true
+9 --> 
+	10  / true
+10 --> 
+	11  / true
+11 --> 
+	12  / true
+12 --> 
+	13  / true
+13 --> 
+	14  / true
+14 --> 
+	15  / true
+15 --> 
+	16  / true
+16 --> 
+	17  / true
+17 --> 
+	18  / true
+18 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 2.77>
+ST_1 : Operation 19 [1/1] (2.77ns)   --->   "%layer2_out_0_V = alloca [2848 x i16], align 2" [firmware/myproject.cpp:39]   --->   Operation 19 'alloca' 'layer2_out_0_V' <Predicate = true> <Delay = 2.77>
+ST_1 : Operation 20 [1/1] (2.77ns)   --->   "%layer2_out_1_V = alloca [2848 x i16], align 2" [firmware/myproject.cpp:39]   --->   Operation 20 'alloca' 'layer2_out_1_V' <Predicate = true> <Delay = 2.77>
+ST_1 : Operation 21 [1/1] (2.77ns)   --->   "%layer2_out_2_V = alloca [2848 x i16], align 2" [firmware/myproject.cpp:39]   --->   Operation 21 'alloca' 'layer2_out_2_V' <Predicate = true> <Delay = 2.77>
+ST_1 : Operation 22 [1/1] (2.77ns)   --->   "%layer2_out_3_V = alloca [2848 x i16], align 2" [firmware/myproject.cpp:39]   --->   Operation 22 'alloca' 'layer2_out_3_V' <Predicate = true> <Delay = 2.77>
+ST_1 : Operation 23 [1/1] (2.77ns)   --->   "%layer2_out_4_V = alloca [2848 x i16], align 2" [firmware/myproject.cpp:39]   --->   Operation 23 'alloca' 'layer2_out_4_V' <Predicate = true> <Delay = 2.77>
+ST_1 : Operation 24 [1/1] (2.77ns)   --->   "%layer2_out_5_V = alloca [2848 x i16], align 2" [firmware/myproject.cpp:39]   --->   Operation 24 'alloca' 'layer2_out_5_V' <Predicate = true> <Delay = 2.77>
+ST_1 : Operation 25 [1/1] (2.77ns)   --->   "%layer2_out_6_V = alloca [2848 x i16], align 2" [firmware/myproject.cpp:39]   --->   Operation 25 'alloca' 'layer2_out_6_V' <Predicate = true> <Delay = 2.77>
+ST_1 : Operation 26 [1/1] (2.77ns)   --->   "%layer2_out_7_V = alloca [2848 x i16], align 2" [firmware/myproject.cpp:39]   --->   Operation 26 'alloca' 'layer2_out_7_V' <Predicate = true> <Delay = 2.77>
+ST_1 : Operation 27 [1/1] (2.77ns)   --->   "%layer3_out_0_V = alloca [2848 x i15], align 2" [firmware/myproject.cpp:44]   --->   Operation 27 'alloca' 'layer3_out_0_V' <Predicate = true> <Delay = 2.77>
+ST_1 : Operation 28 [1/1] (2.77ns)   --->   "%layer3_out_1_V = alloca [2848 x i15], align 2" [firmware/myproject.cpp:44]   --->   Operation 28 'alloca' 'layer3_out_1_V' <Predicate = true> <Delay = 2.77>
+ST_1 : Operation 29 [1/1] (2.77ns)   --->   "%layer3_out_2_V = alloca [2848 x i15], align 2" [firmware/myproject.cpp:44]   --->   Operation 29 'alloca' 'layer3_out_2_V' <Predicate = true> <Delay = 2.77>
+ST_1 : Operation 30 [1/1] (2.77ns)   --->   "%layer3_out_3_V = alloca [2848 x i15], align 2" [firmware/myproject.cpp:44]   --->   Operation 30 'alloca' 'layer3_out_3_V' <Predicate = true> <Delay = 2.77>
+ST_1 : Operation 31 [1/1] (2.77ns)   --->   "%layer3_out_4_V = alloca [2848 x i15], align 2" [firmware/myproject.cpp:44]   --->   Operation 31 'alloca' 'layer3_out_4_V' <Predicate = true> <Delay = 2.77>
+ST_1 : Operation 32 [1/1] (2.77ns)   --->   "%layer3_out_5_V = alloca [2848 x i15], align 2" [firmware/myproject.cpp:44]   --->   Operation 32 'alloca' 'layer3_out_5_V' <Predicate = true> <Delay = 2.77>
+ST_1 : Operation 33 [1/1] (2.77ns)   --->   "%layer3_out_6_V = alloca [2848 x i15], align 2" [firmware/myproject.cpp:44]   --->   Operation 33 'alloca' 'layer3_out_6_V' <Predicate = true> <Delay = 2.77>
+ST_1 : Operation 34 [1/1] (2.77ns)   --->   "%layer3_out_7_V = alloca [2848 x i15], align 2" [firmware/myproject.cpp:44]   --->   Operation 34 'alloca' 'layer3_out_7_V' <Predicate = true> <Delay = 2.77>
+ST_1 : Operation 35 [1/1] (2.77ns)   --->   "%layer4_out_0_V = alloca [704 x i16], align 2" [firmware/myproject.cpp:48]   --->   Operation 35 'alloca' 'layer4_out_0_V' <Predicate = true> <Delay = 2.77>
+ST_1 : Operation 36 [1/1] (2.77ns)   --->   "%layer4_out_1_V = alloca [704 x i16], align 2" [firmware/myproject.cpp:48]   --->   Operation 36 'alloca' 'layer4_out_1_V' <Predicate = true> <Delay = 2.77>
+ST_1 : Operation 37 [1/1] (2.77ns)   --->   "%layer4_out_2_V = alloca [704 x i16], align 2" [firmware/myproject.cpp:48]   --->   Operation 37 'alloca' 'layer4_out_2_V' <Predicate = true> <Delay = 2.77>
+ST_1 : Operation 38 [1/1] (2.77ns)   --->   "%layer4_out_3_V = alloca [704 x i16], align 2" [firmware/myproject.cpp:48]   --->   Operation 38 'alloca' 'layer4_out_3_V' <Predicate = true> <Delay = 2.77>
+ST_1 : Operation 39 [1/1] (2.77ns)   --->   "%layer4_out_4_V = alloca [704 x i16], align 2" [firmware/myproject.cpp:48]   --->   Operation 39 'alloca' 'layer4_out_4_V' <Predicate = true> <Delay = 2.77>
+ST_1 : Operation 40 [1/1] (2.77ns)   --->   "%layer4_out_5_V = alloca [704 x i16], align 2" [firmware/myproject.cpp:48]   --->   Operation 40 'alloca' 'layer4_out_5_V' <Predicate = true> <Delay = 2.77>
+ST_1 : Operation 41 [1/1] (2.77ns)   --->   "%layer4_out_6_V = alloca [704 x i16], align 2" [firmware/myproject.cpp:48]   --->   Operation 41 'alloca' 'layer4_out_6_V' <Predicate = true> <Delay = 2.77>
+ST_1 : Operation 42 [1/1] (2.77ns)   --->   "%layer4_out_7_V = alloca [704 x i16], align 2" [firmware/myproject.cpp:48]   --->   Operation 42 'alloca' 'layer4_out_7_V' <Predicate = true> <Delay = 2.77>
+ST_1 : Operation 43 [1/1] (1.75ns)   --->   "%layer6_out_0_V = alloca [16 x i16], align 2" [firmware/myproject.cpp:53]   --->   Operation 43 'alloca' 'layer6_out_0_V' <Predicate = true> <Delay = 1.75>
+ST_1 : Operation 44 [1/1] (1.75ns)   --->   "%layer6_out_1_V = alloca [16 x i16], align 2" [firmware/myproject.cpp:53]   --->   Operation 44 'alloca' 'layer6_out_1_V' <Predicate = true> <Delay = 1.75>
+ST_1 : Operation 45 [1/1] (1.75ns)   --->   "%layer6_out_2_V = alloca [16 x i16], align 2" [firmware/myproject.cpp:53]   --->   Operation 45 'alloca' 'layer6_out_2_V' <Predicate = true> <Delay = 1.75>
+ST_1 : Operation 46 [1/1] (1.75ns)   --->   "%layer6_out_3_V = alloca [16 x i16], align 2" [firmware/myproject.cpp:53]   --->   Operation 46 'alloca' 'layer6_out_3_V' <Predicate = true> <Delay = 1.75>
+ST_1 : Operation 47 [1/1] (1.75ns)   --->   "%layer6_out_4_V = alloca [16 x i16], align 2" [firmware/myproject.cpp:53]   --->   Operation 47 'alloca' 'layer6_out_4_V' <Predicate = true> <Delay = 1.75>
+ST_1 : Operation 48 [1/1] (1.75ns)   --->   "%layer6_out_5_V = alloca [16 x i16], align 2" [firmware/myproject.cpp:53]   --->   Operation 48 'alloca' 'layer6_out_5_V' <Predicate = true> <Delay = 1.75>
+ST_1 : Operation 49 [1/1] (1.75ns)   --->   "%layer6_out_6_V = alloca [16 x i16], align 2" [firmware/myproject.cpp:53]   --->   Operation 49 'alloca' 'layer6_out_6_V' <Predicate = true> <Delay = 1.75>
+ST_1 : Operation 50 [1/1] (1.75ns)   --->   "%layer6_out_7_V = alloca [16 x i16], align 2" [firmware/myproject.cpp:53]   --->   Operation 50 'alloca' 'layer6_out_7_V' <Predicate = true> <Delay = 1.75>
+ST_1 : Operation 51 [1/1] (1.75ns)   --->   "%layer7_out_0_V = alloca [16 x i15], align 2" [firmware/myproject.cpp:57]   --->   Operation 51 'alloca' 'layer7_out_0_V' <Predicate = true> <Delay = 1.75>
+ST_1 : Operation 52 [1/1] (1.75ns)   --->   "%layer7_out_1_V = alloca [16 x i15], align 2" [firmware/myproject.cpp:57]   --->   Operation 52 'alloca' 'layer7_out_1_V' <Predicate = true> <Delay = 1.75>
+ST_1 : Operation 53 [1/1] (1.75ns)   --->   "%layer7_out_2_V = alloca [16 x i15], align 2" [firmware/myproject.cpp:57]   --->   Operation 53 'alloca' 'layer7_out_2_V' <Predicate = true> <Delay = 1.75>
+ST_1 : Operation 54 [1/1] (1.75ns)   --->   "%layer7_out_3_V = alloca [16 x i15], align 2" [firmware/myproject.cpp:57]   --->   Operation 54 'alloca' 'layer7_out_3_V' <Predicate = true> <Delay = 1.75>
+ST_1 : Operation 55 [1/1] (1.75ns)   --->   "%layer7_out_4_V = alloca [16 x i15], align 2" [firmware/myproject.cpp:57]   --->   Operation 55 'alloca' 'layer7_out_4_V' <Predicate = true> <Delay = 1.75>
+ST_1 : Operation 56 [1/1] (1.75ns)   --->   "%layer7_out_5_V = alloca [16 x i15], align 2" [firmware/myproject.cpp:57]   --->   Operation 56 'alloca' 'layer7_out_5_V' <Predicate = true> <Delay = 1.75>
+ST_1 : Operation 57 [1/1] (1.75ns)   --->   "%layer7_out_6_V = alloca [16 x i15], align 2" [firmware/myproject.cpp:57]   --->   Operation 57 'alloca' 'layer7_out_6_V' <Predicate = true> <Delay = 1.75>
+ST_1 : Operation 58 [1/1] (1.75ns)   --->   "%layer7_out_7_V = alloca [16 x i15], align 2" [firmware/myproject.cpp:57]   --->   Operation 58 'alloca' 'layer7_out_7_V' <Predicate = true> <Delay = 1.75>
+ST_1 : Operation 59 [1/1] (1.75ns)   --->   "%layer8_out_0_V = alloca [16 x i16], align 2" [firmware/myproject.cpp:61]   --->   Operation 59 'alloca' 'layer8_out_0_V' <Predicate = true> <Delay = 1.75>
+ST_1 : Operation 60 [1/1] (1.75ns)   --->   "%layer8_out_1_V = alloca [16 x i16], align 2" [firmware/myproject.cpp:61]   --->   Operation 60 'alloca' 'layer8_out_1_V' <Predicate = true> <Delay = 1.75>
+ST_1 : Operation 61 [1/1] (1.75ns)   --->   "%layer8_out_2_V = alloca [16 x i16], align 2" [firmware/myproject.cpp:61]   --->   Operation 61 'alloca' 'layer8_out_2_V' <Predicate = true> <Delay = 1.75>
+ST_1 : Operation 62 [1/1] (1.75ns)   --->   "%layer8_out_3_V = alloca [16 x i16], align 2" [firmware/myproject.cpp:61]   --->   Operation 62 'alloca' 'layer8_out_3_V' <Predicate = true> <Delay = 1.75>
+ST_1 : Operation 63 [1/1] (1.75ns)   --->   "%layer8_out_4_V = alloca [16 x i16], align 2" [firmware/myproject.cpp:61]   --->   Operation 63 'alloca' 'layer8_out_4_V' <Predicate = true> <Delay = 1.75>
+ST_1 : Operation 64 [1/1] (1.75ns)   --->   "%layer8_out_5_V = alloca [16 x i16], align 2" [firmware/myproject.cpp:61]   --->   Operation 64 'alloca' 'layer8_out_5_V' <Predicate = true> <Delay = 1.75>
+ST_1 : Operation 65 [1/1] (1.75ns)   --->   "%layer8_out_6_V = alloca [16 x i16], align 2" [firmware/myproject.cpp:61]   --->   Operation 65 'alloca' 'layer8_out_6_V' <Predicate = true> <Delay = 1.75>
+ST_1 : Operation 66 [1/1] (1.75ns)   --->   "%layer8_out_7_V = alloca [16 x i16], align 2" [firmware/myproject.cpp:61]   --->   Operation 66 'alloca' 'layer8_out_7_V' <Predicate = true> <Delay = 1.75>
+ST_1 : Operation 67 [1/1] (1.75ns)   --->   "%layer9_out_0_V = alloca [16 x i15], align 2" [firmware/myproject.cpp:65]   --->   Operation 67 'alloca' 'layer9_out_0_V' <Predicate = true> <Delay = 1.75>
+ST_1 : Operation 68 [1/1] (1.75ns)   --->   "%layer9_out_1_V = alloca [16 x i15], align 2" [firmware/myproject.cpp:65]   --->   Operation 68 'alloca' 'layer9_out_1_V' <Predicate = true> <Delay = 1.75>
+ST_1 : Operation 69 [1/1] (1.75ns)   --->   "%layer9_out_2_V = alloca [16 x i15], align 2" [firmware/myproject.cpp:65]   --->   Operation 69 'alloca' 'layer9_out_2_V' <Predicate = true> <Delay = 1.75>
+ST_1 : Operation 70 [1/1] (1.75ns)   --->   "%layer9_out_3_V = alloca [16 x i15], align 2" [firmware/myproject.cpp:65]   --->   Operation 70 'alloca' 'layer9_out_3_V' <Predicate = true> <Delay = 1.75>
+ST_1 : Operation 71 [1/1] (1.75ns)   --->   "%layer9_out_4_V = alloca [16 x i15], align 2" [firmware/myproject.cpp:65]   --->   Operation 71 'alloca' 'layer9_out_4_V' <Predicate = true> <Delay = 1.75>
+ST_1 : Operation 72 [1/1] (1.75ns)   --->   "%layer9_out_5_V = alloca [16 x i15], align 2" [firmware/myproject.cpp:65]   --->   Operation 72 'alloca' 'layer9_out_5_V' <Predicate = true> <Delay = 1.75>
+ST_1 : Operation 73 [1/1] (1.75ns)   --->   "%layer9_out_6_V = alloca [16 x i15], align 2" [firmware/myproject.cpp:65]   --->   Operation 73 'alloca' 'layer9_out_6_V' <Predicate = true> <Delay = 1.75>
+ST_1 : Operation 74 [1/1] (1.75ns)   --->   "%layer9_out_7_V = alloca [16 x i15], align 2" [firmware/myproject.cpp:65]   --->   Operation 74 'alloca' 'layer9_out_7_V' <Predicate = true> <Delay = 1.75>
+ST_1 : Operation 75 [1/1] (1.75ns)   --->   "%layer10_out_0_V = alloca [2 x i16], align 2" [firmware/myproject.cpp:69]   --->   Operation 75 'alloca' 'layer10_out_0_V' <Predicate = true> <Delay = 1.75>
+ST_1 : Operation 76 [1/1] (1.75ns)   --->   "%layer10_out_1_V = alloca [2 x i16], align 2" [firmware/myproject.cpp:69]   --->   Operation 76 'alloca' 'layer10_out_1_V' <Predicate = true> <Delay = 1.75>
+ST_1 : Operation 77 [1/1] (1.75ns)   --->   "%layer10_out_2_V = alloca [2 x i16], align 2" [firmware/myproject.cpp:69]   --->   Operation 77 'alloca' 'layer10_out_2_V' <Predicate = true> <Delay = 1.75>
+ST_1 : Operation 78 [2/2] (0.00ns)   --->   "call fastcc void @"conv_2d_cl<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, config2>"(i4320* %conv2d_1_input_V, [2848 x i16]* %layer2_out_0_V, [2848 x i16]* %layer2_out_1_V, [2848 x i16]* %layer2_out_2_V, [2848 x i16]* %layer2_out_3_V, [2848 x i16]* %layer2_out_4_V, [2848 x i16]* %layer2_out_5_V, [2848 x i16]* %layer2_out_6_V, [2848 x i16]* %layer2_out_7_V)"   --->   Operation 78 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 2 <SV = 1> <Delay = 0.00>
+ST_2 : Operation 79 [1/2] (0.00ns)   --->   "call fastcc void @"conv_2d_cl<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, config2>"(i4320* %conv2d_1_input_V, [2848 x i16]* %layer2_out_0_V, [2848 x i16]* %layer2_out_1_V, [2848 x i16]* %layer2_out_2_V, [2848 x i16]* %layer2_out_3_V, [2848 x i16]* %layer2_out_4_V, [2848 x i16]* %layer2_out_5_V, [2848 x i16]* %layer2_out_6_V, [2848 x i16]* %layer2_out_7_V)"   --->   Operation 79 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 80 [2/2] (0.00ns)   --->   "call fastcc void @"relu<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, relu_config3>"([2848 x i16]* %layer2_out_0_V, [2848 x i16]* %layer2_out_1_V, [2848 x i16]* %layer2_out_2_V, [2848 x i16]* %layer2_out_3_V, [2848 x i16]* %layer2_out_4_V, [2848 x i16]* %layer2_out_5_V, [2848 x i16]* %layer2_out_6_V, [2848 x i16]* %layer2_out_7_V, [2848 x i15]* %layer3_out_0_V, [2848 x i15]* %layer3_out_1_V, [2848 x i15]* %layer3_out_2_V, [2848 x i15]* %layer3_out_3_V, [2848 x i15]* %layer3_out_4_V, [2848 x i15]* %layer3_out_5_V, [2848 x i15]* %layer3_out_6_V, [2848 x i15]* %layer3_out_7_V)" [firmware/myproject.cpp:46]   --->   Operation 80 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 81 [1/2] (0.00ns)   --->   "call fastcc void @"relu<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, relu_config3>"([2848 x i16]* %layer2_out_0_V, [2848 x i16]* %layer2_out_1_V, [2848 x i16]* %layer2_out_2_V, [2848 x i16]* %layer2_out_3_V, [2848 x i16]* %layer2_out_4_V, [2848 x i16]* %layer2_out_5_V, [2848 x i16]* %layer2_out_6_V, [2848 x i16]* %layer2_out_7_V, [2848 x i15]* %layer3_out_0_V, [2848 x i15]* %layer3_out_1_V, [2848 x i15]* %layer3_out_2_V, [2848 x i15]* %layer3_out_3_V, [2848 x i15]* %layer3_out_4_V, [2848 x i15]* %layer3_out_5_V, [2848 x i15]* %layer3_out_6_V, [2848 x i15]* %layer3_out_7_V)" [firmware/myproject.cpp:46]   --->   Operation 81 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 5 <SV = 4> <Delay = 0.00>
+ST_5 : Operation 82 [2/2] (0.00ns)   --->   "call fastcc void @"pooling2d_cl<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, config4>"([2848 x i15]* %layer3_out_0_V, [2848 x i15]* %layer3_out_1_V, [2848 x i15]* %layer3_out_2_V, [2848 x i15]* %layer3_out_3_V, [2848 x i15]* %layer3_out_4_V, [2848 x i15]* %layer3_out_5_V, [2848 x i15]* %layer3_out_6_V, [2848 x i15]* %layer3_out_7_V, [704 x i16]* %layer4_out_0_V, [704 x i16]* %layer4_out_1_V, [704 x i16]* %layer4_out_2_V, [704 x i16]* %layer4_out_3_V, [704 x i16]* %layer4_out_4_V, [704 x i16]* %layer4_out_5_V, [704 x i16]* %layer4_out_6_V, [704 x i16]* %layer4_out_7_V)" [firmware/myproject.cpp:50]   --->   Operation 82 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 6 <SV = 5> <Delay = 0.00>
+ST_6 : Operation 83 [1/2] (0.00ns)   --->   "call fastcc void @"pooling2d_cl<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, config4>"([2848 x i15]* %layer3_out_0_V, [2848 x i15]* %layer3_out_1_V, [2848 x i15]* %layer3_out_2_V, [2848 x i15]* %layer3_out_3_V, [2848 x i15]* %layer3_out_4_V, [2848 x i15]* %layer3_out_5_V, [2848 x i15]* %layer3_out_6_V, [2848 x i15]* %layer3_out_7_V, [704 x i16]* %layer4_out_0_V, [704 x i16]* %layer4_out_1_V, [704 x i16]* %layer4_out_2_V, [704 x i16]* %layer4_out_3_V, [704 x i16]* %layer4_out_4_V, [704 x i16]* %layer4_out_5_V, [704 x i16]* %layer4_out_6_V, [704 x i16]* %layer4_out_7_V)" [firmware/myproject.cpp:50]   --->   Operation 83 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 7 <SV = 6> <Delay = 0.00>
+ST_7 : Operation 84 [2/2] (0.00ns)   --->   "call fastcc void @"dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, config6>"([704 x i16]* %layer4_out_0_V, [704 x i16]* %layer4_out_1_V, [704 x i16]* %layer4_out_2_V, [704 x i16]* %layer4_out_3_V, [704 x i16]* %layer4_out_4_V, [704 x i16]* %layer4_out_5_V, [704 x i16]* %layer4_out_6_V, [704 x i16]* %layer4_out_7_V, [16 x i16]* %layer6_out_0_V, [16 x i16]* %layer6_out_1_V, [16 x i16]* %layer6_out_2_V, [16 x i16]* %layer6_out_3_V, [16 x i16]* %layer6_out_4_V, [16 x i16]* %layer6_out_5_V, [16 x i16]* %layer6_out_6_V, [16 x i16]* %layer6_out_7_V)" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:55]   --->   Operation 84 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 8 <SV = 7> <Delay = 0.00>
+ST_8 : Operation 85 [1/2] (0.00ns)   --->   "call fastcc void @"dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, config6>"([704 x i16]* %layer4_out_0_V, [704 x i16]* %layer4_out_1_V, [704 x i16]* %layer4_out_2_V, [704 x i16]* %layer4_out_3_V, [704 x i16]* %layer4_out_4_V, [704 x i16]* %layer4_out_5_V, [704 x i16]* %layer4_out_6_V, [704 x i16]* %layer4_out_7_V, [16 x i16]* %layer6_out_0_V, [16 x i16]* %layer6_out_1_V, [16 x i16]* %layer6_out_2_V, [16 x i16]* %layer6_out_3_V, [16 x i16]* %layer6_out_4_V, [16 x i16]* %layer6_out_5_V, [16 x i16]* %layer6_out_6_V, [16 x i16]* %layer6_out_7_V)" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:55]   --->   Operation 85 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 9 <SV = 8> <Delay = 0.00>
+ST_9 : Operation 86 [2/2] (0.00ns)   --->   "call fastcc void @"relu<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, relu_config7>"([16 x i16]* %layer6_out_0_V, [16 x i16]* %layer6_out_1_V, [16 x i16]* %layer6_out_2_V, [16 x i16]* %layer6_out_3_V, [16 x i16]* %layer6_out_4_V, [16 x i16]* %layer6_out_5_V, [16 x i16]* %layer6_out_6_V, [16 x i16]* %layer6_out_7_V, [16 x i15]* %layer7_out_0_V, [16 x i15]* %layer7_out_1_V, [16 x i15]* %layer7_out_2_V, [16 x i15]* %layer7_out_3_V, [16 x i15]* %layer7_out_4_V, [16 x i15]* %layer7_out_5_V, [16 x i15]* %layer7_out_6_V, [16 x i15]* %layer7_out_7_V)" [firmware/myproject.cpp:59]   --->   Operation 86 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 10 <SV = 9> <Delay = 0.00>
+ST_10 : Operation 87 [1/2] (0.00ns)   --->   "call fastcc void @"relu<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, relu_config7>"([16 x i16]* %layer6_out_0_V, [16 x i16]* %layer6_out_1_V, [16 x i16]* %layer6_out_2_V, [16 x i16]* %layer6_out_3_V, [16 x i16]* %layer6_out_4_V, [16 x i16]* %layer6_out_5_V, [16 x i16]* %layer6_out_6_V, [16 x i16]* %layer6_out_7_V, [16 x i15]* %layer7_out_0_V, [16 x i15]* %layer7_out_1_V, [16 x i15]* %layer7_out_2_V, [16 x i15]* %layer7_out_3_V, [16 x i15]* %layer7_out_4_V, [16 x i15]* %layer7_out_5_V, [16 x i15]* %layer7_out_6_V, [16 x i15]* %layer7_out_7_V)" [firmware/myproject.cpp:59]   --->   Operation 87 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 11 <SV = 10> <Delay = 0.00>
+ST_11 : Operation 88 [2/2] (0.00ns)   --->   "call fastcc void @"dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, config8>"([16 x i15]* %layer7_out_0_V, [16 x i15]* %layer7_out_1_V, [16 x i15]* %layer7_out_2_V, [16 x i15]* %layer7_out_3_V, [16 x i15]* %layer7_out_4_V, [16 x i15]* %layer7_out_5_V, [16 x i15]* %layer7_out_6_V, [16 x i15]* %layer7_out_7_V, [16 x i16]* %layer8_out_0_V, [16 x i16]* %layer8_out_1_V, [16 x i16]* %layer8_out_2_V, [16 x i16]* %layer8_out_3_V, [16 x i16]* %layer8_out_4_V, [16 x i16]* %layer8_out_5_V, [16 x i16]* %layer8_out_6_V, [16 x i16]* %layer8_out_7_V)" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:63]   --->   Operation 88 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 12 <SV = 11> <Delay = 0.00>
+ST_12 : Operation 89 [1/2] (0.00ns)   --->   "call fastcc void @"dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, config8>"([16 x i15]* %layer7_out_0_V, [16 x i15]* %layer7_out_1_V, [16 x i15]* %layer7_out_2_V, [16 x i15]* %layer7_out_3_V, [16 x i15]* %layer7_out_4_V, [16 x i15]* %layer7_out_5_V, [16 x i15]* %layer7_out_6_V, [16 x i15]* %layer7_out_7_V, [16 x i16]* %layer8_out_0_V, [16 x i16]* %layer8_out_1_V, [16 x i16]* %layer8_out_2_V, [16 x i16]* %layer8_out_3_V, [16 x i16]* %layer8_out_4_V, [16 x i16]* %layer8_out_5_V, [16 x i16]* %layer8_out_6_V, [16 x i16]* %layer8_out_7_V)" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:63]   --->   Operation 89 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 13 <SV = 12> <Delay = 0.00>
+ST_13 : Operation 90 [2/2] (0.00ns)   --->   "call fastcc void @"relu<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, relu_config9>"([16 x i16]* %layer8_out_0_V, [16 x i16]* %layer8_out_1_V, [16 x i16]* %layer8_out_2_V, [16 x i16]* %layer8_out_3_V, [16 x i16]* %layer8_out_4_V, [16 x i16]* %layer8_out_5_V, [16 x i16]* %layer8_out_6_V, [16 x i16]* %layer8_out_7_V, [16 x i15]* %layer9_out_0_V, [16 x i15]* %layer9_out_1_V, [16 x i15]* %layer9_out_2_V, [16 x i15]* %layer9_out_3_V, [16 x i15]* %layer9_out_4_V, [16 x i15]* %layer9_out_5_V, [16 x i15]* %layer9_out_6_V, [16 x i15]* %layer9_out_7_V)" [firmware/myproject.cpp:67]   --->   Operation 90 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 14 <SV = 13> <Delay = 0.00>
+ST_14 : Operation 91 [1/2] (0.00ns)   --->   "call fastcc void @"relu<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, relu_config9>"([16 x i16]* %layer8_out_0_V, [16 x i16]* %layer8_out_1_V, [16 x i16]* %layer8_out_2_V, [16 x i16]* %layer8_out_3_V, [16 x i16]* %layer8_out_4_V, [16 x i16]* %layer8_out_5_V, [16 x i16]* %layer8_out_6_V, [16 x i16]* %layer8_out_7_V, [16 x i15]* %layer9_out_0_V, [16 x i15]* %layer9_out_1_V, [16 x i15]* %layer9_out_2_V, [16 x i15]* %layer9_out_3_V, [16 x i15]* %layer9_out_4_V, [16 x i15]* %layer9_out_5_V, [16 x i15]* %layer9_out_6_V, [16 x i15]* %layer9_out_7_V)" [firmware/myproject.cpp:67]   --->   Operation 91 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 15 <SV = 14> <Delay = 0.00>
+ST_15 : Operation 92 [2/2] (0.00ns)   --->   "call fastcc void @"dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, config10>"([16 x i15]* %layer9_out_0_V, [16 x i15]* %layer9_out_1_V, [16 x i15]* %layer9_out_2_V, [16 x i15]* %layer9_out_3_V, [16 x i15]* %layer9_out_4_V, [16 x i15]* %layer9_out_5_V, [16 x i15]* %layer9_out_6_V, [16 x i15]* %layer9_out_7_V, [2 x i16]* %layer10_out_0_V, [2 x i16]* %layer10_out_1_V, [2 x i16]* %layer10_out_2_V)" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:71]   --->   Operation 92 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 16 <SV = 15> <Delay = 0.00>
+ST_16 : Operation 93 [1/2] (0.00ns)   --->   "call fastcc void @"dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, config10>"([16 x i15]* %layer9_out_0_V, [16 x i15]* %layer9_out_1_V, [16 x i15]* %layer9_out_2_V, [16 x i15]* %layer9_out_3_V, [16 x i15]* %layer9_out_4_V, [16 x i15]* %layer9_out_5_V, [16 x i15]* %layer9_out_6_V, [16 x i15]* %layer9_out_7_V, [2 x i16]* %layer10_out_0_V, [2 x i16]* %layer10_out_1_V, [2 x i16]* %layer10_out_2_V)" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:71]   --->   Operation 93 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 17 <SV = 16> <Delay = 0.00>
+ST_17 : Operation 94 [2/2] (0.00ns)   --->   "call fastcc void @"softmax<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, softmax_config11>"([2 x i16]* %layer10_out_0_V, [2 x i16]* %layer10_out_1_V, [2 x i16]* %layer10_out_2_V, i16* %layer11_out_0_V, i16* %layer11_out_1_V, i16* %layer11_out_2_V, i16* %layer11_out_3_V, i16* %layer11_out_4_V, i16* %layer11_out_5_V)" [firmware/myproject.cpp:73]   --->   Operation 94 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 18 <SV = 17> <Delay = 0.00>
+ST_18 : Operation 95 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecDataflowPipeline(i32 -1, [1 x i8]* @p_str10) nounwind" [firmware/myproject.cpp:15]   --->   Operation 95 'specdataflowpipeline' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 96 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i16* %layer11_out_5_V), !map !233"   --->   Operation 96 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 97 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i16* %layer11_out_4_V), !map !239"   --->   Operation 97 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 98 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i16* %layer11_out_3_V), !map !245"   --->   Operation 98 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 99 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i16* %layer11_out_2_V), !map !251"   --->   Operation 99 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 100 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i16* %layer11_out_1_V), !map !257"   --->   Operation 100 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 101 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i16* %layer11_out_0_V), !map !263"   --->   Operation 101 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 102 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i4320* %conv2d_1_input_V), !map !269"   --->   Operation 102 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 103 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([10 x i8]* @myproject_str) nounwind"   --->   Operation 103 'spectopmodule' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 104 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i4320* %conv2d_1_input_V, [7 x i8]* @p_str11, i32 0, i32 0, [1 x i8]* @p_str10, i32 0, i32 0, [1 x i8]* @p_str10, [1 x i8]* @p_str10, [1 x i8]* @p_str10, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str10, [1 x i8]* @p_str10) nounwind"   --->   Operation 104 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 105 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %layer11_out_0_V, i16* %layer11_out_1_V, i16* %layer11_out_2_V, i16* %layer11_out_3_V, i16* %layer11_out_4_V, i16* %layer11_out_5_V, [7 x i8]* @p_str11, i32 0, i32 0, [1 x i8]* @p_str10, i32 0, i32 0, [1 x i8]* @p_str10, [1 x i8]* @p_str10, [1 x i8]* @p_str10, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str10, [1 x i8]* @p_str10) nounwind"   --->   Operation 105 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 106 [1/2] (0.00ns)   --->   "call fastcc void @"softmax<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, softmax_config11>"([2 x i16]* %layer10_out_0_V, [2 x i16]* %layer10_out_1_V, [2 x i16]* %layer10_out_2_V, i16* %layer11_out_0_V, i16* %layer11_out_1_V, i16* %layer11_out_2_V, i16* %layer11_out_3_V, i16* %layer11_out_4_V, i16* %layer11_out_5_V)" [firmware/myproject.cpp:73]   --->   Operation 106 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_18 : Operation 107 [1/1] (0.00ns)   --->   "ret void" [firmware/myproject.cpp:75]   --->   Operation 107 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+STG Binding: 
+---------------- STG Properties BEGIN ----------------
+- Is combinational: 0
+- Is one-state seq: 0
+- Is datapath-only: 0
+- Is pipelined: 0
+- Is top level: 1
+Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
+Port [ conv2d_1_input_V]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_vld:ce=0
+Port [ layer11_out_0_V]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=ap_vld:ce=0
+Port [ layer11_out_1_V]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=ap_vld:ce=0
+Port [ layer11_out_2_V]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=ap_vld:ce=0
+Port [ layer11_out_3_V]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=ap_vld:ce=0
+Port [ layer11_out_4_V]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=ap_vld:ce=0
+Port [ layer11_out_5_V]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=ap_vld:ce=0
+Port [ w6_V]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; linkage=7; visibility=0; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ b6_V]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; linkage=7; visibility=0; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ w8_V]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; linkage=7; visibility=0; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ b8_V]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; linkage=7; visibility=0; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ w10_V]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; linkage=7; visibility=0; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ b10_V]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; linkage=7; visibility=0; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ exp_table1]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; linkage=7; visibility=0; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ invert_table2]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; linkage=7; visibility=0; MemPort=[1]; IO mode=ap_memory:ce=0
+---------------- STG Properties END ------------------
+
+---------------- Datapath Model BEGIN ----------------
+
+<LifeTime>
+<method=bitvector/>
+layer2_out_0_V  (alloca              ) [ 0011100000000000000]
+layer2_out_1_V  (alloca              ) [ 0011100000000000000]
+layer2_out_2_V  (alloca              ) [ 0011100000000000000]
+layer2_out_3_V  (alloca              ) [ 0011100000000000000]
+layer2_out_4_V  (alloca              ) [ 0011100000000000000]
+layer2_out_5_V  (alloca              ) [ 0011100000000000000]
+layer2_out_6_V  (alloca              ) [ 0011100000000000000]
+layer2_out_7_V  (alloca              ) [ 0011100000000000000]
+layer3_out_0_V  (alloca              ) [ 0011111000000000000]
+layer3_out_1_V  (alloca              ) [ 0011111000000000000]
+layer3_out_2_V  (alloca              ) [ 0011111000000000000]
+layer3_out_3_V  (alloca              ) [ 0011111000000000000]
+layer3_out_4_V  (alloca              ) [ 0011111000000000000]
+layer3_out_5_V  (alloca              ) [ 0011111000000000000]
+layer3_out_6_V  (alloca              ) [ 0011111000000000000]
+layer3_out_7_V  (alloca              ) [ 0011111000000000000]
+layer4_out_0_V  (alloca              ) [ 0011111110000000000]
+layer4_out_1_V  (alloca              ) [ 0011111110000000000]
+layer4_out_2_V  (alloca              ) [ 0011111110000000000]
+layer4_out_3_V  (alloca              ) [ 0011111110000000000]
+layer4_out_4_V  (alloca              ) [ 0011111110000000000]
+layer4_out_5_V  (alloca              ) [ 0011111110000000000]
+layer4_out_6_V  (alloca              ) [ 0011111110000000000]
+layer4_out_7_V  (alloca              ) [ 0011111110000000000]
+layer6_out_0_V  (alloca              ) [ 0011111111100000000]
+layer6_out_1_V  (alloca              ) [ 0011111111100000000]
+layer6_out_2_V  (alloca              ) [ 0011111111100000000]
+layer6_out_3_V  (alloca              ) [ 0011111111100000000]
+layer6_out_4_V  (alloca              ) [ 0011111111100000000]
+layer6_out_5_V  (alloca              ) [ 0011111111100000000]
+layer6_out_6_V  (alloca              ) [ 0011111111100000000]
+layer6_out_7_V  (alloca              ) [ 0011111111100000000]
+layer7_out_0_V  (alloca              ) [ 0011111111111000000]
+layer7_out_1_V  (alloca              ) [ 0011111111111000000]
+layer7_out_2_V  (alloca              ) [ 0011111111111000000]
+layer7_out_3_V  (alloca              ) [ 0011111111111000000]
+layer7_out_4_V  (alloca              ) [ 0011111111111000000]
+layer7_out_5_V  (alloca              ) [ 0011111111111000000]
+layer7_out_6_V  (alloca              ) [ 0011111111111000000]
+layer7_out_7_V  (alloca              ) [ 0011111111111000000]
+layer8_out_0_V  (alloca              ) [ 0011111111111110000]
+layer8_out_1_V  (alloca              ) [ 0011111111111110000]
+layer8_out_2_V  (alloca              ) [ 0011111111111110000]
+layer8_out_3_V  (alloca              ) [ 0011111111111110000]
+layer8_out_4_V  (alloca              ) [ 0011111111111110000]
+layer8_out_5_V  (alloca              ) [ 0011111111111110000]
+layer8_out_6_V  (alloca              ) [ 0011111111111110000]
+layer8_out_7_V  (alloca              ) [ 0011111111111110000]
+layer9_out_0_V  (alloca              ) [ 0011111111111111100]
+layer9_out_1_V  (alloca              ) [ 0011111111111111100]
+layer9_out_2_V  (alloca              ) [ 0011111111111111100]
+layer9_out_3_V  (alloca              ) [ 0011111111111111100]
+layer9_out_4_V  (alloca              ) [ 0011111111111111100]
+layer9_out_5_V  (alloca              ) [ 0011111111111111100]
+layer9_out_6_V  (alloca              ) [ 0011111111111111100]
+layer9_out_7_V  (alloca              ) [ 0011111111111111100]
+layer10_out_0_V (alloca              ) [ 0011111111111111111]
+layer10_out_1_V (alloca              ) [ 0011111111111111111]
+layer10_out_2_V (alloca              ) [ 0011111111111111111]
+StgValue_79     (call                ) [ 0000000000000000000]
+StgValue_81     (call                ) [ 0000000000000000000]
+StgValue_83     (call                ) [ 0000000000000000000]
+StgValue_85     (call                ) [ 0000000000000000000]
+StgValue_87     (call                ) [ 0000000000000000000]
+StgValue_89     (call                ) [ 0000000000000000000]
+StgValue_91     (call                ) [ 0000000000000000000]
+StgValue_93     (call                ) [ 0000000000000000000]
+StgValue_95     (specdataflowpipeline) [ 0000000000000000000]
+StgValue_96     (specbitsmap         ) [ 0000000000000000000]
+StgValue_97     (specbitsmap         ) [ 0000000000000000000]
+StgValue_98     (specbitsmap         ) [ 0000000000000000000]
+StgValue_99     (specbitsmap         ) [ 0000000000000000000]
+StgValue_100    (specbitsmap         ) [ 0000000000000000000]
+StgValue_101    (specbitsmap         ) [ 0000000000000000000]
+StgValue_102    (specbitsmap         ) [ 0000000000000000000]
+StgValue_103    (spectopmodule       ) [ 0000000000000000000]
+StgValue_104    (specinterface       ) [ 0000000000000000000]
+StgValue_105    (specinterface       ) [ 0000000000000000000]
+StgValue_106    (call                ) [ 0000000000000000000]
+StgValue_107    (ret                 ) [ 0000000000000000000]
+</LifeTime>
+
+<model>
+
+<comp_list>
+<comp id="0" class="1000" name="conv2d_1_input_V">
+<pin_list>
+<pin id="1" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="conv2d_1_input_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="2" class="1000" name="layer11_out_0_V">
+<pin_list>
+<pin id="3" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="layer11_out_0_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="4" class="1000" name="layer11_out_1_V">
+<pin_list>
+<pin id="5" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="layer11_out_1_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="6" class="1000" name="layer11_out_2_V">
+<pin_list>
+<pin id="7" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="layer11_out_2_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="8" class="1000" name="layer11_out_3_V">
+<pin_list>
+<pin id="9" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="layer11_out_3_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="10" class="1000" name="layer11_out_4_V">
+<pin_list>
+<pin id="11" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="layer11_out_4_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="12" class="1000" name="layer11_out_5_V">
+<pin_list>
+<pin id="13" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="layer11_out_5_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="14" class="1000" name="w6_V">
+<pin_list>
+<pin id="15" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="w6_V"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="16" class="1000" name="b6_V">
+<pin_list>
+<pin id="17" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="b6_V"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="18" class="1000" name="w8_V">
+<pin_list>
+<pin id="19" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="w8_V"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="20" class="1000" name="b8_V">
+<pin_list>
+<pin id="21" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="b8_V"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="22" class="1000" name="w10_V">
+<pin_list>
+<pin id="23" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="w10_V"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="24" class="1000" name="b10_V">
+<pin_list>
+<pin id="25" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="b10_V"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="26" class="1000" name="exp_table1">
+<pin_list>
+<pin id="27" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="exp_table1"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="28" class="1000" name="invert_table2">
+<pin_list>
+<pin id="29" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="invert_table2"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="30" class="1001" name="const_30">
+<pin_list>
+<pin id="31" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="32" class="1001" name="const_32">
+<pin_list>
+<pin id="33" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="conv_2d_cl<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, config2>"/></StgValue>
+</bind>
+</comp>
+
+<comp id="34" class="1001" name="const_34">
+<pin_list>
+<pin id="35" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="relu<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, relu_config3>"/></StgValue>
+</bind>
+</comp>
+
+<comp id="36" class="1001" name="const_36">
+<pin_list>
+<pin id="37" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="pooling2d_cl<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, config4>"/></StgValue>
+</bind>
+</comp>
+
+<comp id="38" class="1001" name="const_38">
+<pin_list>
+<pin id="39" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, config6>"/></StgValue>
+</bind>
+</comp>
+
+<comp id="40" class="1001" name="const_40">
+<pin_list>
+<pin id="41" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="relu<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, relu_config7>"/></StgValue>
+</bind>
+</comp>
+
+<comp id="42" class="1001" name="const_42">
+<pin_list>
+<pin id="43" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, config8>"/></StgValue>
+</bind>
+</comp>
+
+<comp id="44" class="1001" name="const_44">
+<pin_list>
+<pin id="45" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="relu<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, relu_config9>"/></StgValue>
+</bind>
+</comp>
+
+<comp id="46" class="1001" name="const_46">
+<pin_list>
+<pin id="47" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, config10>"/></StgValue>
+</bind>
+</comp>
+
+<comp id="48" class="1001" name="const_48">
+<pin_list>
+<pin id="49" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="softmax<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, softmax_config11>"/></StgValue>
+</bind>
+</comp>
+
+<comp id="50" class="1001" name="const_50">
+<pin_list>
+<pin id="51" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecDataflowPipeline"/></StgValue>
+</bind>
+</comp>
+
+<comp id="52" class="1001" name="const_52">
+<pin_list>
+<pin id="53" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="54" class="1001" name="const_54">
+<pin_list>
+<pin id="55" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_str10"/></StgValue>
+</bind>
+</comp>
+
+<comp id="56" class="1001" name="const_56">
+<pin_list>
+<pin id="57" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecBitsMap"/></StgValue>
+</bind>
+</comp>
+
+<comp id="58" class="1001" name="const_58">
+<pin_list>
+<pin id="59" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecTopModule"/></StgValue>
+</bind>
+</comp>
+
+<comp id="60" class="1001" name="const_60">
+<pin_list>
+<pin id="61" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="myproject_str"/></StgValue>
+</bind>
+</comp>
+
+<comp id="62" class="1001" name="const_62">
+<pin_list>
+<pin id="63" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecInterface"/></StgValue>
+</bind>
+</comp>
+
+<comp id="64" class="1001" name="const_64">
+<pin_list>
+<pin id="65" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_str11"/></StgValue>
+</bind>
+</comp>
+
+<comp id="66" class="1001" name="const_66">
+<pin_list>
+<pin id="67" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="68" class="1004" name="layer2_out_0_V_alloca_fu_68">
+<pin_list>
+<pin id="69" dir="0" index="0" bw="1" slack="0"/>
+<pin id="70" dir="1" index="1" bw="16" slack="0"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="layer2_out_0_V/1 "/>
+</bind>
+</comp>
+
+<comp id="72" class="1004" name="layer2_out_1_V_alloca_fu_72">
+<pin_list>
+<pin id="73" dir="0" index="0" bw="1" slack="0"/>
+<pin id="74" dir="1" index="1" bw="16" slack="0"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="layer2_out_1_V/1 "/>
+</bind>
+</comp>
+
+<comp id="76" class="1004" name="layer2_out_2_V_alloca_fu_76">
+<pin_list>
+<pin id="77" dir="0" index="0" bw="1" slack="0"/>
+<pin id="78" dir="1" index="1" bw="16" slack="0"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="layer2_out_2_V/1 "/>
+</bind>
+</comp>
+
+<comp id="80" class="1004" name="layer2_out_3_V_alloca_fu_80">
+<pin_list>
+<pin id="81" dir="0" index="0" bw="1" slack="0"/>
+<pin id="82" dir="1" index="1" bw="16" slack="0"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="layer2_out_3_V/1 "/>
+</bind>
+</comp>
+
+<comp id="84" class="1004" name="layer2_out_4_V_alloca_fu_84">
+<pin_list>
+<pin id="85" dir="0" index="0" bw="1" slack="0"/>
+<pin id="86" dir="1" index="1" bw="16" slack="0"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="layer2_out_4_V/1 "/>
+</bind>
+</comp>
+
+<comp id="88" class="1004" name="layer2_out_5_V_alloca_fu_88">
+<pin_list>
+<pin id="89" dir="0" index="0" bw="1" slack="0"/>
+<pin id="90" dir="1" index="1" bw="16" slack="0"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="layer2_out_5_V/1 "/>
+</bind>
+</comp>
+
+<comp id="92" class="1004" name="layer2_out_6_V_alloca_fu_92">
+<pin_list>
+<pin id="93" dir="0" index="0" bw="1" slack="0"/>
+<pin id="94" dir="1" index="1" bw="16" slack="0"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="layer2_out_6_V/1 "/>
+</bind>
+</comp>
+
+<comp id="96" class="1004" name="layer2_out_7_V_alloca_fu_96">
+<pin_list>
+<pin id="97" dir="0" index="0" bw="1" slack="0"/>
+<pin id="98" dir="1" index="1" bw="16" slack="0"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="layer2_out_7_V/1 "/>
+</bind>
+</comp>
+
+<comp id="100" class="1004" name="layer3_out_0_V_alloca_fu_100">
+<pin_list>
+<pin id="101" dir="0" index="0" bw="1" slack="0"/>
+<pin id="102" dir="1" index="1" bw="15" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="layer3_out_0_V/1 "/>
+</bind>
+</comp>
+
+<comp id="104" class="1004" name="layer3_out_1_V_alloca_fu_104">
+<pin_list>
+<pin id="105" dir="0" index="0" bw="1" slack="0"/>
+<pin id="106" dir="1" index="1" bw="15" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="layer3_out_1_V/1 "/>
+</bind>
+</comp>
+
+<comp id="108" class="1004" name="layer3_out_2_V_alloca_fu_108">
+<pin_list>
+<pin id="109" dir="0" index="0" bw="1" slack="0"/>
+<pin id="110" dir="1" index="1" bw="15" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="layer3_out_2_V/1 "/>
+</bind>
+</comp>
+
+<comp id="112" class="1004" name="layer3_out_3_V_alloca_fu_112">
+<pin_list>
+<pin id="113" dir="0" index="0" bw="1" slack="0"/>
+<pin id="114" dir="1" index="1" bw="15" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="layer3_out_3_V/1 "/>
+</bind>
+</comp>
+
+<comp id="116" class="1004" name="layer3_out_4_V_alloca_fu_116">
+<pin_list>
+<pin id="117" dir="0" index="0" bw="1" slack="0"/>
+<pin id="118" dir="1" index="1" bw="15" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="layer3_out_4_V/1 "/>
+</bind>
+</comp>
+
+<comp id="120" class="1004" name="layer3_out_5_V_alloca_fu_120">
+<pin_list>
+<pin id="121" dir="0" index="0" bw="1" slack="0"/>
+<pin id="122" dir="1" index="1" bw="15" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="layer3_out_5_V/1 "/>
+</bind>
+</comp>
+
+<comp id="124" class="1004" name="layer3_out_6_V_alloca_fu_124">
+<pin_list>
+<pin id="125" dir="0" index="0" bw="1" slack="0"/>
+<pin id="126" dir="1" index="1" bw="15" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="layer3_out_6_V/1 "/>
+</bind>
+</comp>
+
+<comp id="128" class="1004" name="layer3_out_7_V_alloca_fu_128">
+<pin_list>
+<pin id="129" dir="0" index="0" bw="1" slack="0"/>
+<pin id="130" dir="1" index="1" bw="15" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="layer3_out_7_V/1 "/>
+</bind>
+</comp>
+
+<comp id="132" class="1004" name="layer4_out_0_V_alloca_fu_132">
+<pin_list>
+<pin id="133" dir="0" index="0" bw="1" slack="0"/>
+<pin id="134" dir="1" index="1" bw="16" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="layer4_out_0_V/1 "/>
+</bind>
+</comp>
+
+<comp id="136" class="1004" name="layer4_out_1_V_alloca_fu_136">
+<pin_list>
+<pin id="137" dir="0" index="0" bw="1" slack="0"/>
+<pin id="138" dir="1" index="1" bw="16" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="layer4_out_1_V/1 "/>
+</bind>
+</comp>
+
+<comp id="140" class="1004" name="layer4_out_2_V_alloca_fu_140">
+<pin_list>
+<pin id="141" dir="0" index="0" bw="1" slack="0"/>
+<pin id="142" dir="1" index="1" bw="16" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="layer4_out_2_V/1 "/>
+</bind>
+</comp>
+
+<comp id="144" class="1004" name="layer4_out_3_V_alloca_fu_144">
+<pin_list>
+<pin id="145" dir="0" index="0" bw="1" slack="0"/>
+<pin id="146" dir="1" index="1" bw="16" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="layer4_out_3_V/1 "/>
+</bind>
+</comp>
+
+<comp id="148" class="1004" name="layer4_out_4_V_alloca_fu_148">
+<pin_list>
+<pin id="149" dir="0" index="0" bw="1" slack="0"/>
+<pin id="150" dir="1" index="1" bw="16" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="layer4_out_4_V/1 "/>
+</bind>
+</comp>
+
+<comp id="152" class="1004" name="layer4_out_5_V_alloca_fu_152">
+<pin_list>
+<pin id="153" dir="0" index="0" bw="1" slack="0"/>
+<pin id="154" dir="1" index="1" bw="16" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="layer4_out_5_V/1 "/>
+</bind>
+</comp>
+
+<comp id="156" class="1004" name="layer4_out_6_V_alloca_fu_156">
+<pin_list>
+<pin id="157" dir="0" index="0" bw="1" slack="0"/>
+<pin id="158" dir="1" index="1" bw="16" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="layer4_out_6_V/1 "/>
+</bind>
+</comp>
+
+<comp id="160" class="1004" name="layer4_out_7_V_alloca_fu_160">
+<pin_list>
+<pin id="161" dir="0" index="0" bw="1" slack="0"/>
+<pin id="162" dir="1" index="1" bw="16" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="layer4_out_7_V/1 "/>
+</bind>
+</comp>
+
+<comp id="164" class="1004" name="layer6_out_0_V_alloca_fu_164">
+<pin_list>
+<pin id="165" dir="0" index="0" bw="1" slack="0"/>
+<pin id="166" dir="1" index="1" bw="16" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="layer6_out_0_V/1 "/>
+</bind>
+</comp>
+
+<comp id="168" class="1004" name="layer6_out_1_V_alloca_fu_168">
+<pin_list>
+<pin id="169" dir="0" index="0" bw="1" slack="0"/>
+<pin id="170" dir="1" index="1" bw="16" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="layer6_out_1_V/1 "/>
+</bind>
+</comp>
+
+<comp id="172" class="1004" name="layer6_out_2_V_alloca_fu_172">
+<pin_list>
+<pin id="173" dir="0" index="0" bw="1" slack="0"/>
+<pin id="174" dir="1" index="1" bw="16" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="layer6_out_2_V/1 "/>
+</bind>
+</comp>
+
+<comp id="176" class="1004" name="layer6_out_3_V_alloca_fu_176">
+<pin_list>
+<pin id="177" dir="0" index="0" bw="1" slack="0"/>
+<pin id="178" dir="1" index="1" bw="16" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="layer6_out_3_V/1 "/>
+</bind>
+</comp>
+
+<comp id="180" class="1004" name="layer6_out_4_V_alloca_fu_180">
+<pin_list>
+<pin id="181" dir="0" index="0" bw="1" slack="0"/>
+<pin id="182" dir="1" index="1" bw="16" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="layer6_out_4_V/1 "/>
+</bind>
+</comp>
+
+<comp id="184" class="1004" name="layer6_out_5_V_alloca_fu_184">
+<pin_list>
+<pin id="185" dir="0" index="0" bw="1" slack="0"/>
+<pin id="186" dir="1" index="1" bw="16" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="layer6_out_5_V/1 "/>
+</bind>
+</comp>
+
+<comp id="188" class="1004" name="layer6_out_6_V_alloca_fu_188">
+<pin_list>
+<pin id="189" dir="0" index="0" bw="1" slack="0"/>
+<pin id="190" dir="1" index="1" bw="16" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="layer6_out_6_V/1 "/>
+</bind>
+</comp>
+
+<comp id="192" class="1004" name="layer6_out_7_V_alloca_fu_192">
+<pin_list>
+<pin id="193" dir="0" index="0" bw="1" slack="0"/>
+<pin id="194" dir="1" index="1" bw="16" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="layer6_out_7_V/1 "/>
+</bind>
+</comp>
+
+<comp id="196" class="1004" name="layer7_out_0_V_alloca_fu_196">
+<pin_list>
+<pin id="197" dir="0" index="0" bw="1" slack="0"/>
+<pin id="198" dir="1" index="1" bw="15" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="layer7_out_0_V/1 "/>
+</bind>
+</comp>
+
+<comp id="200" class="1004" name="layer7_out_1_V_alloca_fu_200">
+<pin_list>
+<pin id="201" dir="0" index="0" bw="1" slack="0"/>
+<pin id="202" dir="1" index="1" bw="15" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="layer7_out_1_V/1 "/>
+</bind>
+</comp>
+
+<comp id="204" class="1004" name="layer7_out_2_V_alloca_fu_204">
+<pin_list>
+<pin id="205" dir="0" index="0" bw="1" slack="0"/>
+<pin id="206" dir="1" index="1" bw="15" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="layer7_out_2_V/1 "/>
+</bind>
+</comp>
+
+<comp id="208" class="1004" name="layer7_out_3_V_alloca_fu_208">
+<pin_list>
+<pin id="209" dir="0" index="0" bw="1" slack="0"/>
+<pin id="210" dir="1" index="1" bw="15" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="layer7_out_3_V/1 "/>
+</bind>
+</comp>
+
+<comp id="212" class="1004" name="layer7_out_4_V_alloca_fu_212">
+<pin_list>
+<pin id="213" dir="0" index="0" bw="1" slack="0"/>
+<pin id="214" dir="1" index="1" bw="15" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="layer7_out_4_V/1 "/>
+</bind>
+</comp>
+
+<comp id="216" class="1004" name="layer7_out_5_V_alloca_fu_216">
+<pin_list>
+<pin id="217" dir="0" index="0" bw="1" slack="0"/>
+<pin id="218" dir="1" index="1" bw="15" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="layer7_out_5_V/1 "/>
+</bind>
+</comp>
+
+<comp id="220" class="1004" name="layer7_out_6_V_alloca_fu_220">
+<pin_list>
+<pin id="221" dir="0" index="0" bw="1" slack="0"/>
+<pin id="222" dir="1" index="1" bw="15" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="layer7_out_6_V/1 "/>
+</bind>
+</comp>
+
+<comp id="224" class="1004" name="layer7_out_7_V_alloca_fu_224">
+<pin_list>
+<pin id="225" dir="0" index="0" bw="1" slack="0"/>
+<pin id="226" dir="1" index="1" bw="15" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="layer7_out_7_V/1 "/>
+</bind>
+</comp>
+
+<comp id="228" class="1004" name="layer8_out_0_V_alloca_fu_228">
+<pin_list>
+<pin id="229" dir="0" index="0" bw="1" slack="0"/>
+<pin id="230" dir="1" index="1" bw="16" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="layer8_out_0_V/1 "/>
+</bind>
+</comp>
+
+<comp id="232" class="1004" name="layer8_out_1_V_alloca_fu_232">
+<pin_list>
+<pin id="233" dir="0" index="0" bw="1" slack="0"/>
+<pin id="234" dir="1" index="1" bw="16" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="layer8_out_1_V/1 "/>
+</bind>
+</comp>
+
+<comp id="236" class="1004" name="layer8_out_2_V_alloca_fu_236">
+<pin_list>
+<pin id="237" dir="0" index="0" bw="1" slack="0"/>
+<pin id="238" dir="1" index="1" bw="16" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="layer8_out_2_V/1 "/>
+</bind>
+</comp>
+
+<comp id="240" class="1004" name="layer8_out_3_V_alloca_fu_240">
+<pin_list>
+<pin id="241" dir="0" index="0" bw="1" slack="0"/>
+<pin id="242" dir="1" index="1" bw="16" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="layer8_out_3_V/1 "/>
+</bind>
+</comp>
+
+<comp id="244" class="1004" name="layer8_out_4_V_alloca_fu_244">
+<pin_list>
+<pin id="245" dir="0" index="0" bw="1" slack="0"/>
+<pin id="246" dir="1" index="1" bw="16" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="layer8_out_4_V/1 "/>
+</bind>
+</comp>
+
+<comp id="248" class="1004" name="layer8_out_5_V_alloca_fu_248">
+<pin_list>
+<pin id="249" dir="0" index="0" bw="1" slack="0"/>
+<pin id="250" dir="1" index="1" bw="16" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="layer8_out_5_V/1 "/>
+</bind>
+</comp>
+
+<comp id="252" class="1004" name="layer8_out_6_V_alloca_fu_252">
+<pin_list>
+<pin id="253" dir="0" index="0" bw="1" slack="0"/>
+<pin id="254" dir="1" index="1" bw="16" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="layer8_out_6_V/1 "/>
+</bind>
+</comp>
+
+<comp id="256" class="1004" name="layer8_out_7_V_alloca_fu_256">
+<pin_list>
+<pin id="257" dir="0" index="0" bw="1" slack="0"/>
+<pin id="258" dir="1" index="1" bw="16" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="layer8_out_7_V/1 "/>
+</bind>
+</comp>
+
+<comp id="260" class="1004" name="layer9_out_0_V_alloca_fu_260">
+<pin_list>
+<pin id="261" dir="0" index="0" bw="1" slack="0"/>
+<pin id="262" dir="1" index="1" bw="15" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="layer9_out_0_V/1 "/>
+</bind>
+</comp>
+
+<comp id="264" class="1004" name="layer9_out_1_V_alloca_fu_264">
+<pin_list>
+<pin id="265" dir="0" index="0" bw="1" slack="0"/>
+<pin id="266" dir="1" index="1" bw="15" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="layer9_out_1_V/1 "/>
+</bind>
+</comp>
+
+<comp id="268" class="1004" name="layer9_out_2_V_alloca_fu_268">
+<pin_list>
+<pin id="269" dir="0" index="0" bw="1" slack="0"/>
+<pin id="270" dir="1" index="1" bw="15" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="layer9_out_2_V/1 "/>
+</bind>
+</comp>
+
+<comp id="272" class="1004" name="layer9_out_3_V_alloca_fu_272">
+<pin_list>
+<pin id="273" dir="0" index="0" bw="1" slack="0"/>
+<pin id="274" dir="1" index="1" bw="15" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="layer9_out_3_V/1 "/>
+</bind>
+</comp>
+
+<comp id="276" class="1004" name="layer9_out_4_V_alloca_fu_276">
+<pin_list>
+<pin id="277" dir="0" index="0" bw="1" slack="0"/>
+<pin id="278" dir="1" index="1" bw="15" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="layer9_out_4_V/1 "/>
+</bind>
+</comp>
+
+<comp id="280" class="1004" name="layer9_out_5_V_alloca_fu_280">
+<pin_list>
+<pin id="281" dir="0" index="0" bw="1" slack="0"/>
+<pin id="282" dir="1" index="1" bw="15" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="layer9_out_5_V/1 "/>
+</bind>
+</comp>
+
+<comp id="284" class="1004" name="layer9_out_6_V_alloca_fu_284">
+<pin_list>
+<pin id="285" dir="0" index="0" bw="1" slack="0"/>
+<pin id="286" dir="1" index="1" bw="15" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="layer9_out_6_V/1 "/>
+</bind>
+</comp>
+
+<comp id="288" class="1004" name="layer9_out_7_V_alloca_fu_288">
+<pin_list>
+<pin id="289" dir="0" index="0" bw="1" slack="0"/>
+<pin id="290" dir="1" index="1" bw="15" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="layer9_out_7_V/1 "/>
+</bind>
+</comp>
+
+<comp id="292" class="1004" name="layer10_out_0_V_alloca_fu_292">
+<pin_list>
+<pin id="293" dir="0" index="0" bw="1" slack="0"/>
+<pin id="294" dir="1" index="1" bw="16" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="layer10_out_0_V/1 "/>
+</bind>
+</comp>
+
+<comp id="296" class="1004" name="layer10_out_1_V_alloca_fu_296">
+<pin_list>
+<pin id="297" dir="0" index="0" bw="1" slack="0"/>
+<pin id="298" dir="1" index="1" bw="16" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="layer10_out_1_V/1 "/>
+</bind>
+</comp>
+
+<comp id="300" class="1004" name="layer10_out_2_V_alloca_fu_300">
+<pin_list>
+<pin id="301" dir="0" index="0" bw="1" slack="0"/>
+<pin id="302" dir="1" index="1" bw="16" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="layer10_out_2_V/1 "/>
+</bind>
+</comp>
+
+<comp id="304" class="1004" name="grp_conv_2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_304">
+<pin_list>
+<pin id="305" dir="0" index="0" bw="0" slack="0"/>
+<pin id="306" dir="0" index="1" bw="4320" slack="0"/>
+<pin id="307" dir="0" index="2" bw="16" slack="0"/>
+<pin id="308" dir="0" index="3" bw="16" slack="0"/>
+<pin id="309" dir="0" index="4" bw="16" slack="0"/>
+<pin id="310" dir="0" index="5" bw="16" slack="0"/>
+<pin id="311" dir="0" index="6" bw="16" slack="0"/>
+<pin id="312" dir="0" index="7" bw="16" slack="0"/>
+<pin id="313" dir="0" index="8" bw="16" slack="0"/>
+<pin id="314" dir="0" index="9" bw="16" slack="0"/>
+<pin id="315" dir="1" index="10" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="StgValue_78/1 "/>
+</bind>
+</comp>
+
+<comp id="326" class="1004" name="grp_pooling2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_s_fu_326">
+<pin_list>
+<pin id="327" dir="0" index="0" bw="0" slack="0"/>
+<pin id="328" dir="0" index="1" bw="15" slack="2147483647"/>
+<pin id="329" dir="0" index="2" bw="15" slack="2147483647"/>
+<pin id="330" dir="0" index="3" bw="15" slack="2147483647"/>
+<pin id="331" dir="0" index="4" bw="15" slack="2147483647"/>
+<pin id="332" dir="0" index="5" bw="15" slack="2147483647"/>
+<pin id="333" dir="0" index="6" bw="15" slack="2147483647"/>
+<pin id="334" dir="0" index="7" bw="15" slack="2147483647"/>
+<pin id="335" dir="0" index="8" bw="15" slack="2147483647"/>
+<pin id="336" dir="0" index="9" bw="16" slack="2147483647"/>
+<pin id="337" dir="0" index="10" bw="16" slack="2147483647"/>
+<pin id="338" dir="0" index="11" bw="16" slack="2147483647"/>
+<pin id="339" dir="0" index="12" bw="16" slack="2147483647"/>
+<pin id="340" dir="0" index="13" bw="16" slack="2147483647"/>
+<pin id="341" dir="0" index="14" bw="16" slack="2147483647"/>
+<pin id="342" dir="0" index="15" bw="16" slack="2147483647"/>
+<pin id="343" dir="0" index="16" bw="16" slack="2147483647"/>
+<pin id="344" dir="1" index="17" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="StgValue_82/5 "/>
+</bind>
+</comp>
+
+<comp id="346" class="1004" name="grp_softmax_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_softmax_config11_s_fu_346">
+<pin_list>
+<pin id="347" dir="0" index="0" bw="0" slack="0"/>
+<pin id="348" dir="0" index="1" bw="16" slack="2147483647"/>
+<pin id="349" dir="0" index="2" bw="16" slack="2147483647"/>
+<pin id="350" dir="0" index="3" bw="16" slack="2147483647"/>
+<pin id="351" dir="0" index="4" bw="16" slack="0"/>
+<pin id="352" dir="0" index="5" bw="16" slack="0"/>
+<pin id="353" dir="0" index="6" bw="16" slack="0"/>
+<pin id="354" dir="0" index="7" bw="16" slack="0"/>
+<pin id="355" dir="0" index="8" bw="16" slack="0"/>
+<pin id="356" dir="0" index="9" bw="16" slack="0"/>
+<pin id="357" dir="0" index="10" bw="17" slack="0"/>
+<pin id="358" dir="0" index="11" bw="18" slack="0"/>
+<pin id="359" dir="1" index="12" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="StgValue_94/17 "/>
+</bind>
+</comp>
+
+<comp id="369" class="1004" name="grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_s_fu_369">
+<pin_list>
+<pin id="370" dir="0" index="0" bw="0" slack="0"/>
+<pin id="371" dir="0" index="1" bw="16" slack="2147483647"/>
+<pin id="372" dir="0" index="2" bw="16" slack="2147483647"/>
+<pin id="373" dir="0" index="3" bw="16" slack="2147483647"/>
+<pin id="374" dir="0" index="4" bw="16" slack="2147483647"/>
+<pin id="375" dir="0" index="5" bw="16" slack="2147483647"/>
+<pin id="376" dir="0" index="6" bw="16" slack="2147483647"/>
+<pin id="377" dir="0" index="7" bw="16" slack="2147483647"/>
+<pin id="378" dir="0" index="8" bw="16" slack="2147483647"/>
+<pin id="379" dir="0" index="9" bw="16" slack="2147483647"/>
+<pin id="380" dir="0" index="10" bw="16" slack="2147483647"/>
+<pin id="381" dir="0" index="11" bw="16" slack="2147483647"/>
+<pin id="382" dir="0" index="12" bw="16" slack="2147483647"/>
+<pin id="383" dir="0" index="13" bw="16" slack="2147483647"/>
+<pin id="384" dir="0" index="14" bw="16" slack="2147483647"/>
+<pin id="385" dir="0" index="15" bw="16" slack="2147483647"/>
+<pin id="386" dir="0" index="16" bw="16" slack="2147483647"/>
+<pin id="387" dir="0" index="17" bw="11" slack="0"/>
+<pin id="388" dir="0" index="18" bw="10" slack="0"/>
+<pin id="389" dir="1" index="19" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="StgValue_84/7 "/>
+</bind>
+</comp>
+
+<comp id="393" class="1004" name="grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_s_fu_393">
+<pin_list>
+<pin id="394" dir="0" index="0" bw="0" slack="0"/>
+<pin id="395" dir="0" index="1" bw="15" slack="2147483647"/>
+<pin id="396" dir="0" index="2" bw="15" slack="2147483647"/>
+<pin id="397" dir="0" index="3" bw="15" slack="2147483647"/>
+<pin id="398" dir="0" index="4" bw="15" slack="2147483647"/>
+<pin id="399" dir="0" index="5" bw="15" slack="2147483647"/>
+<pin id="400" dir="0" index="6" bw="15" slack="2147483647"/>
+<pin id="401" dir="0" index="7" bw="15" slack="2147483647"/>
+<pin id="402" dir="0" index="8" bw="15" slack="2147483647"/>
+<pin id="403" dir="0" index="9" bw="16" slack="2147483647"/>
+<pin id="404" dir="0" index="10" bw="16" slack="2147483647"/>
+<pin id="405" dir="0" index="11" bw="16" slack="2147483647"/>
+<pin id="406" dir="0" index="12" bw="16" slack="2147483647"/>
+<pin id="407" dir="0" index="13" bw="16" slack="2147483647"/>
+<pin id="408" dir="0" index="14" bw="16" slack="2147483647"/>
+<pin id="409" dir="0" index="15" bw="16" slack="2147483647"/>
+<pin id="410" dir="0" index="16" bw="16" slack="2147483647"/>
+<pin id="411" dir="0" index="17" bw="11" slack="0"/>
+<pin id="412" dir="0" index="18" bw="11" slack="0"/>
+<pin id="413" dir="1" index="19" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="StgValue_88/11 "/>
+</bind>
+</comp>
+
+<comp id="417" class="1004" name="grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config10_s_fu_417">
+<pin_list>
+<pin id="418" dir="0" index="0" bw="0" slack="0"/>
+<pin id="419" dir="0" index="1" bw="15" slack="2147483647"/>
+<pin id="420" dir="0" index="2" bw="15" slack="2147483647"/>
+<pin id="421" dir="0" index="3" bw="15" slack="2147483647"/>
+<pin id="422" dir="0" index="4" bw="15" slack="2147483647"/>
+<pin id="423" dir="0" index="5" bw="15" slack="2147483647"/>
+<pin id="424" dir="0" index="6" bw="15" slack="2147483647"/>
+<pin id="425" dir="0" index="7" bw="15" slack="2147483647"/>
+<pin id="426" dir="0" index="8" bw="15" slack="2147483647"/>
+<pin id="427" dir="0" index="9" bw="16" slack="2147483647"/>
+<pin id="428" dir="0" index="10" bw="16" slack="2147483647"/>
+<pin id="429" dir="0" index="11" bw="16" slack="2147483647"/>
+<pin id="430" dir="0" index="12" bw="12" slack="0"/>
+<pin id="431" dir="0" index="13" bw="11" slack="0"/>
+<pin id="432" dir="1" index="14" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="StgValue_92/15 "/>
+</bind>
+</comp>
+
+<comp id="436" class="1004" name="grp_relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_s_fu_436">
+<pin_list>
+<pin id="437" dir="0" index="0" bw="0" slack="0"/>
+<pin id="438" dir="0" index="1" bw="16" slack="2147483647"/>
+<pin id="439" dir="0" index="2" bw="16" slack="2147483647"/>
+<pin id="440" dir="0" index="3" bw="16" slack="2147483647"/>
+<pin id="441" dir="0" index="4" bw="16" slack="2147483647"/>
+<pin id="442" dir="0" index="5" bw="16" slack="2147483647"/>
+<pin id="443" dir="0" index="6" bw="16" slack="2147483647"/>
+<pin id="444" dir="0" index="7" bw="16" slack="2147483647"/>
+<pin id="445" dir="0" index="8" bw="16" slack="2147483647"/>
+<pin id="446" dir="0" index="9" bw="15" slack="2147483647"/>
+<pin id="447" dir="0" index="10" bw="15" slack="2147483647"/>
+<pin id="448" dir="0" index="11" bw="15" slack="2147483647"/>
+<pin id="449" dir="0" index="12" bw="15" slack="2147483647"/>
+<pin id="450" dir="0" index="13" bw="15" slack="2147483647"/>
+<pin id="451" dir="0" index="14" bw="15" slack="2147483647"/>
+<pin id="452" dir="0" index="15" bw="15" slack="2147483647"/>
+<pin id="453" dir="0" index="16" bw="15" slack="2147483647"/>
+<pin id="454" dir="1" index="17" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="StgValue_80/3 "/>
+</bind>
+</comp>
+
+<comp id="456" class="1004" name="grp_relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_s_fu_456">
+<pin_list>
+<pin id="457" dir="0" index="0" bw="0" slack="0"/>
+<pin id="458" dir="0" index="1" bw="16" slack="2147483647"/>
+<pin id="459" dir="0" index="2" bw="16" slack="2147483647"/>
+<pin id="460" dir="0" index="3" bw="16" slack="2147483647"/>
+<pin id="461" dir="0" index="4" bw="16" slack="2147483647"/>
+<pin id="462" dir="0" index="5" bw="16" slack="2147483647"/>
+<pin id="463" dir="0" index="6" bw="16" slack="2147483647"/>
+<pin id="464" dir="0" index="7" bw="16" slack="2147483647"/>
+<pin id="465" dir="0" index="8" bw="16" slack="2147483647"/>
+<pin id="466" dir="0" index="9" bw="15" slack="2147483647"/>
+<pin id="467" dir="0" index="10" bw="15" slack="2147483647"/>
+<pin id="468" dir="0" index="11" bw="15" slack="2147483647"/>
+<pin id="469" dir="0" index="12" bw="15" slack="2147483647"/>
+<pin id="470" dir="0" index="13" bw="15" slack="2147483647"/>
+<pin id="471" dir="0" index="14" bw="15" slack="2147483647"/>
+<pin id="472" dir="0" index="15" bw="15" slack="2147483647"/>
+<pin id="473" dir="0" index="16" bw="15" slack="2147483647"/>
+<pin id="474" dir="1" index="17" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="StgValue_86/9 "/>
+</bind>
+</comp>
+
+<comp id="476" class="1004" name="grp_relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config9_s_fu_476">
+<pin_list>
+<pin id="477" dir="0" index="0" bw="0" slack="0"/>
+<pin id="478" dir="0" index="1" bw="16" slack="2147483647"/>
+<pin id="479" dir="0" index="2" bw="16" slack="2147483647"/>
+<pin id="480" dir="0" index="3" bw="16" slack="2147483647"/>
+<pin id="481" dir="0" index="4" bw="16" slack="2147483647"/>
+<pin id="482" dir="0" index="5" bw="16" slack="2147483647"/>
+<pin id="483" dir="0" index="6" bw="16" slack="2147483647"/>
+<pin id="484" dir="0" index="7" bw="16" slack="2147483647"/>
+<pin id="485" dir="0" index="8" bw="16" slack="2147483647"/>
+<pin id="486" dir="0" index="9" bw="15" slack="2147483647"/>
+<pin id="487" dir="0" index="10" bw="15" slack="2147483647"/>
+<pin id="488" dir="0" index="11" bw="15" slack="2147483647"/>
+<pin id="489" dir="0" index="12" bw="15" slack="2147483647"/>
+<pin id="490" dir="0" index="13" bw="15" slack="2147483647"/>
+<pin id="491" dir="0" index="14" bw="15" slack="2147483647"/>
+<pin id="492" dir="0" index="15" bw="15" slack="2147483647"/>
+<pin id="493" dir="0" index="16" bw="15" slack="2147483647"/>
+<pin id="494" dir="1" index="17" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="StgValue_90/13 "/>
+</bind>
+</comp>
+
+</comp_list>
+
+<net_list>
+<net id="71"><net_src comp="30" pin="0"/><net_sink comp="68" pin=0"/></net>
+
+<net id="75"><net_src comp="30" pin="0"/><net_sink comp="72" pin=0"/></net>
+
+<net id="79"><net_src comp="30" pin="0"/><net_sink comp="76" pin=0"/></net>
+
+<net id="83"><net_src comp="30" pin="0"/><net_sink comp="80" pin=0"/></net>
+
+<net id="87"><net_src comp="30" pin="0"/><net_sink comp="84" pin=0"/></net>
+
+<net id="91"><net_src comp="30" pin="0"/><net_sink comp="88" pin=0"/></net>
+
+<net id="95"><net_src comp="30" pin="0"/><net_sink comp="92" pin=0"/></net>
+
+<net id="99"><net_src comp="30" pin="0"/><net_sink comp="96" pin=0"/></net>
+
+<net id="103"><net_src comp="30" pin="0"/><net_sink comp="100" pin=0"/></net>
+
+<net id="107"><net_src comp="30" pin="0"/><net_sink comp="104" pin=0"/></net>
+
+<net id="111"><net_src comp="30" pin="0"/><net_sink comp="108" pin=0"/></net>
+
+<net id="115"><net_src comp="30" pin="0"/><net_sink comp="112" pin=0"/></net>
+
+<net id="119"><net_src comp="30" pin="0"/><net_sink comp="116" pin=0"/></net>
+
+<net id="123"><net_src comp="30" pin="0"/><net_sink comp="120" pin=0"/></net>
+
+<net id="127"><net_src comp="30" pin="0"/><net_sink comp="124" pin=0"/></net>
+
+<net id="131"><net_src comp="30" pin="0"/><net_sink comp="128" pin=0"/></net>
+
+<net id="135"><net_src comp="30" pin="0"/><net_sink comp="132" pin=0"/></net>
+
+<net id="139"><net_src comp="30" pin="0"/><net_sink comp="136" pin=0"/></net>
+
+<net id="143"><net_src comp="30" pin="0"/><net_sink comp="140" pin=0"/></net>
+
+<net id="147"><net_src comp="30" pin="0"/><net_sink comp="144" pin=0"/></net>
+
+<net id="151"><net_src comp="30" pin="0"/><net_sink comp="148" pin=0"/></net>
+
+<net id="155"><net_src comp="30" pin="0"/><net_sink comp="152" pin=0"/></net>
+
+<net id="159"><net_src comp="30" pin="0"/><net_sink comp="156" pin=0"/></net>
+
+<net id="163"><net_src comp="30" pin="0"/><net_sink comp="160" pin=0"/></net>
+
+<net id="167"><net_src comp="30" pin="0"/><net_sink comp="164" pin=0"/></net>
+
+<net id="171"><net_src comp="30" pin="0"/><net_sink comp="168" pin=0"/></net>
+
+<net id="175"><net_src comp="30" pin="0"/><net_sink comp="172" pin=0"/></net>
+
+<net id="179"><net_src comp="30" pin="0"/><net_sink comp="176" pin=0"/></net>
+
+<net id="183"><net_src comp="30" pin="0"/><net_sink comp="180" pin=0"/></net>
+
+<net id="187"><net_src comp="30" pin="0"/><net_sink comp="184" pin=0"/></net>
+
+<net id="191"><net_src comp="30" pin="0"/><net_sink comp="188" pin=0"/></net>
+
+<net id="195"><net_src comp="30" pin="0"/><net_sink comp="192" pin=0"/></net>
+
+<net id="199"><net_src comp="30" pin="0"/><net_sink comp="196" pin=0"/></net>
+
+<net id="203"><net_src comp="30" pin="0"/><net_sink comp="200" pin=0"/></net>
+
+<net id="207"><net_src comp="30" pin="0"/><net_sink comp="204" pin=0"/></net>
+
+<net id="211"><net_src comp="30" pin="0"/><net_sink comp="208" pin=0"/></net>
+
+<net id="215"><net_src comp="30" pin="0"/><net_sink comp="212" pin=0"/></net>
+
+<net id="219"><net_src comp="30" pin="0"/><net_sink comp="216" pin=0"/></net>
+
+<net id="223"><net_src comp="30" pin="0"/><net_sink comp="220" pin=0"/></net>
+
+<net id="227"><net_src comp="30" pin="0"/><net_sink comp="224" pin=0"/></net>
+
+<net id="231"><net_src comp="30" pin="0"/><net_sink comp="228" pin=0"/></net>
+
+<net id="235"><net_src comp="30" pin="0"/><net_sink comp="232" pin=0"/></net>
+
+<net id="239"><net_src comp="30" pin="0"/><net_sink comp="236" pin=0"/></net>
+
+<net id="243"><net_src comp="30" pin="0"/><net_sink comp="240" pin=0"/></net>
+
+<net id="247"><net_src comp="30" pin="0"/><net_sink comp="244" pin=0"/></net>
+
+<net id="251"><net_src comp="30" pin="0"/><net_sink comp="248" pin=0"/></net>
+
+<net id="255"><net_src comp="30" pin="0"/><net_sink comp="252" pin=0"/></net>
+
+<net id="259"><net_src comp="30" pin="0"/><net_sink comp="256" pin=0"/></net>
+
+<net id="263"><net_src comp="30" pin="0"/><net_sink comp="260" pin=0"/></net>
+
+<net id="267"><net_src comp="30" pin="0"/><net_sink comp="264" pin=0"/></net>
+
+<net id="271"><net_src comp="30" pin="0"/><net_sink comp="268" pin=0"/></net>
+
+<net id="275"><net_src comp="30" pin="0"/><net_sink comp="272" pin=0"/></net>
+
+<net id="279"><net_src comp="30" pin="0"/><net_sink comp="276" pin=0"/></net>
+
+<net id="283"><net_src comp="30" pin="0"/><net_sink comp="280" pin=0"/></net>
+
+<net id="287"><net_src comp="30" pin="0"/><net_sink comp="284" pin=0"/></net>
+
+<net id="291"><net_src comp="30" pin="0"/><net_sink comp="288" pin=0"/></net>
+
+<net id="295"><net_src comp="30" pin="0"/><net_sink comp="292" pin=0"/></net>
+
+<net id="299"><net_src comp="30" pin="0"/><net_sink comp="296" pin=0"/></net>
+
+<net id="303"><net_src comp="30" pin="0"/><net_sink comp="300" pin=0"/></net>
+
+<net id="316"><net_src comp="32" pin="0"/><net_sink comp="304" pin=0"/></net>
+
+<net id="317"><net_src comp="0" pin="0"/><net_sink comp="304" pin=1"/></net>
+
+<net id="318"><net_src comp="68" pin="1"/><net_sink comp="304" pin=2"/></net>
+
+<net id="319"><net_src comp="72" pin="1"/><net_sink comp="304" pin=3"/></net>
+
+<net id="320"><net_src comp="76" pin="1"/><net_sink comp="304" pin=4"/></net>
+
+<net id="321"><net_src comp="80" pin="1"/><net_sink comp="304" pin=5"/></net>
+
+<net id="322"><net_src comp="84" pin="1"/><net_sink comp="304" pin=6"/></net>
+
+<net id="323"><net_src comp="88" pin="1"/><net_sink comp="304" pin=7"/></net>
+
+<net id="324"><net_src comp="92" pin="1"/><net_sink comp="304" pin=8"/></net>
+
+<net id="325"><net_src comp="96" pin="1"/><net_sink comp="304" pin=9"/></net>
+
+<net id="345"><net_src comp="36" pin="0"/><net_sink comp="326" pin=0"/></net>
+
+<net id="360"><net_src comp="48" pin="0"/><net_sink comp="346" pin=0"/></net>
+
+<net id="361"><net_src comp="2" pin="0"/><net_sink comp="346" pin=4"/></net>
+
+<net id="362"><net_src comp="4" pin="0"/><net_sink comp="346" pin=5"/></net>
+
+<net id="363"><net_src comp="6" pin="0"/><net_sink comp="346" pin=6"/></net>
+
+<net id="364"><net_src comp="8" pin="0"/><net_sink comp="346" pin=7"/></net>
+
+<net id="365"><net_src comp="10" pin="0"/><net_sink comp="346" pin=8"/></net>
+
+<net id="366"><net_src comp="12" pin="0"/><net_sink comp="346" pin=9"/></net>
+
+<net id="367"><net_src comp="26" pin="0"/><net_sink comp="346" pin=10"/></net>
+
+<net id="368"><net_src comp="28" pin="0"/><net_sink comp="346" pin=11"/></net>
+
+<net id="390"><net_src comp="38" pin="0"/><net_sink comp="369" pin=0"/></net>
+
+<net id="391"><net_src comp="14" pin="0"/><net_sink comp="369" pin=17"/></net>
+
+<net id="392"><net_src comp="16" pin="0"/><net_sink comp="369" pin=18"/></net>
+
+<net id="414"><net_src comp="42" pin="0"/><net_sink comp="393" pin=0"/></net>
+
+<net id="415"><net_src comp="18" pin="0"/><net_sink comp="393" pin=17"/></net>
+
+<net id="416"><net_src comp="20" pin="0"/><net_sink comp="393" pin=18"/></net>
+
+<net id="433"><net_src comp="46" pin="0"/><net_sink comp="417" pin=0"/></net>
+
+<net id="434"><net_src comp="22" pin="0"/><net_sink comp="417" pin=12"/></net>
+
+<net id="435"><net_src comp="24" pin="0"/><net_sink comp="417" pin=13"/></net>
+
+<net id="455"><net_src comp="34" pin="0"/><net_sink comp="436" pin=0"/></net>
+
+<net id="475"><net_src comp="40" pin="0"/><net_sink comp="456" pin=0"/></net>
+
+<net id="495"><net_src comp="44" pin="0"/><net_sink comp="476" pin=0"/></net>
+
+</net_list>
+
+</model> 
+---------------- Datapath Model END ------------------
+
+* FSMD analyzer results:
+  - Output states:
+	Port: layer11_out_0_V | {17 18 }
+	Port: layer11_out_1_V | {17 18 }
+	Port: layer11_out_2_V | {17 18 }
+	Port: layer11_out_3_V | {17 18 }
+	Port: layer11_out_4_V | {17 18 }
+	Port: layer11_out_5_V | {17 18 }
+ - Input state : 
+	Port: myproject : conv2d_1_input_V | {1 2 }
+	Port: myproject : w6_V | {7 8 }
+	Port: myproject : b6_V | {7 8 }
+	Port: myproject : w8_V | {11 12 }
+	Port: myproject : b8_V | {11 12 }
+	Port: myproject : w10_V | {15 16 }
+	Port: myproject : b10_V | {15 16 }
+	Port: myproject : exp_table1 | {17 18 }
+	Port: myproject : invert_table2 | {17 18 }
+  - Chain level:
+	State 1
+		StgValue_78 : 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+
+* Functional unit list:
+|----------|-------------------------------------------------------------------------------|---------|---------|---------|---------|---------|
+| Operation|                                Functional Unit                                |   BRAM  |  DSP48E |  Delay  |    FF   |   LUT   |
+|----------|-------------------------------------------------------------------------------|---------|---------|---------|---------|---------|
+|          |    grp_conv_2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_304    |    0    |   394   |  587.58 |  134913 |  95426  |
+|          |   grp_pooling2d_cl_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_s_fu_326   |    0    |    2    | 19.2052 |   1077  |   612   |
+|          | grp_softmax_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_softmax_config11_s_fu_346 |    0    |    1    | 23.8019 |   606   |   858   |
+|          |   grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_s_fu_369  |   1025  |    1    | 23.2553 |   860   |   539   |
+|   call   |   grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_s_fu_393  |    17   |    1    | 21.9053 |   545   |   424   |
+|          |  grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config10_s_fu_417  |    1    |    1    |  23.357 |   454   |   449   |
+|          |     grp_relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_s_fu_436    |    0    |    0    |  12.15  |   445   |   273   |
+|          |     grp_relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_s_fu_456    |    0    |    0    |   10.8  |   130   |   167   |
+|          |     grp_relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config9_s_fu_476    |    0    |    0    |   10.8  |   130   |   167   |
+|----------|-------------------------------------------------------------------------------|---------|---------|---------|---------|---------|
+|   Total  |                                                                               |   1043  |   400   | 732.855 |  139160 |  98915  |
+|----------|-------------------------------------------------------------------------------|---------|---------|---------|---------|---------|
+
+Memories:
++---------------+--------+--------+--------+
+|               |  BRAM  |   FF   |   LUT  |
++---------------+--------+--------+--------+
+|     b10_V     |    0   |   11   |    2   |
+|      b6_V     |    1   |    0   |    0   |
+|      b8_V     |    1   |    0   |    0   |
+|   exp_table1  |    1   |    0   |    0   |
+| invert_table2 |    1   |    0   |    0   |
+|layer10_out_0_V|    0   |   32   |    1   |
+|layer10_out_1_V|    0   |   32   |    1   |
+|layer10_out_2_V|    0   |   32   |    1   |
+| layer2_out_0_V|    4   |    0   |    0   |
+| layer2_out_1_V|    4   |    0   |    0   |
+| layer2_out_2_V|    4   |    0   |    0   |
+| layer2_out_3_V|    4   |    0   |    0   |
+| layer2_out_4_V|    4   |    0   |    0   |
+| layer2_out_5_V|    4   |    0   |    0   |
+| layer2_out_6_V|    4   |    0   |    0   |
+| layer2_out_7_V|    4   |    0   |    0   |
+| layer3_out_0_V|    4   |    0   |    0   |
+| layer3_out_1_V|    4   |    0   |    0   |
+| layer3_out_2_V|    4   |    0   |    0   |
+| layer3_out_3_V|    4   |    0   |    0   |
+| layer3_out_4_V|    4   |    0   |    0   |
+| layer3_out_5_V|    4   |    0   |    0   |
+| layer3_out_6_V|    4   |    0   |    0   |
+| layer3_out_7_V|    4   |    0   |    0   |
+| layer4_out_0_V|    1   |    0   |    0   |
+| layer4_out_1_V|    1   |    0   |    0   |
+| layer4_out_2_V|    1   |    0   |    0   |
+| layer4_out_3_V|    1   |    0   |    0   |
+| layer4_out_4_V|    1   |    0   |    0   |
+| layer4_out_5_V|    1   |    0   |    0   |
+| layer4_out_6_V|    1   |    0   |    0   |
+| layer4_out_7_V|    1   |    0   |    0   |
+| layer6_out_0_V|    0   |   32   |    4   |
+| layer6_out_1_V|    0   |   32   |    4   |
+| layer6_out_2_V|    0   |   32   |    4   |
+| layer6_out_3_V|    0   |   32   |    4   |
+| layer6_out_4_V|    0   |   32   |    4   |
+| layer6_out_5_V|    0   |   32   |    4   |
+| layer6_out_6_V|    0   |   32   |    4   |
+| layer6_out_7_V|    0   |   32   |    4   |
+| layer7_out_0_V|    0   |   30   |    4   |
+| layer7_out_1_V|    0   |   30   |    4   |
+| layer7_out_2_V|    0   |   30   |    4   |
+| layer7_out_3_V|    0   |   30   |    4   |
+| layer7_out_4_V|    0   |   30   |    4   |
+| layer7_out_5_V|    0   |   30   |    4   |
+| layer7_out_6_V|    0   |   30   |    4   |
+| layer7_out_7_V|    0   |   30   |    4   |
+| layer8_out_0_V|    0   |   32   |    4   |
+| layer8_out_1_V|    0   |   32   |    4   |
+| layer8_out_2_V|    0   |   32   |    4   |
+| layer8_out_3_V|    0   |   32   |    4   |
+| layer8_out_4_V|    0   |   32   |    4   |
+| layer8_out_5_V|    0   |   32   |    4   |
+| layer8_out_6_V|    0   |   32   |    4   |
+| layer8_out_7_V|    0   |   32   |    4   |
+| layer9_out_0_V|    0   |   30   |    4   |
+| layer9_out_1_V|    0   |   30   |    4   |
+| layer9_out_2_V|    0   |   30   |    4   |
+| layer9_out_3_V|    0   |   30   |    4   |
+| layer9_out_4_V|    0   |   30   |    4   |
+| layer9_out_5_V|    0   |   30   |    4   |
+| layer9_out_6_V|    0   |   30   |    4   |
+| layer9_out_7_V|    0   |   30   |    4   |
+|     w10_V     |    1   |    0   |    0   |
+|      w6_V     |   704  |    0   |    0   |
+|      w8_V     |   11   |    0   |    0   |
++---------------+--------+--------+--------+
+|     Total     |   792  |  1099  |   133  |
++---------------+--------+--------+--------+
+
+* Register list:
+N/A
+
+* Multiplexer (MUX) list: 
+|--------|------|------|------|--------|
+|  Comp  |  Pin | Size |  BW  | S x BW |
+|--------|------|------|------|--------|
+|  Total |      |      |      |    0   |
+|--------|------|------|------|--------|
+
+
+
+* Summary:
++-----------+--------+--------+--------+--------+--------+
+|           |  BRAM  | DSP48E |  Delay |   FF   |   LUT  |
++-----------+--------+--------+--------+--------+--------+
+|  Function |  1043  |   400  |   732  | 139160 |  98915 |
+|   Memory  |   792  |    -   |    -   |  1099  |   133  |
+|Multiplexer|    -   |    -   |    -   |    -   |    -   |
+|  Register |    -   |    -   |    -   |    -   |    -   |
++-----------+--------+--------+--------+--------+--------+
+|   Total   |  1835  |   400  |   732  | 140259 |  99048 |
++-----------+--------+--------+--------+--------+--------+
